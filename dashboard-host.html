@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>QRelax - Dashboard Host</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff; --ink:#2D3748; --muted:#6B7280; --soft:#F0F9FF; --line:#E5E7EB;
+    --primary:#2D3748; --secondary:#7DD3FC; --success:#48BB78; --warning:#F6AD55; --danger:#FC8181;
+    --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.08);
+  }
+  [data-theme="dark"] {
+    --bg:#1a202c; --ink:#f7fafc; --muted:#a0aec0; --soft:#2d3748; --line:#4a5568;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif}
+  
+  /* Login */
+  .login-wrapper{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+  .login-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:32px;max-width:400px;width:100%;border:1px solid var(--line)}
+  .login-logo{text-align:center;margin-bottom:24px;font-size:2rem;font-weight:700}
+  .login-logo span{color:var(--secondary)}
+  .form-group{margin-bottom:16px}
+  .form-label{display:block;margin-bottom:6px;font-weight:600;font-size:.9rem}
+  .form-input{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;font-size:1rem}
+  .form-input:focus{outline:none;border-color:var(--secondary)}
+  .btn{padding:12px 24px;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all 0.2s}
+  .btn-primary{background:var(--secondary);color:var(--primary);width:100%}
+  .btn-primary:hover{opacity:0.9}
+  .error-msg{background:#FEE;color:#C53030;padding:12px;border-radius:8px;margin-bottom:16px;font-size:.9rem}
+  
+  /* Dashboard */
+  .dashboard{display:none}
+  .dashboard.active{display:block}
+  .header{background:#fff;border-bottom:1px solid var(--line);padding:16px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+  .header-title{font-size:1.5rem;font-weight:700;color:var(--primary)}
+  .header-actions{display:flex;gap:12px;align-items:center}
+  .btn-logout{padding:8px 16px;background:var(--danger);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.9rem}
+  .apt-selector{padding:8px 12px;border:1px solid var(--line);border-radius:6px;font-size:.9rem}
+  
+  .container{max-width:1400px;margin:0 auto;padding:24px}
+  .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-bottom:32px}
+  .stat-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;border:1px solid var(--line)}
+  .stat-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;font-size:24px}
+  .stat-icon.blue{background:#E6F7FF;color:#1890FF}
+  .stat-icon.green{background:#F6FFED;color:#52C41A}
+  .stat-icon.orange{background:#FFF7E6;color:#FA8C16}
+  .stat-icon.purple{background:#F9F0FF;color:#722ED1}
+  .stat-value{font-size:2rem;font-weight:700;margin-bottom:4px}
+  .stat-label{color:var(--muted);font-size:.9rem}
+  .stat-trend{font-size:.85rem;margin-top:8px}
+  .stat-trend.up{color:var(--success)}
+  .stat-trend.down{color:var(--danger)}
+  
+  .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;border:1px solid var(--line);margin-bottom:24px}
+  .card-title{font-size:1.25rem;font-weight:700;margin-bottom:16px}
+  
+  .chart-container{height:300px;position:relative}
+  .chart-placeholder{display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);background:var(--soft);border-radius:8px}
+  
+  .feedback-list{display:flex;flex-direction:column;gap:12px}
+  .feedback-item{border:1px solid var(--line);border-radius:8px;padding:16px}
+  .feedback-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+  .feedback-rating{color:#F59E0B;font-weight:600}
+  .feedback-date{color:var(--muted);font-size:.85rem}
+  .feedback-text{color:var(--ink);line-height:1.6}
+  
+  .qr-section{text-align:center}
+  .qr-code{width:200px;height:200px;margin:20px auto;background:#f5f5f5;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem}
+  .qr-url{background:var(--soft);padding:12px;border-radius:6px;margin-top:16px;word-break:break-all;font-family:monospace;font-size:.9rem}
+  .btn-download{background:var(--primary);color:#fff;margin-top:16px}
+  
+  .visits-table{width:100%;border-collapse:collapse}
+  .visits-table th,.visits-table td{padding:12px;text-align:left;border-bottom:1px solid var(--line)}
+  .visits-table th{font-weight:600;color:var(--muted);font-size:.85rem;text-transform:uppercase}
+  .visits-table tr:hover{background:var(--soft)}
+  
+  .empty-state{text-align:center;padding:48px 24px;color:var(--muted)}
+  .empty-state-icon{font-size:4rem;margin-bottom:16px;opacity:0.5}
+  
+  @media(max-width:768px){
+    .header{flex-direction:column;gap:12px;align-items:stretch}
+    .stats-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- Login Form -->
+<div id="login-screen" class="login-wrapper">
+  <div class="login-card">
+    <div class="login-logo">QR<span>ELAX</span></div>
+    <h2 style="text-align:center;margin-bottom:24px">Dashboard Host</h2>
+    <div id="login-error" class="error-msg" style="display:none">Credenziali non valide</div>
+    <form id="login-form">
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-input" id="login-email" required placeholder="host@qrelaxing.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-input" id="login-password" required placeholder="••••••••">
+      </div>
+      <button type="submit" class="btn btn-primary">Accedi</button>
+    </form>
+    <p style="text-align:center;margin-top:16px;font-size:.85rem;color:var(--muted)">
+      Demo: leonardo@qrelaxing.com / demo123
+    </p>
+  </div>
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard" class="dashboard">
+  <header class="header">
+    <div class="header-title">Dashboard Host</div>
+    <div class="header-actions">
+      <select class="apt-selector" id="apt-selector">
+        <option value="papaya">Appartamento Papaya</option>
+        <option value="villa-mare">Villa Mare</option>
+        <option value="centro">Centro Storico</option>
+      </select>
+      <button class="btn-logout" id="logout-btn">Esci</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Statistiche Overview -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon blue">👁️</div>
+        <div class="stat-value" id="total-views">0</div>
+        <div class="stat-label">Visualizzazioni Totali</div>
+        <div class="stat-trend up">↑ +12% vs mese scorso</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon green">📱</div>
+        <div class="stat-value" id="qr-scans">0</div>
+        <div class="stat-label">QR Code Scansionati</div>
+        <div class="stat-trend up">↑ +8% vs mese scorso</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon orange">⭐</div>
+        <div class="stat-value" id="avg-rating">4.8</div>
+        <div class="stat-label">Valutazione Media</div>
+        <div class="stat-trend up">↑ +0.2 vs mese scorso</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon purple">💬</div>
+        <div class="stat-value" id="feedback-count">0</div>
+        <div class="stat-label">Feedback Ricevuti</div>
+        <div class="stat-trend up">↑ +5 questo mese</div>
+      </div>
+    </div>
+
+    <!-- Grafico Visualizzazioni -->
+    <div class="card">
+      <div class="card-title">📊 Visualizzazioni negli ultimi 30 giorni</div>
+      <div class="chart-container">
+        <canvas id="views-chart"></canvas>
+      </div>
+    </div>
+
+    <!-- QR Code -->
+    <div class="card">
+      <div class="card-title">🎯 QR Code Appartamento</div>
+      <div class="qr-section">
+        <div class="qr-code" id="qr-display">
+          <svg width="180" height="180" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" fill="white"/>
+            <rect x="10" y="10" width="30" height="30" fill="black"/>
+            <rect x="60" y="10" width="30" height="30" fill="black"/>
+            <rect x="10" y="60" width="30" height="30" fill="black"/>
+            <rect x="15" y="15" width="20" height="20" fill="white"/>
+            <rect x="65" y="15" width="20" height="20" fill="white"/>
+            <rect x="15" y="65" width="20" height="20" fill="white"/>
+            <rect x="50" y="50" width="10" height="10" fill="black"/>
+            <rect x="70" y="50" width="10" height="10" fill="black"/>
+            <rect x="50" y="70" width="10" height="10" fill="black"/>
+          </svg>
+        </div>
+        <div class="qr-url" id="qr-url">https://tuosito.github.io/qrelax?apt=papaya</div>
+        <button class="btn btn-download">📥 Scarica QR Code</button>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <!-- Visite Recenti -->
+      <div class="card">
+        <div class="card-title">🕒 Visite Recenti</div>
+        <table class="visits-table">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Ora</th>
+              <th>Sorgente</th>
+            </tr>
+          </thead>
+          <tbody id="visits-tbody">
+            <tr>
+              <td>08/10/2025</td>
+              <td>14:32</td>
+              <td>📱 QR Code</td>
+            </tr>
+            <tr>
+              <td>08/10/2025</td>
+              <td>11:15</td>
+              <td>🔗 Link Diretto</td>
+            </tr>
+            <tr>
+              <td>07/10/2025</td>
+              <td>18:45</td>
+              <td>📱 QR Code</td>
+            </tr>
+            <tr>
+              <td>07/10/2025</td>
+              <td>09:20</td>
+              <td>📱 QR Code</td>
+            </tr>
+            <tr>
+              <td>06/10/2025</td>
+              <td>16:10</td>
+              <td>🔗 Link Diretto</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Feedback Ospiti -->
+      <div class="card">
+        <div class="card-title">💬 Feedback Ospiti</div>
+        <div class="feedback-list" id="feedback-list">
+          <div class="feedback-item">
+            <div class="feedback-header">
+              <div class="feedback-rating">⭐⭐⭐⭐⭐ 5.0</div>
+              <div class="feedback-date">5 ott 2025</div>
+            </div>
+            <div class="feedback-text">
+              Appartamento fantastico! Guida molto utile, soprattutto i consigli sui ristoranti. Torneremo sicuramente!
+            </div>
+          </div>
+          
+          <div class="feedback-item">
+            <div class="feedback-header">
+              <div class="feedback-rating">⭐⭐⭐⭐ 4.5</div>
+              <div class="feedback-date">2 ott 2025</div>
+            </div>
+            <div class="feedback-text">
+              Molto comodo avere tutte le informazioni sul telefono. WiFi perfetto e istruzioni chiare.
+            </div>
+          </div>
+          
+          <div class="feedback-item">
+            <div class="feedback-header">
+              <div class="feedback-rating">⭐⭐⭐⭐⭐ 5.0</div>
+              <div class="feedback-date">28 set 2025</div>
+            </div>
+            <div class="feedback-text">
+              Ottima esperienza! La mappa con i ristoranti consigliati è stata utilissima. Host disponibilissimo.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Dati demo
+const DEMO_CREDENTIALS = {
+  email: 'leonardo@qrelaxing.com',
+  password: 'demo123'
+};
+
+const DEMO_STATS = {
+  papaya: {
+    views: 1247,
+    qr_scans: 89,
+    rating: 4.8,
+    feedback: 12,
+    visits: [
+      { date: '08/10/2025', time: '14:32', source: 'QR' },
+      { date: '08/10/2025', time: '11:15', source: 'Link' },
+      { date: '07/10/2025', time: '18:45', source: 'QR' },
+      { date: '07/10/2025', time: '09:20', source: 'QR' },
+      { date: '06/10/2025', time: '16:10', source: 'Link' }
+    ],
+    viewsChart: [32, 45, 38, 52, 48, 61, 55, 72, 68, 58, 75, 82, 71, 89, 95, 88, 102, 98, 115, 108, 122, 118, 135, 128, 142, 138, 155, 148, 162, 175]
+  },
+  'villa-mare': {
+    views: 856,
+    qr_scans: 64,
+    rating: 4.9,
+    feedback: 8
+  },
+  centro: {
+    views: 623,
+    qr_scans: 42,
+    rating: 4.7,
+    feedback: 6
+  }
+};
+
+let currentApt = 'papaya';
+
+// Login
+document.getElementById('login-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const email = document.getElementById('login-email').value;
+  const password = document.getElementById('login-password').value;
+  
+  if (email === DEMO_CREDENTIALS.email && password === DEMO_CREDENTIALS.password) {
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('dashboard').classList.add('active');
+    localStorage.setItem('qrelax-auth', 'true');
+    loadDashboard('papaya');
+  } else {
+    document.getElementById('login-error').style.display = 'block';
+  }
+});
+
+// Logout
+document.getElementById('logout-btn').addEventListener('click', function() {
+  localStorage.removeItem('qrelax-auth');
+  document.getElementById('dashboard').classList.remove('active');
+  document.getElementById('login-screen').style.display = 'flex';
+  document.getElementById('login-email').value = '';
+  document.getElementById('login-password').value = '';
+});
+
+// Cambio appartamento
+document.getElementById('apt-selector').addEventListener('change', function(e) {
+  currentApt = e.target.value;
+  loadDashboard(currentApt);
+});
+
+// Carica dashboard
+function loadDashboard(aptId) {
+  const stats = DEMO_STATS[aptId] || DEMO_STATS.papaya;
+  
+  document.getElementById('total-views').textContent = stats.views.toLocaleString();
+  document.getElementById('qr-scans').textContent = stats.qr_scans;
+  document.getElementById('avg-rating').textContent = stats.rating;
+  document.getElementById('feedback-count').textContent = stats.feedback;
+  
+  const url = `https://tuosito.github.io/qrelax?apt=${aptId}`;
+  document.getElementById('qr-url').textContent = url;
+  
+  // Simula tracking real-time
+  simulateRealTimeUpdates();
+}
+
+// Tracking simulato
+function simulateRealTimeUpdates() {
+  setInterval(() => {
+    const currentViews = parseInt(document.getElementById('total-views').textContent.replace(',', ''));
+    const newViews = currentViews + Math.floor(Math.random() * 3);
+    document.getElementById('total-views').textContent = newViews.toLocaleString();
+  }, 30000); // Ogni 30 secondi
+}
+
+// Check se già loggato
+if (localStorage.getItem('qrelax-auth') === 'true') {
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('dashboard').classList.add('active');
+  loadDashboard('papaya');
+}
+
+// Grafico (semplificato)
+const canvas = document.getElementById('views-chart');
+if (canvas) {
+  const ctx = canvas.getContext('2d');
+  canvas.width = canvas.parentElement.clientWidth;
+  canvas.height = 300;
+  
+  const data = DEMO_STATS.papaya.viewsChart;
+  const max = Math.max(...data);
+  const width = canvas.width;
+  const height = canvas.height;
+  const padding = 40;
+  const barWidth = (width - padding * 2) / data.length;
+  
+  // Background
+  ctx.fillStyle = '#F0F9FF';
+  ctx.fillRect(0, 0, width, height);
+  
+  // Bars
+  data.forEach((value, index) => {
+    const barHeight = (value / max) * (height - padding * 2);
+    const x = padding + index * barWidth;
+    const y = height - padding - barHeight;
+    
+    ctx.fillStyle = '#7DD3FC';
+    ctx.fillRect(x, y, barWidth - 2, barHeight);
+  });
+  
+  // Axes
+  ctx.strokeStyle = '#E5E7EB';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(padding, height - padding);
+  ctx.lineTo(width - padding, height - padding);
+  ctx.moveTo(padding, padding);
+  ctx.lineTo(padding, height - padding);
+  ctx.stroke();
+}
+</script>
+
+</body>
+</html>

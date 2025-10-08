@@ -1,0 +1,86 @@
+{
+  "nome": "NOME_APPARTAMENTO",
+  "indirizzo": "INDIRIZZO_COMPLETO",
+  "foto_copertina": "https://images.unsplash.com/LINK_FOTO_COPERTINA",
+  "lat": 45.0000,
+  "lon": 12.0000,
+  
+  "wifi_ssid": "NOME_WIFI",
+  "wifi_password": "PASSWORD_WIFI",
+  
+  "checkin": "dalle XX:XX",
+  "checkout": "entro le XX:XX", 
+  "checkin_note": "Note aggiuntive sui check-in/out (opzionale)",
+  
+  "host_telefono": "+39 XXX XXXXXXX",
+  "host_email": "email@cliente.it",
+  
+  "regole": "<ul style=\"margin:0;padding-left:20px\"><li><strong>Regola 1:</strong> Descrizione</li><li><strong>Regola 2:</strong> Descrizione</li><li><strong>Regola 3:</strong> Descrizione</li></ul>",
+  
+  "emergenze": "<p><strong>🚑 Ambulanza:</strong> <a href=\"tel:118\">118</a><br><strong>👩‍⚕️ Guardia Medica:</strong> <a href=\"tel:116117\">116 117</a><br><strong>💊 Farmacia turno:</strong> Numero locale<br><strong>📞 Emergenze:</strong> <a href=\"tel:112\">112</a></p>",
+  
+  "funzionamento": "<h4 style=\"margin:0 0 8px;color:#2D3748\">📺 Televisione</h4><p>Istruzioni TV qui...</p><h4 style=\"margin:16px 0 8px;color:#2D3748\">🌡️ Climatizzatore</h4><p>Istruzioni clima qui...</p><h4 style=\"margin:16px 0 8px;color:#2D3748\">🔐 Sicurezza</h4><p>Istruzioni allarme/cancello qui...</p>",
+  
+  "mappa_embed": "LINK_GOOGLE_MAPS_EMBED",
+  
+  "ristoranti": [
+    {
+      "nome": "Nome Ristorante 1",
+      "foto": "https://images.unsplash.com/FOTO_RISTORANTE",
+      "prezzo": "€€",
+      "distanza": "X min a piedi/auto",
+      "descrizione": "Descrizione breve del ristorante e tipo di cucina",
+      "telefono": "+39 XXXX XXXXXX",
+      "maps": "https://goo.gl/maps/LINK"
+    },
+    {
+      "nome": "Nome Ristorante 2",
+      "foto": "https://images.unsplash.com/FOTO_RISTORANTE",
+      "prezzo": "€",
+      "distanza": "X min",
+      "descrizione": "Descrizione",
+      "telefono": "+39 XXXX XXXXXX",
+      "maps": "https://goo.gl/maps/LINK"
+    },
+    {
+      "nome": "Nome Ristorante 3",
+      "foto": "https://images.unsplash.com/FOTO_RISTORANTE",
+      "prezzo": "€€€",
+      "distanza": "X min",
+      "descrizione": "Descrizione",
+      "telefono": "+39 XXXX XXXXXX",
+      "maps": "https://goo.gl/maps/LINK"
+    }
+  ],
+  
+  "attivita": [
+    {
+      "nome": "Nome Attività 1",
+      "foto": "https://images.unsplash.com/FOTO_ATTIVITA",
+      "distanza": "X min",
+      "descrizione": "Descrizione dell'attività o luogo da visitare",
+      "maps": "https://goo.gl/maps/LINK"
+    },
+    {
+      "nome": "Nome Attività 2",
+      "foto": "https://images.unsplash.com/FOTO_ATTIVITA",
+      "distanza": "X min",
+      "descrizione": "Descrizione",
+      "maps": "https://goo.gl/maps/LINK"
+    },
+    {
+      "nome": "Nome Attività 3",
+      "foto": "https://images.unsplash.com/FOTO_ATTIVITA",
+      "distanza": "X min",
+      "descrizione": "Descrizione",
+      "maps": "https://goo.gl/maps/LINK"
+    }
+  ],
+  
+  "galleria": [
+    "https://images.unsplash.com/FOTO1",
+    "https://images.unsplash.com/FOTO2",
+    "https://images.unsplash.com/FOTO3",
+    "https://images.unsplash.com/FOTO4"
+  ]
+}
