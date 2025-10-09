@@ -1,4 +1,18 @@
-{
+"ristoranti": [
+    {
+      "nome": "Al Torcio",
+      "foto": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
+      "prezzo": "€€",
+      "distanza": "5 min a piedi",
+      "descrizione": "Cucina veneta tradizionale, mare e carne. Pizza al forno a legna in ambiente rustico.",
+      "telefono": "+39 0421 123456",
+      "maps": "https://goo.gl/maps/esempio1"
+    },
+    {
+      "nome": "Da Guido",
+      "foto": "https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800",
+      "prezzo": "€€€",
+      "distanza": "10 min in auto",{
   "nome": "Appartamento Papaya",
   "indirizzo": "Via Ulisse 1, 30016 Lido di Jesolo VE",
   "foto_copertina": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1400",
@@ -50,6 +64,24 @@
       "descrizione": "Locale moderno vicino al mare. Cucina di pesce creativa e ottima carta vini.",
       "telefono": "+39 0421 345678",
       "maps": "https://goo.gl/maps/esempio3"
+    },
+    {
+      "nome": "Pizzeria Il Forno",
+      "foto": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
+      "prezzo": "€",
+      "distanza": "3 min a piedi",
+      "descrizione": "Pizza napoletana autentica con ingredienti di qualità. Atmosfera familiare.",
+      "telefono": "+39 0421 456789",
+      "maps": "https://goo.gl/maps/esempio4"
+    },
+    {
+      "nome": "Gelateria Venezia",
+      "foto": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800",
+      "prezzo": "€",
+      "distanza": "2 min a piedi",
+      "descrizione": "Gelato artigianale con gusti tradizionali e innovativi. Perfetto dopo cena.",
+      "telefono": "+39 0421 567890",
+      "maps": "https://goo.gl/maps/esempio5"
     }
   ],
   
