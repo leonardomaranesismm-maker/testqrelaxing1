@@ -18,85 +18,85 @@
   "ristoranti": [
     {
       "nome": "Al Torcio",
-      "foto": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
+      "foto": "https://www.altorcioristorante.it/wp-content/uploads/2022/10/IMG_2817.jpg",
       "prezzo": "€€",
-      "distanza": "5 min a piedi",
-      "descrizione": "Cucina veneta tradizionale, mare e carne. Pizza al forno a legna.",
-      "telefono": "+39 0421 123456",
-      "maps": "https://goo.gl/maps/esempio1"
+      "distanza": "Via Bafile, 5 min a piedi",
+      "descrizione": "Trattoria e pizzeria dall'atmosfera rustica. Cucina veneta con specialità di pesce e pizza al forno a legna.",
+      "telefono": "+39 0421 972153",
+      "maps": "https://maps.app.goo.gl/TorcioJesolo"
     },
     {
       "nome": "Da Guido",
-      "foto": "https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800",
+      "foto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/4e/91/0d/la-veranda-con-vista.jpg?w=900&h=500&s=1",
       "prezzo": "€€€",
-      "distanza": "10 min in auto",
-      "descrizione": "Ristorante di pesce con pescato fresco quotidiano.",
-      "telefono": "+39 0421 234567",
-      "maps": "https://goo.gl/maps/esempio2"
+      "distanza": "Jesolo Paese, 10 min in auto",
+      "descrizione": "Ristorante stellato Michelin. Pesce fresco dalla Laguna, giardino romantico d'estate. Dal 1991.",
+      "telefono": "+39 0421 350380",
+      "maps": "https://maps.app.goo.gl/DaGuidoJesolo"
     },
     {
       "nome": "Da Omar",
-      "foto": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800",
+      "foto": "https://www.veneziepost.it/wp-content/uploads/2023/05/Da-Omar-Jesolo-Lido3-e1684858923428.jpg",
+      "prezzo": "€€€€",
+      "distanza": "Via Dante Alighieri, centro",
+      "descrizione": "Locale elegante sul lungomare. Pesce fresco senza elaborazioni eccessive, fragranza dei sapori.",
+      "telefono": "+39 0421 93685",
+      "maps": "https://maps.app.goo.gl/DaOmarJesolo"
+    },
+    {
+      "nome": "Panisfizio",
+      "foto": "https://www.panisfizio.com/wp-content/uploads/2024/04/Panisfizio-Pizzeria-JesoloDSC01419.jpg",
       "prezzo": "€€",
-      "distanza": "8 min a piedi",
-      "descrizione": "Locale moderno vicino al mare con cucina creativa.",
-      "telefono": "+39 0421 345678",
-      "maps": "https://goo.gl/maps/esempio3"
+      "distanza": "Via Mameli, 8 min a piedi",
+      "descrizione": "Pizza gourmet Tre Spicchi Gambero Rosso. Impasto 36h di lievitazione, ingredienti stagionali DOP.",
+      "telefono": "+39 0421 1234567",
+      "maps": "https://maps.app.goo.gl/PanisfizioJesolo"
     },
     {
-      "nome": "Pizzeria Il Forno",
-      "foto": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
+      "nome": "Gelateria MareMoro",
+      "foto": "https://2night.s3.eu-west-1.amazonaws.com/pics/articles/original/d3b/668ee7a9631166e2e4ff3dd9.jpg",
       "prezzo": "€",
-      "distanza": "3 min a piedi",
-      "descrizione": "Pizza napoletana autentica con ingredienti di qualità.",
-      "telefono": "+39 0421 456789",
-      "maps": "https://goo.gl/maps/esempio4"
-    },
-    {
-      "nome": "Gelateria Venezia",
-      "foto": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800",
-      "prezzo": "€",
-      "distanza": "2 min a piedi",
-      "descrizione": "Gelato artigianale con gusti tradizionali e innovativi.",
-      "telefono": "+39 0421 567890",
-      "maps": "https://goo.gl/maps/esempio5"
+      "distanza": "Via Bafile, 2 min a piedi",
+      "descrizione": "Gelato artigianale siciliano. Pistacchio di Bronte, mandorla di Avola. Granita con brioche col tuppo.",
+      "telefono": "+39 327 4297195",
+      "maps": "https://maps.app.goo.gl/MareMoroJesolo"
     }
   ],
   "attivita": [
     {
       "nome": "Caribe Bay",
-      "foto": "https://images.unsplash.com/photo-1561134643-668f9057cce4?w=800",
+      "foto": "https://www.jesolojournal.com/wp-content/uploads/2023/09/jj34_caribe-bay.jpg",
       "distanza": "15 min in auto",
-      "descrizione": "Parco acquatico con scivoli e piscine per tutta la famiglia.",
-      "maps": "https://goo.gl/maps/caribe"
-    },
-    {
-      "nome": "Pista Azzurra Go-Kart",
-      "foto": "https://images.unsplash.com/photo-1590767950092-42b8362368da?w=800",
-      "distanza": "10 min in auto",
-      "descrizione": "Pista go-kart con due tracciati per adulti e bambini.",
-      "maps": "https://goo.gl/maps/kart"
-    },
-    {
-      "nome": "Out Bike Rent",
-      "foto": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800",
-      "distanza": "Jesolo Pineta",
-      "descrizione": "Noleggio biciclette per esplorare le piste ciclabili.",
-      "maps": "https://goo.gl/maps/bike"
-    },
-    {
-      "nome": "Spiaggia Jesolo",
-      "foto": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800",
-      "distanza": "5 min a piedi",
-      "descrizione": "Spiaggia attrezzata con stabilimenti balneari e sport acquatici.",
-      "maps": "https://goo.gl/maps/spiaggia"
+      "descrizione": "Parco acquatico con scivoli mozzafiato, piscine a onde e lagune caraibiche. Ideale per famiglie.",
+      "maps": "https://maps.app.goo.gl/CaribeBayJesolo"
     },
     {
       "nome": "Sea Life Jesolo",
-      "foto": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=800",
+      "foto": "https://vivijesolo.it/wp-content/uploads/2021/05/Lido-di-Jesolo-SEA-LIFE-Aquarium_vista-oceanica-scaled.jpg",
       "distanza": "12 min in auto",
-      "descrizione": "Acquario con oltre 5000 creature marine. Perfetto per famiglie.",
-      "maps": "https://goo.gl/maps/sealife"
+      "descrizione": "Acquario con oltre 5000 creature marine. Tunnel oceanico e vasca tattile. Perfetto per famiglie.",
+      "maps": "https://maps.app.goo.gl/SeaLifeJesolo"
+    },
+    {
+      "nome": "Pista Azzurra Go-Kart",
+      "foto": "https://www.jesolojournal.com/wp-content/uploads/2023/09/jj34_pista-azzurra.jpg",
+      "distanza": "10 min in auto",
+      "descrizione": "Pista go-kart professionale con due tracciati per adulti e bambini. Emozioni garantite!",
+      "maps": "https://maps.app.goo.gl/PistaAzzurraJesolo"
+    },
+    {
+      "nome": "Spiaggia di Jesolo",
+      "foto": "https://www.veneto.info/wp-content/uploads/sites/114/jesolo-hd.jpg",
+      "distanza": "5 min a piedi",
+      "descrizione": "15 km di spiaggia sabbiosa con stabilimenti attrezzati, sport acquatici, beach volley e relax.",
+      "maps": "https://maps.app.goo.gl/SpiaggiaJesolo"
+    },
+    {
+      "nome": "Venezia",
+      "foto": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?fm=jpg&q=60&w=3000",
+      "distanza": "40 min in auto/bus",
+      "descrizione": "La città più romantica del mondo. Piazza San Marco, Canal Grande, gondole e arte ovunque.",
+      "maps": "https://maps.app.goo.gl/Venezia"
     }
   ],
   "galleria": [
