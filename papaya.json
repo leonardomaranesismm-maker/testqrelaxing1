@@ -60,51 +60,72 @@
       "descrizione": "Gelato artigianale siciliano. Pistacchio di Bronte, mandorla di Avola. Granita con brioche col tuppo.",
       "telefono": "+39 327 4297195",
       "maps": "https://maps.app.goo.gl/MareMoroJesolo"
+    },
+    {
+      "nome": "Ristorante Tempini",
+      "foto": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800",
+      "prezzo": "€€",
+      "distanza": "Via Bafile, 7 min a piedi",
+      "descrizione": "Friggitoria e ristorante di pesce. Frittura mista dell'Adriatico e pasta fresca fatta in casa.",
+      "telefono": "+39 0421 123456",
+      "maps": "https://maps.app.goo.gl/TempiniJesolo"
     }
   ],
   "attivita": [
     {
       "nome": "Caribe Bay",
       "foto": "https://www.jesolojournal.com/wp-content/uploads/2023/09/jj34_caribe-bay.jpg",
-      "distanza": "15 min in auto",
+      "distanza": "15 min in auto (6 km)",
       "descrizione": "Parco acquatico con scivoli mozzafiato, piscine a onde e lagune caraibiche. Ideale per famiglie.",
       "maps": "https://maps.app.goo.gl/CaribeBayJesolo"
     },
     {
       "nome": "Sea Life Jesolo",
       "foto": "https://vivijesolo.it/wp-content/uploads/2021/05/Lido-di-Jesolo-SEA-LIFE-Aquarium_vista-oceanica-scaled.jpg",
-      "distanza": "12 min in auto",
+      "distanza": "12 min in auto (4.5 km)",
       "descrizione": "Acquario con oltre 5000 creature marine. Tunnel oceanico e vasca tattile. Perfetto per famiglie.",
       "maps": "https://maps.app.goo.gl/SeaLifeJesolo"
     },
     {
       "nome": "Pista Azzurra Go-Kart",
       "foto": "https://www.jesolojournal.com/wp-content/uploads/2023/09/jj34_pista-azzurra.jpg",
-      "distanza": "10 min in auto",
+      "distanza": "10 min in auto (3.8 km)",
       "descrizione": "Pista go-kart professionale con due tracciati per adulti e bambini. Emozioni garantite!",
       "maps": "https://maps.app.goo.gl/PistaAzzurraJesolo"
     },
     {
       "nome": "Spiaggia di Jesolo",
       "foto": "https://www.veneto.info/wp-content/uploads/sites/114/jesolo-hd.jpg",
-      "distanza": "5 min a piedi",
+      "distanza": "5 min a piedi (400 m)",
       "descrizione": "15 km di spiaggia sabbiosa con stabilimenti attrezzati, sport acquatici, beach volley e relax.",
       "maps": "https://maps.app.goo.gl/SpiaggiaJesolo"
     },
     {
       "nome": "Venezia",
       "foto": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?fm=jpg&q=60&w=3000",
-      "distanza": "40 min in auto/bus",
+      "distanza": "40 min in auto (45 km)",
       "descrizione": "La città più romantica del mondo. Piazza San Marco, Canal Grande, gondole e arte ovunque.",
       "maps": "https://maps.app.goo.gl/Venezia"
+    },
+    {
+      "nome": "Tropicarium Park",
+      "foto": "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800",
+      "distanza": "8 min a piedi (650 m)",
+      "descrizione": "Parco tropicale con squali, pinguini, rettili e farfalle. Esperienza educativa e divertente.",
+      "maps": "https://maps.app.goo.gl/TropicariumJesolo"
     }
   ],
-  "galleria": [
-    "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1400",
-    "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1400",
-    "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1400",
-    "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1400",
-    "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400",
-    "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=1400"
-  ]
-}
+  "info_utili": {
+    "trasporti": {
+      "autobus": "Fermata ATVO a 200m - Linea 5 per Venezia ogni 30 min (€8 a/r). Orari: 6:00-23:00",
+      "taxi": "Radio Taxi Jesolo: +39 0421 370370 - Disponibile 24/7",
+      "bici": "Noleggio bici presso Lido Bike (Via Bafile 320) - €10/giorno",
+      "parcheggio": "Parcheggio pubblico P5 a 100m - €1.50/ora, €12/giorno. Parcheggio gratuito Via dei Mille"
+    },
+    "servizi": {
+      "supermercati": [
+        {"nome": "Conad City", "distanza": "3 min a piedi (250m)", "orari": "7:30-20:30"},
+        {"nome": "Eurospar", "distanza": "8 min a piedi (600m)", "orari": "8:00-21:00"}
+      ],
+      "farmacie": [
+        {"nome":
