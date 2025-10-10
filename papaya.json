@@ -37,7 +37,7 @@
     {
       "nome": "Da Omar",
       "foto": "https://www.veneziepost.it/wp-content/uploads/2023/05/Da-Omar-Jesolo-Lido3-e1684858923428.jpg",
-      "prezzo": "€€€€",
+      "prezzo": "€€€",
       "distanza": "Centro, 8 min",
       "descrizione": "Elegante sul lungomare. Pesce fresco senza elaborazioni eccessive.",
       "telefono": "+39 0421 93685",
@@ -45,7 +45,7 @@
     },
     {
       "nome": "Panisfizio",
-      "foto": "https://www.panisfizio.com/wp-content/uploads/2024/04/Panisfizio-Pizzeria-JesoloDSC01419.jpg",
+      "foto": "https://www.panisfizio.com/wp-content/uploads/2024/04/Panisfizio-Pizzeria-JesoloDSC01407-2.jpg",
       "prezzo": "€€",
       "distanza": "8 min a piedi",
       "descrizione": "Pizza gourmet Tre Spicchi Gambero Rosso. Impasto 36h di lievitazione.",
@@ -63,7 +63,7 @@
     },
     {
       "nome": "Ristorante Tempini",
-      "foto": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800",
+      "foto": "https://www.hotel-nettuno.com/images/cmsone/galleryone/ristorante-friggitoria-tempini/zoom/dsc_4729_45295.JPG",
       "prezzo": "€€",
       "distanza": "7 min a piedi",
       "descrizione": "Friggitoria e ristorante. Frittura mista dell'Adriatico e pasta fresca.",
@@ -104,12 +104,12 @@
       "nome": "Venezia",
       "foto": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?fm=jpg&q=60&w=3000",
       "distanza": "40 min in auto (45 km)",
-      "descrizione": "La citta piu romantica del mondo. Piazza San Marco, Canal Grande e gondole.",
+      "descrizione": "La città più romantica del mondo. Piazza San Marco, Canal Grande e gondole.",
       "maps": "https://goo.gl/maps/Venezia"
     },
     {
       "nome": "Tropicarium Park",
-      "foto": "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800",
+      "foto": "https://www.hoteldantejesolo.com/public/img-camere/larg/tropicarium-park-1065021015.jpg",
       "distanza": "8 min a piedi (650 m)",
       "descrizione": "Parco tropicale con squali, pinguini, rettili e farfalle. Educativo e divertente.",
       "maps": "https://goo.gl/maps/TropicariumJesolo"
