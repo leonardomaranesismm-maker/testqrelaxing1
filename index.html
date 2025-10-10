@@ -479,8 +479,13 @@
     document.getElementById('apt-cover').src = data.foto_copertina || '';
     document.getElementById('wifi-ssid').textContent = data.wifi_ssid || '—';
     document.getElementById('wifi-pass').textContent = data.wifi_password || '—';
-    document.getElementById('checkin').textContent = data.checkin || '—';
-    document.getElementById('checkout').textContent = data.checkout || '—';
+    const checkinText = data.checkin && data.checkin[currentLang] ? data.checkin[currentLang] : data.checkin || '—';
+const checkoutText = data.checkout && data.checkout[currentLang] ? data.checkout[currentLang] : data.checkout || '—';
+document.getElementById('checkin').textContent = checkinText;
+document.getElementById('checkout').textContent = checkoutText;
+
+const checkinNoteText = data.checkin_note && data.checkin_note[currentLang] ? data.checkin_note[currentLang] : data.checkin_note || '';
+document.getElementById('checkin-note').textContent = checkinNoteText;
     
     const hostInfo = document.getElementById('host-info');
     let hostHtml = '';
