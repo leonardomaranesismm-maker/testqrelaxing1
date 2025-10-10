@@ -1,4 +1,317 @@
-ivita</span>
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title id="page-title">QRelax - Caricamento...</title>
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --ink:#2D3748; --muted:#6B7280; --soft:#F0F9FF; --line:#E5E7EB; --accent:#7DD3FC;
+      --primary:#2D3748; --secondary:#7DD3FC; --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+    [data-theme="dark"] {
+      --bg:#1a202c; --ink:#f7fafc; --muted:#a0aec0; --soft:#2d3748; --line:#4a5568; 
+      --primary:#f7fafc; --secondary:#63b3ed; --shadow:0 10px 30px rgba(0,0,0,.3);
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;transition:background 0.3s,color 0.3s}
+    .q-container{max-width:1120px;margin:0 auto;padding:20px}
+    .q-grid{display:grid;gap:14px}
+    @media (min-width:768px){ 
+      .q-grid.cols-2{grid-template-columns:repeat(2,1fr)} 
+      .q-grid.cols-3{grid-template-columns:repeat(3,1fr)} 
+    }
+    .hero{padding:28px 0}
+    .hero-grid{display:grid;gap:16px}
+    @media(min-width:768px){ .hero-grid{grid-template-columns:1fr 420px;align-items:center} }
+    .hero-cover{border-radius:12px;overflow:hidden;background:#eee;height:260px}
+    .q-card{background:var(--bg);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px;border:1px solid var(--line)}
+    .q-title{font-weight:700;margin:0 0 6px;color:var(--ink)}
+    .q-text{color:var(--muted);margin:0}
+    .q-small{font-size:.92rem;color:var(--muted)}
+    .q-small a{color:var(--secondary)}
+    .q-small ul{margin:0;padding-left:20px;color:var(--muted)}
+    .q-small strong{color:var(--ink)}
+    .q-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+    .q-action{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:120px;text-align:center;border-radius:12px}
+    .q-link{display:block;text-decoration:none;color:var(--ink)}
+    .q-ico{width:20px;height:20px;stroke:currentColor;fill:none;display:inline-block}
+    .q-ico-sm{width:16px;height:16px}
+    .q-img{position:relative;aspect-ratio:16/9;background:#ddd;overflow:hidden;border-radius:10px}
+    .q-img img{width:100%;height:100%;object-fit:cover}
+    .q-chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+    .q-chip{font-size:.78rem;background:var(--soft);border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:var(--ink)}
+    .q-cta{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+    .q-btn{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);text-decoration:none;transition:all 0.2s}
+    .q-btn:hover{background:var(--soft)}
+    .q-btn-primary{background:var(--secondary);color:var(--primary);border:none;font-weight:600}
+    .q-btn-primary:hover{opacity:0.9}
+    .q-btn-secondary{background:var(--primary);color:#fff;border:none}
+    .lang-switcher{position:fixed;top:20px;right:20px;display:flex;gap:4px;align-items:center;z-index:1000;background:var(--bg);padding:8px;border-radius:8px;box-shadow:var(--shadow);border:1px solid var(--line)}
+    .theme-toggle{padding:6px 10px;border:1px solid var(--line);background:var(--bg);color:var(--muted);border-radius:6px;font-size:.8rem;transition:all 0.2s;cursor:pointer}
+    .theme-toggle:hover{background:var(--secondary);color:var(--primary);border-color:var(--secondary)}
+    .lang-btn{padding:6px 10px;border:1px solid var(--line);background:var(--bg);color:var(--muted);text-decoration:none;border-radius:6px;font-size:.8rem;transition:all 0.2s}
+    .lang-btn.active,.lang-btn:hover{background:var(--secondary);color:var(--primary);border-color:var(--secondary)}
+    .brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+    .brand-logo{width:180px;height:auto}
+    .q-bottom{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-around;background:var(--bg);border-top:1px solid var(--line);padding:10px;z-index:999;box-shadow:0 -2px 10px rgba(0,0,0,.05)}
+    .q-bottom a{display:flex;flex-direction:column;align-items:center;font-size:.72rem;color:var(--ink);text-decoration:none;padding:4px 12px;border-radius:8px;transition:background 0.2s}
+    .q-bottom a:hover{background:var(--soft)}
+    .q-bottom svg{width:22px;height:22px;margin-bottom:4px;stroke:var(--ink);fill:none}
+    .loading{display:flex;align-items:center;justify-content:center;height:200px;color:var(--muted)}
+    .error{background:#fee;border:1px solid #fcc;color:#c33;padding:20px;border-radius:8px;margin:20px 0}
+    @media(max-width:768px){
+      .q-container{padding:12px}
+      .hero-cover{height:180px}
+      .q-action{min-height:100px}
+      .lang-switcher{top:10px;right:10px;padding:4px;gap:2px}
+      .lang-btn,.theme-toggle{padding:4px 8px;font-size:.75rem}
+      .q-grid.cols-2{grid-template-columns:1fr}
+      .q-grid.cols-3{grid-template-columns:1fr}
+    }
+    .muted{color:var(--muted)}
+    .center{display:flex;align-items:center;justify-content:center}
+    .hidden{display:none}
+    .filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+    .filter-btn{padding:8px 16px;border:1px solid var(--line);background:var(--bg);color:var(--muted);border-radius:20px;font-size:.85rem;cursor:pointer;transition:all 0.2s}
+    .filter-btn:hover,.filter-btn.active{background:var(--secondary);color:var(--primary);border-color:var(--secondary)}
+    .skip-link{position:absolute;top:-40px;left:0;background:var(--primary);color:#fff;padding:8px;z-index:100;transition:top 0.3s}
+    .skip-link:focus{top:0}
+    [aria-live]{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+    .scroll-container{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;margin-top:10px;padding-bottom:10px}
+    .scroll-container::-webkit-scrollbar{height:8px}
+    .scroll-container::-webkit-scrollbar-track{background:var(--soft);border-radius:10px}
+    .scroll-container::-webkit-scrollbar-thumb{background:var(--secondary);border-radius:10px}
+    .scroll-grid{display:flex;gap:14px;min-width:min-content}
+    .scroll-grid .q-card{min-width:300px;max-width:300px;flex-shrink:0}
+    .whatsapp-widget {
+      position:fixed;bottom:80px;right:20px;width:60px;height:60px;background:#25D366;
+      border-radius:50%;display:flex;align-items:center;justify-content:center;
+      box-shadow:0 4px 12px rgba(0,0,0,0.3);z-index:998;transition:transform 0.3s,box-shadow 0.3s;
+      text-decoration:none;
+    }
+    .whatsapp-widget:hover{transform:scale(1.1);box-shadow:0 6px 20px rgba(37,211,102,0.4)}
+    .whatsapp-widget svg{width:35px;height:35px}
+    @media(max-width:768px){
+      .whatsapp-widget{bottom:70px;right:15px;width:50px;height:50px}
+      .whatsapp-widget svg{width:28px;height:28px}
+    }
+    .map-wrapper{border-radius:10px;overflow:hidden;margin-top:8px}
+    .map-wrapper iframe{display:block;border:0}
+    .footer-section{text-align:center;padding:32px 20px;margin-bottom:100px}
+    .footer-logo{margin-bottom:16px}
+    .footer-logo svg{width:150px;height:auto}
+    .footer-text{color:var(--muted);font-size:.95rem;margin-top:8px}
+    .footer-powered{color:var(--muted);font-size:.8rem;margin-top:12px;font-style:italic}
+    .services-section{margin-top:18px}
+    .services-toggle{width:100%;padding:16px;background:var(--soft);border:1px solid var(--line);border-radius:12px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;color:var(--ink);transition:all 0.2s}
+    .services-toggle:hover{background:var(--secondary);color:var(--primary);border-color:var(--secondary)}
+    .services-toggle svg{transition:transform 0.3s}
+    .services-toggle.active svg{transform:rotate(180deg)}
+    .services-content{max-height:0;overflow:hidden;transition:max-height 0.3s ease}
+    .services-content.expanded{max-height:2000px}
+  </style>
+</head>
+<body>
+
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="q-house" viewBox="0 0 24 24"><path d="M3 10L12 3l9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10Z" stroke-width="2"/></symbol>
+    <symbol id="q-restaurant" viewBox="0 0 24 24"><path d="M6 3v18M10 3v8a2 2 0 1 0 4 0V3M18 3v18" stroke-width="2"/></symbol>
+    <symbol id="q-activity" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="2"/><path d="M12 7v5l4 2" stroke-width="2"/></symbol>
+    <symbol id="q-wifi" viewBox="0 0 24 24"><path d="M2 8a16 16 0 0 1 20 0M5 12a11 11 0 0 1 14 0M9 16a6 6 0 0 1 6 0" stroke-width="2"/></symbol>
+    <symbol id="q-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" stroke-width="2"/><path d="M8 2v4M16 2v4M3 10h18" stroke-width="2"/></symbol>
+    <symbol id="q-doc" viewBox="0 0 24 24"><path d="M6 4h9l3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke-width="2"/></symbol>
+    <symbol id="q-plus" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20" stroke-width="2"/></symbol>
+    <symbol id="q-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.09 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.6a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6" stroke-width="2"/></symbol>
+    <symbol id="q-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12Z" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke-width="2"/></symbol>
+    <symbol id="q-map" viewBox="0 0 24 24"><path d="M9 2L1 6v16l8-4 8 4 6-3V3l-6 3-8-4z" stroke-width="2"/><path d="M9 2v16M17 6v16" stroke-width="2"/></symbol>
+    <symbol id="q-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke-width="2"/></symbol>
+    <symbol id="q-shopping" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1" stroke-width="2"/><circle cx="20" cy="21" r="1" stroke-width="2"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" stroke-width="2"/></symbol>
+    <symbol id="q-pill" viewBox="0 0 24 24"><path d="M10.5 20.5L3.5 13.5a5 5 0 1 1 7-7l10 10a5 5 0 1 1-7 7z" stroke-width="2"/><path d="M8.5 8.5l7 7" stroke-width="2"/></symbol>
+    <symbol id="q-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke-width="2"/></symbol>
+    <symbol id="q-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="2"/></symbol>
+    <symbol id="q-cloud" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" stroke-width="2"/></symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
+  <div aria-live="polite" aria-atomic="true" id="announcer"></div>
+
+  <div id="loading" class="loading">Caricamento appartamento...</div>
+  <div id="error" class="error hidden">Errore nel caricamento dei dati.</div>
+
+  <div id="app" class="hidden">
+    <div class="lang-switcher">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Cambia tema">
+        <svg class="q-ico" id="theme-icon"><use href="#q-sun"/></svg>
+      </button>
+      <a href="#" class="lang-btn active" data-lang="it">IT</a>
+      <a href="#" class="lang-btn" data-lang="en">EN</a>
+      <a href="#" class="lang-btn" data-lang="de">DE</a>
+    </div>
+
+    <div class="q-container">
+      <header class="hero" id="main-content">
+        <div class="hero-grid">
+          <div>
+            <div class="brand">
+              <svg class="brand-logo" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#7DD3FC;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#2D3748;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <text x="0" y="45" font-family="Inter, sans-serif" font-weight="700" font-size="48" fill="url(#logoGradient)">QRelax</text>
+              </svg>
+            </div>
+            <h1 class="q-title" id="apt-nome">Caricamento...</h1>
+            <p class="q-text" id="apt-indirizzo">Caricamento indirizzo...</p>
+
+            <div class="q-grid cols-3" style="margin-top:14px">
+              <a class="q-card q-action q-link" href="#casa"><svg class="q-ico"><use href="#q-house"/></svg><div class="q-title" data-i18n="house">La casa</div><p class="q-text" data-i18n="house-desc">TV, clima, riscaldamento</p></a>
+              <a class="q-card q-action q-link" href="#mangiare"><svg class="q-ico"><use href="#q-restaurant"/></svg><div class="q-title" data-i18n="eat">Mangiare</div><p class="q-text" data-i18n="eat-desc">Ristoranti locali</p></a>
+              <a class="q-card q-action q-link" href="#attivita"><svg class="q-ico"><use href="#q-activity"/></svg><div class="q-title" data-i18n="activities">Attività</div><p class="q-text" data-i18n="activities-desc">Esperienze e svago</p></a>
+            </div>
+          </div>
+
+          <div class="hero-cover center"><img id="apt-cover" src="" alt="Appartamento" style="width:100%;height:100%;object-fit:cover"></div>
+        </div>
+      </header>
+
+      <section class="q-grid cols-2" style="margin-top:18px">
+        <div class="q-card">
+          <div class="q-row"><svg class="q-ico"><use href="#q-wifi"/></svg><div class="q-title" data-i18n="wifi">Wi-Fi</div></div>
+          <p class="q-small"><strong>SSID:</strong> <span id="wifi-ssid">—</span></p>
+          <p class="q-small"><strong data-i18n="password">Password:</strong> <span id="wifi-pass">—</span></p>
+          <a href="#" class="q-btn" id="copyPass" data-i18n="copy-password">Copia password</a><span class="muted" id="copiedMsg" style="display:none;margin-left:8px" data-i18n="copied">Copiata ✅</span>
+        </div>
+
+        <div class="q-card">
+          <div class="q-row"><svg class="q-ico"><use href="#q-calendar"/></svg><div class="q-title" data-i18n="checkin-checkout">Check-in / Check-out</div></div>
+          <p class="q-small"><span data-i18n="checkin">Check-in</span>: <span id="checkin">—</span> • <span data-i18n="checkout">Check-out</span>: <span id="checkout">—</span></p>
+          <div style="margin-top:10px"><strong data-i18n="host">Host:</strong> <span id="host-info">—</span></div>
+          <p class="q-small" id="checkin-note" style="margin-top:6px;font-style:italic"></p>
+        </div>
+
+        <div class="q-card">
+          <div class="q-row"><svg class="q-ico"><use href="#q-doc"/></svg><div class="q-title" data-i18n="house-rules">Regole della casa</div></div>
+          <div class="q-small" id="regole">—</div>
+        </div>
+
+        <div class="q-card">
+          <div class="q-row"><svg class="q-ico"><use href="#q-plus"/></svg><div class="q-title" data-i18n="emergencies">Emergenze</div></div>
+          <div class="q-small" id="emergenze">—</div>
+        </div>
+      </section>
+
+      <section id="casa" style="margin-top:18px">
+        <div class="q-title" data-i18n="house-operations">Funzionamento della casa</div>
+        <div class="q-card" style="margin-top:8px">
+          <div id="funzionamento" class="q-small">—</div>
+        </div>
+      </section>
+
+      <section id="mangiare" style="margin-top:18px">
+        <div class="q-title" data-i18n="where-eat">Dove mangiare</div>
+        <div class="filter-bar" role="group" aria-label="Filtri ristoranti">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter-all">Tutti</button>
+          <button class="filter-btn" data-filter="€" aria-label="Fascia economica">€</button>
+          <button class="filter-btn" data-filter="€€" aria-label="Fascia media">€€</button>
+          <button class="filter-btn" data-filter="€€€" aria-label="Fascia alta">€€€</button>
+          <button class="filter-btn" data-filter="vicino" data-i18n="filter-nearby">Vicino</button>
+        </div>
+        <div class="scroll-container">
+          <div id="luoghi-wrap" class="scroll-grid"></div>
+        </div>
+      </section>
+
+      <section class="services-section">
+        <button class="services-toggle" id="services-toggle">
+          <span><svg class="q-ico" style="margin-right:8px"><use href="#q-shopping"/></svg><span data-i18n="essential-services">Servizi Essenziali</span></span>
+          <svg class="q-ico"><use href="#q-chevron-down"/></svg>
+        </button>
+        <div class="services-content" id="services-content">
+          <div style="margin-top:14px">
+            <div class="filter-bar">
+              <button class="filter-btn active" data-filter-services="all" data-i18n="filter-all">Tutti</button>
+              <button class="filter-btn" data-filter-services="pharmacy" data-i18n="pharmacies">Farmacie</button>
+              <button class="filter-btn" data-filter-services="supermarket" data-i18n="supermarkets">Supermercati</button>
+            </div>
+            <div class="scroll-container">
+              <div id="services-wrap" class="scroll-grid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="attivita" style="margin-top:18px">
+        <div class="q-title" data-i18n="recommended-activities">Attività consigliate</div>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter-activity="all" data-i18n="filter-all">Tutti</button>
+          <button class="filter-btn" data-filter-activity="outdoor" data-i18n="outdoor">All'aperto</button>
+          <button class="filter-btn" data-filter-activity="indoor" data-i18n="indoor">Al chiuso</button>
+        </div>
+        <div class="scroll-container">
+          <div id="attivita-wrap" class="scroll-grid"></div>
+        </div>
+      </section>
+
+      <section id="galleria" style="margin-top:18px">
+        <div class="q-title" data-i18n="gallery">Galleria</div>
+        <div id="gallery-wrap" class="q-grid cols-2" style="margin-top:10px"></div>
+      </section>
+
+      <section id="mappa" style="margin-top:18px">
+        <div class="q-card">
+          <div class="q-title" data-i18n="map">Mappa</div>
+          <div class="map-wrapper">
+            <iframe id="mappa-iframe" src="" width="100%" height="350" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="contatti" style="margin-top:18px">
+        <div class="q-card">
+          <div class="q-title" data-i18n="contacts">Contatti</div>
+          <div class="q-small" id="contact-block">—</div>
+          <div style="margin-top:16px">
+            <a href="feedback.html" class="q-btn q-btn-primary" id="feedback-link" style="text-decoration:none;display:inline-flex">
+              ⭐ <span data-i18n="leave-feedback">Lascia un feedback</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-section">
+        <div class="footer-logo">
+          <svg viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#7DD3FC;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#2D3748;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <text x="0" y="45" font-family="Inter, sans-serif" font-weight="700" font-size="48" fill="url(#logoGradient2)">QRelax</text>
+          </svg>
+        </div>
+        <p class="footer-text" data-i18n="thank-you">Grazie per aver scelto la nostra guida digitale</p>
+        <p class="footer-powered" data-i18n="powered-by">Gentilmente powered by QRelax</p>
+      </div>
+    </div>
+
+    <nav class="q-bottom">
+      <a href="#home">
+        <svg><use href="#q-house"/></svg>
+        <span data-i18n="home">Home</span>
+      </a>
+      <a href="#mangiare">
+        <svg><use href="#q-restaurant"/></svg>
+        <span data-i18n="eat">Mangiare</span>
+      </a>
+      <a href="#attivita">
+        <svg><use href="#q-activity"/></svg>
+        <span data-i18n="activities">Attività</span>
       </a>
       <a href="#contatti">
         <svg><use href="#q-map"/></svg>
@@ -6,11 +319,13 @@ ivita</span>
       </a>
     </nav>
   </div>
+
   <a href="https://wa.me/393470839898" class="whatsapp-widget" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">
     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <path fill="white" d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-.646-7.07-1.87l-.507-.292-5.247 1.408 1.417-5.267-.321-.525c-1.321-2.165-2.005-4.652-2.005-7.188 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62-6.11 13.62-13.62 13.62zM21.305 18.421c-.327-.163-1.933-.956-2.233-1.066s-.518-.163-.736.163c-.218.327-.845 1.066-1.036 1.284s-.382.245-.709.082c-.327-.163-1.381-.509-2.632-1.626-.973-.868-1.629-1.939-1.82-2.267s-.02-.504.143-.667c.147-.146.327-.382.491-.573s.218-.327.327-.545c.109-.218.055-.409-.027-.573s-.736-1.775-1.01-2.43c-.267-.638-.538-.552-.736-.562-.191-.01-.409-.012-.627-.012s-.573.082-.873.409c-.3.327-1.145 1.12-1.145 2.731s1.172 3.167 1.336 3.385c.163.218 2.312 3.527 5.602 4.945.782.337 1.393.539 1.869.689.787.25 1.503.215 2.069.13.631-.094 1.933-.791 2.207-1.555s.273-1.42.191-1.555c-.082-.135-.3-.218-.627-.382z"/>
     </svg>
   </a>
+  
   <script>
   const TRANSLATIONS = {
     it: {
@@ -50,42 +365,49 @@ ivita</span>
       'outdoor':'Im Freien','indoor':'Innen','powered-by':'Freundlicherweise bereitgestellt von QRelax','show-services':'Dienste anzeigen'
     }
   };
+  
   let currentLang = 'it';
   let apartmentData = null;
+  
   function initTheme() {
     const saved = localStorage.getItem('qrelax-theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const theme = saved || (prefersDark ? 'dark' : 'light');
     setTheme(theme);
   }
+  
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('qrelax-theme', theme);
     const icon = document.getElementById('theme-icon');
     if (icon) icon.innerHTML = `<use href="#q-${theme === 'dark' ? 'sun' : 'moon'}"/>`;
   }
+  
   function toggleTheme() {
     const current = document.documentElement.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
     setTheme(next);
   }
+  
   async function loadWeather(lat, lon, cityName) {
     try {
       const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
       const data = await response.json();
-      const widget = document.getElementById('weather-widget');
       const temp = Math.round(data.current_weather.temperature);
       const weatherCode = data.current_weather.weathercode;
       document.getElementById('weather-temp').textContent = `${temp}°C`;
       document.getElementById('weather-desc').textContent = getWeatherDescription(weatherCode);
       document.getElementById('weather-location').textContent = cityName;
-      widget.classList.remove('hidden');
-    } catch (e) { console.error('Errore meteo:', e); }
+    } catch (e) { 
+      console.error('Errore meteo:', e); 
+    }
   }
+  
   function getWeatherDescription(code) {
     const d = {0:'☀️ Sereno',1:'🌤️ Parzialmente nuvoloso',2:'⛅ Nuvoloso',3:'☁️ Coperto',45:'🌫️ Nebbia',48:'🌫️ Nebbia',51:'🌦️ Pioggia leggera',61:'🌧️ Pioggia',80:'🌦️ Rovesci',95:'⛈️ Temporale'};
     return d[code] || '🌡️ Meteo';
   }
+  
   function filterRestaurants(filter) {
     document.querySelectorAll('#luoghi-wrap article').forEach(card => {
       const price = card.dataset.price;
@@ -97,6 +419,7 @@ ivita</span>
       card.style.display = show ? 'block' : 'none';
     });
   }
+  
   function filterActivities(filter) {
     document.querySelectorAll('#attivita-wrap article').forEach(card => {
       const type = card.dataset.type;
@@ -104,6 +427,7 @@ ivita</span>
       else card.style.display = type === filter ? 'block' : 'none';
     });
   }
+  
   function filterServices(filter) {
     document.querySelectorAll('#services-wrap article').forEach(card => {
       const type = card.dataset.type;
@@ -111,25 +435,43 @@ ivita</span>
       else card.style.display = type === filter ? 'block' : 'none';
     });
   }
+  
   function announce(message) {
     const a = document.getElementById('announcer');
     if (!a) return;
-    a.textContent = message; setTimeout(()=> a.textContent='', 1000);
+    a.textContent = message; 
+    setTimeout(()=> a.textContent='', 1000);
   }
+  
   function getApartmentSlug() {
     const p = new URLSearchParams(window.location.search);
     return p.get('apt') || 'papaya';
   }
+  
   async function loadApartmentData(slug) {
     try {
       const r = await fetch(`${slug}.json`);
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const data = await r.json();
-      apartmentData = data; return data;
-    } catch(e){ console.error('Errore caricamento dati:', e); showError(); return null; }
+      apartmentData = data; 
+      return data;
+    } catch(e){ 
+      console.error('Errore caricamento dati:', e); 
+      showError(); 
+      return null; 
+    }
   }
-  function showError(){ document.getElementById('loading').classList.add('hidden'); document.getElementById('error').classList.remove('hidden'); }
-  function showApp(){ document.getElementById('loading').classList.add('hidden'); document.getElementById('app').classList.remove('hidden'); }
+  
+  function showError(){ 
+    document.getElementById('loading').classList.add('hidden'); 
+    document.getElementById('error').classList.remove('hidden'); 
+  }
+  
+  function showApp(){ 
+    document.getElementById('loading').classList.add('hidden'); 
+    document.getElementById('app').classList.remove('hidden'); 
+  }
+  
   function renderApartment(data) {
     document.getElementById('page-title').textContent = data.nome || 'QRelax';
     document.getElementById('apt-nome').textContent = data.nome || '';
@@ -139,18 +481,24 @@ ivita</span>
     document.getElementById('wifi-pass').textContent = data.wifi_password || '—';
     document.getElementById('checkin').textContent = data.checkin || '—';
     document.getElementById('checkout').textContent = data.checkout || '—';
+    
     const hostInfo = document.getElementById('host-info');
     let hostHtml = '';
     if (data.host_telefono) hostHtml += `<a href="tel:${data.host_telefono.replace(/\s/g,'')}">${data.host_telefono}</a>`;
     if (data.host_email) hostHtml += `${hostHtml ? ' • ' : ''}<a href="mailto:${data.host_email}">${data.host_email}</a>`;
     hostInfo.innerHTML = hostHtml || '—';
+    
     document.getElementById('checkin-note').textContent = data.checkin_note || '';
+    
     const regoleContent = data.regole && data.regole[currentLang] ? data.regole[currentLang] : data.regole || '—';
     document.getElementById('regole').innerHTML = regoleContent;
+    
     const emergenzeContent = data.emergenze && data.emergenze[currentLang] ? data.emergenze[currentLang] : data.emergenze || '—';
     document.getElementById('emergenze').innerHTML = emergenzeContent;
+    
     const funzionamentoContent = data.funzionamento && data.funzionamento[currentLang] ? data.funzionamento[currentLang] : data.funzionamento || '—';
     document.getElementById('funzionamento').innerHTML = funzionamentoContent;
+    
     const contactBlock = document.getElementById('contact-block');
     let contactHtml = hostInfo.innerHTML;
     if (data.indirizzo) {
@@ -158,13 +506,16 @@ ivita</span>
       contactHtml += `<p style="margin-top:16px"><strong>${addressLabel}:</strong><br>${data.indirizzo}</p>`;
     }
     contactBlock.innerHTML = contactHtml;
+    
     if (data.mappa_embed) document.getElementById('mappa-iframe').src = data.mappa_embed;
     if (data.lat && data.lon) loadWeather(data.lat, data.lon, data.nome);
+    
     renderRestaurants(data.ristoranti || []);
     renderActivities(data.attivita || []);
     renderServices(data.servizi || []);
     renderGallery(data.galleria || []);
   }
+  
   function renderRestaurants(restaurants) {
     const container = document.getElementById('luoghi-wrap');
     container.innerHTML = '';
@@ -193,6 +544,7 @@ ivita</span>
       container.appendChild(card);
     });
   }
+  
   function renderActivities(activities) {
     const container = document.getElementById('attivita-wrap');
     container.innerHTML = '';
@@ -212,6 +564,7 @@ ivita</span>
       container.appendChild(card);
     });
   }
+  
   function renderServices(services) {
     const container = document.getElementById('services-wrap');
     container.innerHTML = '';
@@ -234,6 +587,7 @@ ivita</span>
       container.appendChild(card);
     });
   }
+  
   function renderGallery(photos) {
     const container = document.getElementById('gallery-wrap');
     container.innerHTML = '';
@@ -244,12 +598,14 @@ ivita</span>
       container.appendChild(img);
     });
   }
+  
   function detectLanguage() {
     const saved = localStorage.getItem('qrelax-lang');
     if (saved && TRANSLATIONS[saved]) return saved;
     const browser = navigator.language.slice(0,2);
     return TRANSLATIONS[browser] ? browser : 'it';
   }
+  
   function translatePage(lang) {
     currentLang = lang; 
     localStorage.setItem('qrelax-lang', lang);
@@ -260,12 +616,17 @@ ivita</span>
     });
     if (apartmentData) renderApartment(apartmentData);
   }
+  
   document.addEventListener('click', (e) => {
     if (e.target && (e.target.id === 'theme-toggle' || e.target.closest('#theme-toggle'))) { 
-      e.preventDefault(); toggleTheme(); return; 
+      e.preventDefault(); 
+      toggleTheme(); 
+      return; 
     }
     if (e.target && e.target.classList.contains('lang-btn')) { 
-      e.preventDefault(); translatePage(e.target.dataset.lang); return; 
+      e.preventDefault(); 
+      translatePage(e.target.dataset.lang); 
+      return; 
     }
     if (e.target && e.target.classList.contains('filter-btn')) {
       const parent = e.target.parentElement;
@@ -278,9 +639,11 @@ ivita</span>
     }
     if (e.target && e.target.id === 'copyPass') {
       e.preventDefault();
-      const t = document.getElementById('wifi-pass'); if(!t) return;
+      const t = document.getElementById('wifi-pass'); 
+      if(!t) return;
       navigator.clipboard.writeText((t.textContent||'').trim()).then(()=>{
-        const n = document.getElementById('copiedMsg'); n.style.display = 'inline';
+        const n = document.getElementById('copiedMsg'); 
+        n.style.display = 'inline';
         setTimeout(()=> n.style.display='none', 1500);
       }).catch(()=> alert('Impossibile copiare'));
     }
@@ -291,9 +654,12 @@ ivita</span>
       content.classList.toggle('expanded');
     }
   });
+  
   (async function init() {
     if ('serviceWorker' in navigator) {
-      try { await navigator.serviceWorker.register('SW (1).JS'); } catch(_) {}
+      try { 
+        await navigator.serviceWorker.register('sw.js'); 
+      } catch(_) {}
     }
     initTheme();
     const lang = detectLanguage();
@@ -302,7 +668,10 @@ ivita</span>
     const feedbackLink = document.getElementById('feedback-link');
     if (feedbackLink) feedbackLink.href = `feedback.html?apt=${encodeURIComponent(slug)}`;
     const data = await loadApartmentData(slug);
-    if (data) { renderApartment(data); showApp(); }
+    if (data) { 
+      renderApartment(data); 
+      showApp(); 
+    }
   })();
   </script>
 </body>
