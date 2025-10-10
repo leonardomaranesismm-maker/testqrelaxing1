@@ -1,0 +1,254 @@
+{
+  "nome": "Villa Rosa",
+  "indirizzo": "Via delle Rose 25, 20121 Milano MI",
+  "foto_copertina": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400",
+  "lat": 45.4642,
+  "lon": 9.1900,
+  "wifi_ssid": "VillaRosaWiFi",
+  "wifi_password": "password123",
+  "checkin": {
+    "it": "dalle 14:00",
+    "en": "from 2:00 PM",
+    "de": "ab 14:00 Uhr"
+  },
+  "checkout": {
+    "it": "entro le 11:00",
+    "en": "by 11:00 AM",
+    "de": "bis 11:00 Uhr"
+  },
+  "checkin_note": {
+    "it": "Gli orari possono essere modificati su richiesta",
+    "en": "Times can be modified upon request",
+    "de": "Zeiten können auf Anfrage geändert werden"
+  },
+  "host_telefono": "+39 347 083 9898",
+  "host_email": "leonardo@qrelaxing.com",
+  "regole": {
+    "it": "<ul style='margin:0;padding-left:20px'><li><strong>Silenzio:</strong> 14:00-16:00 e 22:00-08:00</li><li><strong>Vietato:</strong> Feste e fumare in casa</li><li><strong>Animali:</strong> Solo su richiesta preventiva</li></ul>",
+    "en": "<ul style='margin:0;padding-left:20px'><li><strong>Quiet hours:</strong> 2:00 PM-4:00 PM and 10:00 PM-8:00 AM</li><li><strong>Forbidden:</strong> Parties and smoking indoors</li><li><strong>Pets:</strong> Only upon prior request</li></ul>",
+    "de": "<ul style='margin:0;padding-left:20px'><li><strong>Ruhezeiten:</strong> 14:00-16:00 und 22:00-08:00</li><li><strong>Verboten:</strong> Feiern und Rauchen im Haus</li><li><strong>Haustiere:</strong> Nur auf vorherige Anfrage</li></ul>"
+  },
+  "emergenze": {
+    "it": "<p><strong>🚑 Ambulanza:</strong> <a href='tel:118'>118</a><br><strong>👩‍⚕️ Guardia Medica:</strong> <a href='tel:116117'>116 117</a><br><strong>💊 Farmacia:</strong> <a href='tel:800801185'>800 801 185</a><br><strong>📞 Emergenze:</strong> <a href='tel:112'>112</a></p>",
+    "en": "<p><strong>🚑 Ambulance:</strong> <a href='tel:118'>118</a><br><strong>👩‍⚕️ Medical Guard:</strong> <a href='tel:116117'>116 117</a><br><strong>💊 Pharmacy:</strong> <a href='tel:800801185'>800 801 185</a><br><strong>📞 Emergencies:</strong> <a href='tel:112'>112</a></p>",
+    "de": "<p><strong>🚑 Krankenwagen:</strong> <a href='tel:118'>118</a><br><strong>👩‍⚕️ Ärztlicher Notdienst:</strong> <a href='tel:116117'>116 117</a><br><strong>💊 Apotheke:</strong> <a href='tel:800801185'>800 801 185</a><br><strong>📞 Notfälle:</strong> <a href='tel:112'>112</a></p>"
+  },
+  "funzionamento": {
+    "it": "<h4 style='margin:0 0 8px;color:#2D3748'>📺 Televisione</h4><p>Accendi con <strong>Power</strong>. Canali: <strong>CH+/CH-</strong>. Netflix/Prime Video: <strong>Home</strong>.</p><h4 style='margin:16px 0 8px;color:#2D3748'>🌡️ Climatizzatore</h4><p>Power per accendere. <strong>Heat</strong> riscalda, <strong>Cool</strong> raffredda. Temperatura consigliata: 21-23°C.</p><h4 style='margin:16px 0 8px;color:#2D3748'>☕ Caffè</h4><p>Macchina Nespresso in cucina. Capsule nel cassetto sotto la macchina.</p>",
+    "en": "<h4 style='margin:0 0 8px;color:#2D3748'>📺 Television</h4><p>Turn on with <strong>Power</strong>. Channels: <strong>CH+/CH-</strong>. Netflix/Prime Video: <strong>Home</strong>.</p><h4 style='margin:16px 0 8px;color:#2D3748'>🌡️ Air Conditioning</h4><p>Power to turn on. <strong>Heat</strong> warms, <strong>Cool</strong> cools. Recommended temperature: 21-23°C.</p><h4 style='margin:16px 0 8px;color:#2D3748'>☕ Coffee</h4><p>Nespresso machine in kitchen. Capsules in drawer under machine.</p>",
+    "de": "<h4 style='margin:0 0 8px;color:#2D3748'>📺 Fernseher</h4><p>Einschalten mit <strong>Power</strong>. Kanäle: <strong>CH+/CH-</strong>. Netflix/Prime Video: <strong>Home</strong>.</p><h4 style='margin:16px 0 8px;color:#2D3748'>🌡️ Klimaanlage</h4><p>Power zum Einschalten. <strong>Heat</strong> heizt, <strong>Cool</strong> kühlt. Empfohlene Temperatur: 21-23°C.</p><h4 style='margin:16px 0 8px;color:#2D3748'>☕ Kaffee</h4><p>Nespresso-Maschine in der Küche. Kapseln in der Schublade unter der Maschine.</p>"
+  },
+  "mappa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.2!2d9.1900!3d45.4642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI3JzUxLjEiTiA5wrAxMScyNC4wIkU!5e0!3m2!1sit!2sit!4v1234567890",
+  "ristoranti": [
+    {
+      "nome": "Trattoria Milanese",
+      "foto": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+      "prezzo": "€€",
+      "distanza": "5 min a piedi",
+      "descrizione": {
+        "it": "Autentica cucina milanese. Risotto allo zafferano, ossobuco e cotoletta alla milanese.",
+        "en": "Authentic Milanese cuisine. Saffron risotto, ossobuco and Milanese cutlet.",
+        "de": "Authentische Mailänder Küche. Safranrisotto, Ossobuco und Mailänder Schnitzel."
+      },
+      "telefono": "+39 02 8645 1991",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Trattoria+Milanese+Milano"
+    },
+    {
+      "nome": "Pizzeria Spontini",
+      "foto": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
+      "prezzo": "€",
+      "distanza": "3 min a piedi",
+      "descrizione": {
+        "it": "Pizza al taglio storica di Milano. Fette alte e soffici, perfette per uno spuntino veloce.",
+        "en": "Historic Milan pizza by the slice. Thick and fluffy slices, perfect for a quick snack.",
+        "de": "Historische Mailänder Pizza am Stück. Dicke und fluffige Scheiben, perfekt für einen schnellen Snack."
+      },
+      "telefono": "+39 02 4547 3845",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Pizzeria+Spontini+Milano"
+    },
+    {
+      "nome": "Cracco",
+      "foto": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800",
+      "prezzo": "€€€",
+      "distanza": "15 min a piedi",
+      "descrizione": {
+        "it": "Ristorante stellato Michelin dello chef Carlo Cracco. Alta cucina italiana contemporanea.",
+        "en": "Michelin-starred restaurant by chef Carlo Cracco. Contemporary Italian haute cuisine.",
+        "de": "Michelin-Stern Restaurant von Koch Carlo Cracco. Zeitgenössische italienische Haute Cuisine."
+      },
+      "telefono": "+39 02 876 774",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Ristorante+Cracco+Milano"
+    },
+    {
+      "nome": "Luini Panzerotti",
+      "foto": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800",
+      "prezzo": "€",
+      "distanza": "10 min a piedi",
+      "descrizione": {
+        "it": "Istituzione milanese dal 1949. Panzerotti fritti ripieni di mozzarella e pomodoro.",
+        "en": "Milan institution since 1949. Fried panzerotti filled with mozzarella and tomato.",
+        "de": "Mailänder Institution seit 1949. Frittierte Panzerotti gefüllt mit Mozzarella und Tomate."
+      },
+      "telefono": "+39 02 8646 1917",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Luini+Panzerotti+Milano"
+    },
+    {
+      "nome": "Pavé",
+      "foto": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800",
+      "prezzo": "€€",
+      "distanza": "12 min a piedi",
+      "descrizione": {
+        "it": "Bakery & bistrot con pane fatto in casa, dolci artigianali e brunch gourmet.",
+        "en": "Bakery & bistrot with homemade bread, artisan pastries and gourmet brunch.",
+        "de": "Bäckerei & Bistrot mit hausgemachtem Brot, handwerklichen Gebäck und Gourmet-Brunch."
+      },
+      "telefono": "+39 02 4742 3819",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Pavé+Milano"
+    },
+    {
+      "nome": "Gelateria Della Palma",
+      "foto": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800",
+      "prezzo": "€",
+      "distanza": "7 min a piedi",
+      "descrizione": {
+        "it": "Oltre 150 gusti di gelato artigianale. Specialità: pistacchio di Bronte e stracciatella.",
+        "en": "Over 150 flavors of artisan gelato. Specialties: Bronte pistachio and stracciatella.",
+        "de": "Über 150 Sorten handwerkliches Eis. Spezialitäten: Bronte-Pistazie und Stracciatella."
+      },
+      "telefono": "+39 02 8645 3174",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Gelateria+Milano+Centro"
+    }
+  ],
+  "attivita": [
+    {
+      "nome": "Duomo di Milano",
+      "foto": "https://images.unsplash.com/photo-1513581166391-887a96ddeafd?w=800",
+      "distanza": "20 min a piedi",
+      "descrizione": {
+        "it": "La cattedrale gotica simbolo di Milano. Salita alle terrazze per vista panoramica sulla città.",
+        "en": "The Gothic cathedral symbol of Milan. Climb to the terraces for panoramic city views.",
+        "de": "Die gotische Kathedrale, Symbol von Mailand. Aufstieg zu den Terrassen für Panoramablick."
+      },
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Duomo+di+Milano"
+    },
+    {
+      "nome": "Galleria Vittorio Emanuele II",
+      "foto": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?w=800",
+      "distanza": "18 min a piedi",
+      "descrizione": {
+        "it": "Il salotto di Milano. Galleria storica con boutique di lusso, caffè e ristoranti eleganti.",
+        "en": "Milan's living room. Historic gallery with luxury boutiques, cafés and elegant restaurants.",
+        "de": "Mailands Wohnzimmer. Historische Galerie mit Luxusboutiquen, Cafés und eleganten Restaurants."
+      },
+      "tipo": "indoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Galleria+Vittorio+Emanuele+II+Milano"
+    },
+    {
+      "nome": "Castello Sforzesco",
+      "foto": "https://images.unsplash.com/photo-1543832923-44667a44c804?w=800",
+      "distanza": "25 min a piedi",
+      "descrizione": {
+        "it": "Castello medievale con musei, opere d'arte e il Parco Sempione adiacente per passeggiate.",
+        "en": "Medieval castle with museums, artworks and adjacent Sempione Park for walks.",
+        "de": "Mittelalterliche Burg mit Museen, Kunstwerken und angrenzendem Sempione Park für Spaziergänge."
+      },
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Castello+Sforzesco+Milano"
+    },
+    {
+      "nome": "Teatro alla Scala",
+      "foto": "https://images.unsplash.com/photo-1580809361436-42a7ec204889?w=800",
+      "distanza": "15 min a piedi",
+      "descrizione": {
+        "it": "Teatro d'opera più famoso al mondo. Museo e visite guidate disponibili, spettacoli serali.",
+        "en": "The world's most famous opera house. Museum and guided tours available, evening performances.",
+        "de": "Das berühmteste Opernhaus der Welt. Museum und Führungen verfügbar, Abendvorstellungen."
+      },
+      "tipo": "indoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Teatro+alla+Scala+Milano"
+    },
+    {
+      "nome": "Navigli",
+      "foto": "https://images.unsplash.com/photo-1568158879083-c42860933ed7?w=800",
+      "distanza": "30 min in metro",
+      "descrizione": {
+        "it": "Canali storici con movida serale. Aperitivo milanese, mercatini vintage e ristoranti sul canale.",
+        "en": "Historic canals with evening nightlife. Milanese aperitivo, vintage markets and canal restaurants.",
+        "de": "Historische Kanäle mit Abendleben. Mailänder Aperitivo, Vintage-Märkte und Kanalrestaurants."
+      },
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Navigli+Milano"
+    },
+    {
+      "nome": "Pinacoteca di Brera",
+      "foto": "https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=800",
+      "distanza": "10 min a piedi",
+      "descrizione": {
+        "it": "Galleria d'arte con capolavori italiani. Opere di Caravaggio, Raffaello e Mantegna.",
+        "en": "Art gallery with Italian masterpieces. Works by Caravaggio, Raphael and Mantegna.",
+        "de": "Kunstgalerie mit italienischen Meisterwerken. Werke von Caravaggio, Raffael und Mantegna."
+      },
+      "tipo": "indoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Pinacoteca+di+Brera+Milano"
+    }
+  ],
+  "servizi": [
+    {
+      "nome": "Farmacia Centrale",
+      "tipo": "pharmacy",
+      "distanza": "2 min a piedi",
+      "indirizzo": "Via Manzoni 15, Milano",
+      "telefono": "+39 02 760 001",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Farmacia+Centrale+Milano"
+    },
+    {
+      "nome": "Farmacia Sant'Ambrogio",
+      "tipo": "pharmacy",
+      "distanza": "5 min a piedi",
+      "indirizzo": "Corso Magenta 23, Milano",
+      "telefono": "+39 02 4800 5542",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Farmacia+Sant+Ambrogio+Milano"
+    },
+    {
+      "nome": "Farmacia 24h Stazione Centrale",
+      "tipo": "pharmacy",
+      "distanza": "15 min in metro",
+      "indirizzo": "Piazza Duca d'Aosta 1, Milano",
+      "telefono": "+39 02 669 0935",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Farmacia+Stazione+Centrale+Milano"
+    },
+    {
+      "nome": "Esselunga Supermarket",
+      "tipo": "supermarket",
+      "distanza": "4 min a piedi",
+      "indirizzo": "Via Dante 8, Milano",
+      "telefono": "+39 02 8646 3001",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Esselunga+Via+Dante+Milano"
+    },
+    {
+      "nome": "Carrefour Express",
+      "tipo": "supermarket",
+      "distanza": "3 min a piedi",
+      "indirizzo": "Corso Vittorio Emanuele 30, Milano",
+      "telefono": "+39 02 7600 2345",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Carrefour+Express+Milano+Centro"
+    },
+    {
+      "nome": "Pam Local",
+      "tipo": "supermarket",
+      "distanza": "6 min a piedi",
+      "indirizzo": "Via Torino 42, Milano",
+      "telefono": "+39 02 8646 7890",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Pam+Local+Via+Torino+Milano"
+    }
+  ],
+  "galleria": [
+    "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1400",
+    "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1400",
+    "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1400",
+    "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1400",
+    "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400",
+    "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=1400"
+  ]
+}
