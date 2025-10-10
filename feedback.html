@@ -1,185 +1,81 @@
 <!doctype html>
 <html lang="it">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>QRelax - Lascia un Feedback</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#ffffff; --ink:#2D3748; --muted:#6B7280; --soft:#F0F9FF; --line:#E5E7EB;
-    --primary:#2D3748; --secondary:#7DD3FC; --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.08);
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif}
-  
-  .container{max-width:600px;margin:0 auto;padding:40px 20px}
-  .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:32px;border:1px solid var(--line)}
-  .logo{text-align:center;margin-bottom:24px;font-size:2rem;font-weight:700}
-  .logo span{color:var(--secondary)}
-  h1{text-align:center;margin-bottom:8px;font-size:1.75rem}
-  .subtitle{text-align:center;color:var(--muted);margin-bottom:32px}
-  
-  .form-group{margin-bottom:24px}
-  .form-label{display:block;margin-bottom:8px;font-weight:600}
-  .required{color:#FC8181}
-  
-  .rating-group{display:flex;gap:8px;justify-content:center;margin-bottom:8px}
-  .star{font-size:2.5rem;cursor:pointer;transition:all 0.2s;filter:grayscale(100%)}
-  .star:hover,.star.active{filter:grayscale(0%);transform:scale(1.1)}
-  
-  .form-input,.form-textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;font-size:1rem;font-family:inherit}
-  .form-input:focus,.form-textarea:focus{outline:none;border-color:var(--secondary)}
-  .form-textarea{min-height:120px;resize:vertical}
-  
-  .btn{padding:14px 32px;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all 0.2s;font-size:1rem}
-  .btn-primary{background:var(--secondary);color:var(--primary);width:100%}
-  .btn-primary:hover{opacity:0.9;transform:translateY(-1px)}
-  .btn-primary:disabled{opacity:0.5;cursor:not-allowed}
-  
-  .success-message{display:none;text-align:center;padding:32px}
-  .success-message.show{display:block}
-  .success-icon{font-size:4rem;margin-bottom:16px}
-  
-  .char-count{text-align:right;font-size:.85rem;color:var(--muted);margin-top:4px}
-</style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Feedback - QRelax</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#ffffff;--ink:#2D3748;--muted:#6B7280;--soft:#F0F9FF;--line:#E5E7EB;--secondary:#7DD3FC;}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:Inter,sans-serif;background:var(--bg);color:var(--ink);padding:20px}
+    .container{max-width:600px;margin:0 auto}
+    h1{margin-bottom:24px;color:var(--ink)}
+    .form-group{margin-bottom:20px}
+    label{display:block;margin-bottom:8px;font-weight:600;color:var(--ink)}
+    input,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    .btn{background:var(--secondary);color:var(--ink);border:none;padding:14px 24px;border-radius:8px;font-weight:600;cursor:pointer;width:100%;font-size:16px}
+    .btn:hover{opacity:0.9}
+    .stars{display:flex;gap:8px;font-size:32px;margin-bottom:12px}
+    .star{cursor:pointer;transition:transform 0.2s}
+    .star:hover{transform:scale(1.2)}
+    .star.active{color:#FFD700}
+    .success{background:#d1fae5;border:1px solid #6ee7b7;color:#065f46;padding:16px;border-radius:8px;margin-top:20px}
+  </style>
 </head>
 <body>
-
-<div class="container">
-  <div class="card">
-    <div class="logo">QR<span>ELAX</span></div>
-    
-    <div id="form-container">
-      <h1>Come è stata la tua esperienza?</h1>
-      <p class="subtitle">Il tuo feedback ci aiuta a migliorare</p>
-      
-      <form id="feedback-form">
-        <div class="form-group">
-          <label class="form-label">Valutazione complessiva <span class="required">*</span></label>
-          <div class="rating-group">
-            <span class="star" data-rating="1">⭐</span>
-            <span class="star" data-rating="2">⭐</span>
-            <span class="star" data-rating="3">⭐</span>
-            <span class="star" data-rating="4">⭐</span>
-            <span class="star" data-rating="5">⭐</span>
-          </div>
-          <input type="hidden" id="rating" name="rating" required>
+  <div class="container">
+    <h1>⭐ Lascia un Feedback</h1>
+    <form id="feedbackForm">
+      <div class="form-group">
+        <label>Valutazione</label>
+        <div class="stars" id="stars">
+          <span class="star" data-rating="1">⭐</span>
+          <span class="star" data-rating="2">⭐</span>
+          <span class="star" data-rating="3">⭐</span>
+          <span class="star" data-rating="4">⭐</span>
+          <span class="star" data-rating="5">⭐</span>
         </div>
-        
-        <div class="form-group">
-          <label class="form-label" for="name">Nome (opzionale)</label>
-          <input type="text" class="form-input" id="name" placeholder="Il tuo nome">
-        </div>
-        
-        <div class="form-group">
-          <label class="form-label" for="email">Email (opzionale)</label>
-          <input type="email" class="form-input" id="email" placeholder="email@esempio.com">
-        </div>
-        
-        <div class="form-group">
-          <label class="form-label" for="comment">Il tuo feedback <span class="required">*</span></label>
-          <textarea class="form-textarea" id="comment" name="comment" required placeholder="Raccontaci della tua esperienza..." maxlength="500"></textarea>
-          <div class="char-count"><span id="char-count">0</span>/500 caratteri</div>
-        </div>
-        
-        <button type="submit" class="btn btn-primary" id="submit-btn">Invia Feedback</button>
-      </form>
-    </div>
-    
-    <div id="success-message" class="success-message">
-      <div class="success-icon">✅</div>
-      <h2>Grazie per il tuo feedback!</h2>
-      <p style="color:var(--muted);margin-top:8px">La tua opinione è molto importante per noi</p>
+      </div>
+      <div class="form-group">
+        <label for="name">Nome (opzionale)</label>
+        <input type="text" id="name" placeholder="Il tuo nome">
+      </div>
+      <div class="form-group">
+        <label for="email">Email (opzionale)</label>
+        <input type="email" id="email" placeholder="tua@email.com">
+      </div>
+      <div class="form-group">
+        <label for="message">Messaggio</label>
+        <textarea id="message" placeholder="Raccontaci la tua esperienza..." required></textarea>
+      </div>
+      <button type="submit" class="btn">Invia Feedback</button>
+    </form>
+    <div id="success" class="success" style="display:none">
+      ✅ Grazie per il tuo feedback! Lo apprezziamo molto.
     </div>
   </div>
-</div>
-
-<script>
-let selectedRating = 0;
-
-// Gestione stelle
-document.querySelectorAll('.star').forEach(star => {
-  star.addEventListener('click', function() {
-    selectedRating = parseInt(this.dataset.rating);
-    document.getElementById('rating').value = selectedRating;
-    
-    // Update visual
-    document.querySelectorAll('.star').forEach((s, idx) => {
-      if (idx < selectedRating) {
-        s.classList.add('active');
-      } else {
-        s.classList.remove('active');
-      }
+  <script>
+    let selectedRating = 5;
+    document.querySelectorAll('.star').forEach((star, index) => {
+      star.addEventListener('click', () => {
+        selectedRating = index + 1;
+        document.querySelectorAll('.star').forEach((s, i) => {
+          s.classList.toggle('active', i < selectedRating);
+        });
+      });
     });
-  });
-  
-  star.addEventListener('mouseenter', function() {
-    const rating = parseInt(this.dataset.rating);
-    document.querySelectorAll('.star').forEach((s, idx) => {
-      if (idx < rating) {
-        s.style.filter = 'grayscale(0%)';
-        s.style.transform = 'scale(1.05)';
-      } else {
-        s.style.filter = 'grayscale(100%)';
-        s.style.transform = 'scale(1)';
-      }
+    document.getElementById('feedbackForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      console.log('Feedback:', {rating: selectedRating, name, email, message});
+      document.getElementById('feedbackForm').style.display = 'none';
+      document.getElementById('success').style.display = 'block';
+      setTimeout(() => window.location.href = 'index.html', 2000);
     });
-  });
-});
-
-document.querySelector('.rating-group').addEventListener('mouseleave', function() {
-  document.querySelectorAll('.star').forEach((s, idx) => {
-    if (idx < selectedRating) {
-      s.style.filter = 'grayscale(0%)';
-      s.style.transform = 'scale(1)';
-    } else {
-      s.style.filter = 'grayscale(100%)';
-      s.style.transform = 'scale(1)';
-    }
-  });
-});
-
-// Character count
-const textarea = document.getElementById('comment');
-const charCount = document.getElementById('char-count');
-textarea.addEventListener('input', function() {
-  charCount.textContent = this.value.length;
-});
-
-// Form submit
-document.getElementById('feedback-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  
-  if (selectedRating === 0) {
-    alert('Per favore seleziona una valutazione');
-    return;
-  }
-  
-  const feedback = {
-    rating: selectedRating,
-    name: document.getElementById('name').value || 'Ospite Anonimo',
-    email: document.getElementById('email').value,
-    comment: document.getElementById('comment').value,
-    apartment: new URLSearchParams(window.location.search).get('apt') || 'papaya',
-    timestamp: new Date().toISOString()
-  };
-  
-  // Salva feedback (in produzione: inviare al server)
-  let feedbacks = JSON.parse(localStorage.getItem('qrelax-feedbacks') || '[]');
-  feedbacks.push(feedback);
-  localStorage.setItem('qrelax-feedbacks', JSON.stringify(feedbacks));
-  
-  // Mostra messaggio successo
-  document.getElementById('form-container').style.display = 'none';
-  document.getElementById('success-message').classList.add('show');
-  
-  // Redirect dopo 3 secondi
-  setTimeout(() => {
-    window.location.href = `index.html?apt=${feedback.apartment}`;
-  }, 3000);
-});
-</script>
-
+  </script>
 </body>
 </html>
