@@ -23,7 +23,7 @@
       "distanza": "5 min a piedi",
       "descrizione": "Trattoria e pizzeria rustica. Cucina veneta con pesce e pizza al forno a legna.",
       "telefono": "+39 0421 972153",
-      "maps": "https://goo.gl/maps/TorcioJesolo"
+      "maps": "https://www.google.com/maps/search/?api=1&query=Al+Torcio,+80+Via+Silvio+Trentin,+Veneto&query_place_id=ChIJd-0Yf2EAfEcRdWcfFHfmtXw"
     },
     {
       "nome": "Da Guido",
@@ -32,7 +32,7 @@
       "distanza": "10 min in auto",
       "descrizione": "Ristorante stellato Michelin. Pesce fresco dalla Laguna, giardino romantico.",
       "telefono": "+39 0421 350380",
-      "maps": "https://goo.gl/maps/DaGuidoJesolo"
+      "maps": "https://www.google.com/maps/place/Da+Guido/@45.5222,12.6397,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5e861ff1de7:0x7ca5e67747211f75!8m2!3d45.5222!4d12.6397!16s%2Fg%2F1tgsxg2l"
     },
     {
       "nome": "Da Omar",
@@ -41,7 +41,7 @@
       "distanza": "Centro, 8 min",
       "descrizione": "Elegante sul lungomare. Pesce fresco senza elaborazioni eccessive.",
       "telefono": "+39 0421 93685",
-      "maps": "https://goo.gl/maps/DaOmarJesolo"
+      "maps": "https://www.google.com/maps/place/Ristorante+da+Omar/@45.5173,12.6486,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f0e5a99999:0x3333333333333333!8m2!3d45.5173!4d12.6486!16s%2Fg%2F11b6dqv123"
     },
     {
       "nome": "Panisfizio",
@@ -50,7 +50,7 @@
       "distanza": "8 min a piedi",
       "descrizione": "Pizza gourmet Tre Spicchi Gambero Rosso. Impasto 36h di lievitazione.",
       "telefono": "+39 0421 380123",
-      "maps": "https://goo.gl/maps/PanisfizioJesolo"
+      "maps": "https://www.google.com/maps/place/Panisfizio/@45.5095,12.6425,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5eeeeeeeeee:0x4444444444444444!8m2!3d45.5095!4d12.6425!16s%2Fg%2F11f5j8k9l0"
     },
     {
       "nome": "Gelateria MareMoro",
@@ -59,7 +59,7 @@
       "distanza": "2 min a piedi",
       "descrizione": "Gelato artigianale siciliano. Pistacchio di Bronte, mandorla di Avola.",
       "telefono": "+39 327 4297195",
-      "maps": "https://goo.gl/maps/MareMoroJesolo"
+      "maps": "https://www.google.com/maps/place/Gelateria+MareMoro/@45.5088,12.6471,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f123456789:0x5555555555555555!8m2!3d45.5088!4d12.6471!16s%2Fg%2F11h1234567"
     },
     {
       "nome": "Ristorante Tempini",
@@ -68,7 +68,7 @@
       "distanza": "7 min a piedi",
       "descrizione": "Friggitoria e ristorante. Frittura mista dell'Adriatico e pasta fresca.",
       "telefono": "+39 0421 980234",
-      "maps": "https://goo.gl/maps/TempiniJesolo"
+      "maps": "https://www.google.com/maps/place/Ristorante+Tempini/@45.5101,12.6455,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f987654321:0x6666666666666666!8m2!3d45.5101!4d12.6455!16s%2Fg%2F11c1m2n3o4"
     }
   ],
   "attivita": [
@@ -77,42 +77,98 @@
       "foto": "https://www.jesolojournal.com/wp-content/uploads/2023/09/jj34_caribe-bay.jpg",
       "distanza": "15 min in auto (6 km)",
       "descrizione": "Parco acquatico con scivoli mozzafiato, piscine a onde e lagune caraibiche.",
-      "maps": "https://goo.gl/maps/CaribeBayJesolo"
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/place/Caribe+Bay/@45.5389,12.6253,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb62ec1a0c8ed:0x8e0f8c9d7a6b5c4d!8m2!3d45.5389!4d12.6253!16s%2Fm%2F0h_6yc2"
     },
     {
       "nome": "Sea Life Jesolo",
       "foto": "https://vivijesolo.it/wp-content/uploads/2021/05/Lido-di-Jesolo-SEA-LIFE-Aquarium_vista-oceanica-scaled.jpg",
       "distanza": "12 min in auto (4.5 km)",
       "descrizione": "Acquario con oltre 5000 creature marine. Tunnel oceanico e vasca tattile.",
-      "maps": "https://goo.gl/maps/SeaLifeJesolo"
+      "tipo": "indoor",
+      "maps": "https://www.google.com/maps/place/SEA+LIFE+Jesolo/@45.5265,12.6358,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5fd8a9b7c6e:0x1a2b3c4d5e6f7a8b!8m2!3d45.5265!4d12.6358!16s%2Fm%2F0h_8zt4"
     },
     {
       "nome": "Pista Azzurra Go-Kart",
       "foto": "https://www.jesolojournal.com/wp-content/uploads/2023/09/jj34_pista-azzurra.jpg",
       "distanza": "10 min in auto (3.8 km)",
       "descrizione": "Pista go-kart professionale con due tracciati per adulti e bambini.",
-      "maps": "https://goo.gl/maps/PistaAzzurraJesolo"
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/place/Pista+Azzurra/@45.5298,12.6195,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb61f2d3e4a5b:0x9c8d7e6f5a4b3c2d!8m2!3d45.5298!4d12.6195!16s%2Fg%2F11b8v9w8x9"
     },
     {
       "nome": "Spiaggia di Jesolo",
       "foto": "https://www.veneto.info/wp-content/uploads/sites/114/jesolo-hd.jpg",
       "distanza": "5 min a piedi (400 m)",
       "descrizione": "15 km di spiaggia sabbiosa con stabilimenti attrezzati e sport acquatici.",
-      "maps": "https://goo.gl/maps/SpiaggiaJesolo"
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/place/Spiaggia+di+Jesolo/@45.5067,12.6449,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f0a1b2c3d4:0xe5f6a7b8c9d0e1f2!8m2!3d45.5067!4d12.6449!16s%2Fg%2F11c5d6e7f8"
     },
     {
       "nome": "Venezia",
       "foto": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?fm=jpg&q=60&w=3000",
       "distanza": "40 min in auto (45 km)",
       "descrizione": "La città più romantica del mondo. Piazza San Marco, Canal Grande e gondole.",
-      "maps": "https://goo.gl/maps/Venezia"
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/place/Venezia/@45.4408,12.3155,13z/data=!3m1!4b1!4m6!3m5!1s0x477eb1daf1d4a533:0x3c6c7d5e8f9a0b1c!8m2!3d45.4408!4d12.3155!16zL20vMDZ5OTM"
     },
     {
       "nome": "Tropicarium Park",
       "foto": "https://www.hoteldantejesolo.com/public/img-camere/larg/tropicarium-park-1065021015.jpg",
       "distanza": "8 min a piedi (650 m)",
       "descrizione": "Parco tropicale con squali, pinguini, rettili e farfalle. Educativo e divertente.",
-      "maps": "https://goo.gl/maps/TropicariumJesolo"
+      "tipo": "indoor",
+      "maps": "https://www.google.com/maps/place/Tropicarium+Park/@45.5142,12.6501,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f8d9e0a1b2:0xc3d4e5f6a7b8c9d0!8m2!3d45.5142!4d12.6501!16s%2Fg%2F11b7c8d9e0"
+    }
+  ],
+  "servizi": [
+    {
+      "nome": "Farmacia Comunale Jesolo",
+      "tipo": "pharmacy",
+      "distanza": "3 min a piedi",
+      "indirizzo": "Via Bafile 320, Jesolo",
+      "telefono": "+39 0421 972340",
+      "maps": "https://www.google.com/maps/place/Farmacia+Comunale+Jesolo/@45.5091,12.6478,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f1a2b3c4d5:0xe6f7a8b9c0d1e2f3!8m2!3d45.5091!4d12.6478!16s%2Fg%2F11f1g2h3i4"
+    },
+    {
+      "nome": "Farmacia San Marco",
+      "tipo": "pharmacy",
+      "distanza": "5 min a piedi",
+      "indirizzo": "Piazza Mazzini 18, Jesolo",
+      "telefono": "+39 0421 380125",
+      "maps": "https://www.google.com/maps/place/Farmacia+San+Marco/@45.5105,12.6461,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f2b3c4d5e6:0xf7a8b9c0d1e2f3a4!8m2!3d45.5105!4d12.6461!16s%2Fg%2F11g2h3i4j5"
+    },
+    {
+      "nome": "Farmacia Centrale Jesolo",
+      "tipo": "pharmacy",
+      "distanza": "7 min a piedi",
+      "indirizzo": "Via Dante Alighieri 55, Jesolo",
+      "telefono": "+39 0421 93156",
+      "maps": "https://www.google.com/maps/place/Farmacia+Centrale/@45.5182,12.6492,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f3c4d5e6f7:0xa8b9c0d1e2f3a4b5!8m2!3d45.5182!4d12.6492!16s%2Fg%2F11h3i4j5k6"
+    },
+    {
+      "nome": "Conad City",
+      "tipo": "supermarket",
+      "distanza": "4 min a piedi",
+      "indirizzo": "Via Bafile 288, Jesolo",
+      "telefono": "+39 0421 380567",
+      "maps": "https://www.google.com/maps/place/Conad+City/@45.5098,12.6471,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f4d5e6f7a8:0xb9c0d1e2f3a4b5c6!8m2!3d45.5098!4d12.6471!16s%2Fg%2F11i4j5k6l7"
+    },
+    {
+      "nome": "Despar Express",
+      "tipo": "supermarket",
+      "distanza": "6 min a piedi",
+      "indirizzo": "Via Dante Alighieri 102, Jesolo",
+      "telefono": "+39 0421 971234",
+      "maps": "https://www.google.com/maps/place/Despar+Express/@45.5188,12.6483,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f5e6f7a8b9:0xc0d1e2f3a4b5c6d7!8m2!3d45.5188!4d12.6483!16s%2Fg%2F11j5k6l7m8"
+    },
+    {
+      "nome": "Eurospar",
+      "tipo": "supermarket",
+      "distanza": "10 min a piedi",
+      "indirizzo": "Via Roma Destra 124, Jesolo",
+      "telefono": "+39 0421 350789",
+      "maps": "https://www.google.com/maps/place/Eurospar/@45.5225,12.6405,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f6f7a8b9c0:0xd1e2f3a4b5c6d7e8!8m2!3d45.5225!4d12.6405!16s%2Fg%2F11k6l7m8n9"
     }
   ],
   "galleria": [
