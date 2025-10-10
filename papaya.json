@@ -6,9 +6,21 @@
   "lon": 12.6463,
   "wifi_ssid": "PAPAYAwifi",
   "wifi_password": "testpasswifi",
-  "checkin": "dalle 15:00",
-  "checkout": "entro le 10:00",
-  "checkin_note": "Gli orari possono essere modificati su richiesta",
+  "checkin": {
+  "it": "dalle 15:00",
+  "en": "from 3:00 PM",
+  "de": "ab 15:00 Uhr"
+},
+"checkout": {
+  "it": "entro le 10:00",
+  "en": "by 10:00 AM",
+  "de": "bis 10:00 Uhr"
+},
+"checkin_note": {
+  "it": "Gli orari possono essere modificati su richiesta",
+  "en": "Times can be modified upon request",
+  "de": "Zeiten können auf Anfrage geändert werden"
+},
   "host_telefono": "+39 347 083 9898",
   "host_email": "leonardo@qrelaxing.com",
   "regole": {
