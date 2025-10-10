@@ -165,136 +165,6 @@
                 <text x="0" y="45" font-family="Inter, sans-serif" font-weight="700" font-size="48" fill="url(#logoGradient)">QRelax</text>
               </svg>
             </div>
-            <h1 class="q-title" id="apt-nome">Caricamento...</h1>
-            <p class="q-text" id="apt-indirizzo">Caricamento indirizzo...</p>
-
-            <div class="q-grid cols-3" style="margin-top:14px">
-              <a class="q-card q-action q-link" href="#casa"><svg class="q-ico"><use href="#q-house"/></svg><div class="q-title" data-i18n="house">La casa</div><p class="q-text" data-i18n="house-desc">TV, clima, riscaldamento</p></a>
-              <a class="q-card q-action q-link" href="#mangiare"><svg class="q-ico"><use href="#q-restaurant"/></svg><div class="q-title" data-i18n="eat">Mangiare</div><p class="q-text" data-i18n="eat-desc">Ristoranti locali</p></a>
-              <a class="q-card q-action q-link" href="#attivita"><svg class="q-ico"><use href="#q-activity"/></svg><div class="q-title" data-i18n="activities">Attività</div><p class="q-text" data-i18n="activities-desc">Esperienze e svago</p></a>
-            </div>
-          </div>
-
-          <div class="hero-cover center"><img id="apt-cover" src="" alt="Appartamento" style="width:100%;height:100%;object-fit:cover"></div>
-        </div>
-      </header>
-
-      <section class="q-grid cols-2" style="margin-top:18px">
-        <div class="q-card">
-          <div class="q-row"><svg class="q-ico"><use href="#q-wifi"/></svg><div class="q-title" data-i18n="wifi">Wi-Fi</div></div>
-          <p class="q-small"><strong>SSID:</strong> <span id="wifi-ssid">—</span></p>
-          <p class="q-small"><strong data-i18n="password">Password:</strong> <span id="wifi-pass">—</span></p>
-          <a href="#" class="q-btn" id="copyPass" data-i18n="copy-password">Copia password</a><span class="muted" id="copiedMsg" style="display:none;margin-left:8px" data-i18n="copied">Copiata ✅</span>
-        </div>
-
-        <div class="q-card">
-          <div class="q-row"><svg class="q-ico"><use href="#q-calendar"/></svg><div class="q-title" data-i18n="checkin-checkout">Check-in / Check-out</div></div>
-          <p class="q-small"><span data-i18n="checkin">Check-in</span>: <span id="checkin">—</span> • <span data-i18n="checkout">Check-out</span>: <span id="checkout">—</span></p>
-          <div style="margin-top:10px"><strong data-i18n="host">Host:</strong> <span id="host-info">—</span></div>
-          <p class="q-small" id="checkin-note" style="margin-top:6px;font-style:italic"></p>
-        </div>
-
-        <div class="q-card">
-          <div class="q-row"><svg class="q-ico"><use href="#q-doc"/></svg><div class="q-title" data-i18n="house-rules">Regole della casa</div></div>
-          <div class="q-small" id="regole">—</div>
-        </div>
-
-        <div class="q-card">
-          <div class="q-row"><svg class="q-ico"><use href="#q-plus"/></svg><div class="q-title" data-i18n="emergencies">Emergenze</div></div>
-          <div class="q-small" id="emergenze">—</div>
-        </div>
-      </section>
-
-      <section id="casa" style="margin-top:18px">
-        <div class="q-title" data-i18n="house-operations">Funzionamento della casa</div>
-        <div class="q-card" style="margin-top:8px">
-          <div id="funzionamento" class="q-small">—</div>
-        </div>
-      </section>
-
-      <section id="mangiare" style="margin-top:18px">
-        <div class="q-title" data-i18n="where-eat">Dove mangiare</div>
-        <div class="filter-bar" role="group" aria-label="Filtri ristoranti">
-          <button class="filter-btn active" data-filter="all" data-i18n="filter-all">Tutti</button>
-          <button class="filter-btn" data-filter="€" aria-label="Fascia economica">€</button>
-          <button class="filter-btn" data-filter="€€" aria-label="Fascia media">€€</button>
-          <button class="filter-btn" data-filter="€€€" aria-label="Fascia alta">€€€</button>
-          <button class="filter-btn" data-filter="vicino" data-i18n="filter-nearby">Vicino</button>
-        </div>
-        <div class="scroll-container">
-          <div id="luoghi-wrap" class="scroll-grid"></div>
-        </div>
-      </section>
-
-      <section class="services-section">
-        <button class="services-toggle" id="services-toggle">
-          <span><svg class="q-ico" style="margin-right:8px"><use href="#q-shopping"/></svg><span data-i18n="essential-services">Servizi Essenziali</span></span>
-          <svg class="q-ico"><use href="#q-chevron-down"/></svg>
-        </button>
-        <div class="services-content" id="services-content">
-          <div style="margin-top:14px">
-            <div class="filter-bar">
-              <button class="filter-btn active" data-filter-services="all" data-i18n="filter-all">Tutti</button>
-              <button class="filter-btn" data-filter-services="pharmacy" data-i18n="pharmacies">Farmacie</button>
-              <button class="filter-btn" data-filter-services="supermarket" data-i18n="supermarkets">Supermercati</button>
-            </div>
-            <div class="scroll-container">
-              <div id="services-wrap" class="scroll-grid"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="attivita" style="margin-top:18px">
-        <div class="q-title" data-i18n="recommended-activities">Attività consigliate</div>
-        <div class="filter-bar">
-          <button class="filter-btn active" data-filter-activity="all" data-i18n="filter-all">Tutti</button>
-          <button class="filter-btn" data-filter-activity="outdoor" data-i18n="outdoor">All'aperto</button>
-          <button class="filter-btn" data-filter-activity="indoor" data-i18n="indoor">Al chiuso</button>
-        </div>
-        <div class="scroll-container">
-          <div id="attivita-wrap" class="scroll-grid"></div>
-        </div>
-      </section>
-
-      <section id="galleria" style="margin-top:18px">
-        <div class="q-title" data-i18n="gallery">Galleria</div>
-        <div id="gallery-wrap" class="q-grid cols-2" style="margin-top:10px"></div>
-      </section>
-
-      <section id="mappa" style="margin-top:18px">
-        <div class="q-card">
-          <div class="q-title" data-i18n="map">Mappa</div>
-          <div class="map-wrapper">
-            <iframe id="mappa-iframe" src="" width="100%" height="350" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </div>
-      </section>
-
-      <section id="contatti" style="margin-top:18px">
-        <div class="q-card">
-          <div class="q-title" data-i18n="contacts">Contatti</div>
-          <div class="q-small" id="contact-block">—</div>
-          <div style="margin-top:16px">
-            <a href="feedback.html" class="q-btn q-btn-primary" id="feedback-link" style="text-decoration:none;display:inline-flex">
-              ⭐ <span data-i18n="leave-feedback">Lascia un feedback</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <div class="footer-section">
-        <div class="footer-logo">
-          <svg viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="logoGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style="stop-color:#7DD3FC;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#2D3748;stop-opacity:1" />
-              </linearGradient>
-            </defs>
-            <text x="0" y="45" font-family="Inter, sans-serif" font-weight="700" font-size="48" fill="url(#logoGradient2)">QRelax</text>
-          </svg>
-        </div>
         <p class="footer-text" data-i18n="thank-you">Grazie per aver scelto la nostra guida digitale</p>
         <p class="footer-powered" data-i18n="powered-by">Gentilmente powered by QRelax</p>
       </div>
@@ -338,7 +208,7 @@
       'maps':'Maps','call':'Chiama','home':'Home','filter-all':'Tutti','filter-nearby':'Vicino',
       'leave-feedback':'Lascia un feedback','address':'Indirizzo','thank-you':'Grazie per aver scelto la nostra guida digitale',
       'essential-services':'Servizi Essenziali','pharmacies':'Farmacie','supermarkets':'Supermercati',
-      'outdoor':'All\'aperto','indoor':'Al chiuso','powered-by':'Gentilmente powered by QRelax','show-services':'Mostra servizi'
+      'outdoor':'All\'aperto','indoor':'Al chiuso','powered-by':'Gentilmente powered by QRelax'
     },
     en: {
       'house':'The house','house-desc':'TV, air conditioning, heating','eat':'Dining','eat-desc':'Local restaurants',
@@ -350,7 +220,7 @@
       'maps':'Maps','call':'Call','home':'Home','filter-all':'All','filter-nearby':'Nearby',
       'leave-feedback':'Leave feedback','address':'Address','thank-you':'Thank you for choosing our digital guide',
       'essential-services':'Essential Services','pharmacies':'Pharmacies','supermarkets':'Supermarkets',
-      'outdoor':'Outdoor','indoor':'Indoor','powered-by':'Kindly powered by QRelax','show-services':'Show services'
+      'outdoor':'Outdoor','indoor':'Indoor','powered-by':'Kindly powered by QRelax'
     },
     de: {
       'house':'Das Haus','house-desc':'TV, Klimaanlage, Heizung','eat':'Essen','eat-desc':'Lokale Restaurants',
@@ -362,7 +232,7 @@
       'maps':'Maps','call':'Anrufen','home':'Home','filter-all':'Alle','filter-nearby':'In der Nähe',
       'leave-feedback':'Feedback hinterlassen','address':'Adresse','thank-you':'Danke, dass Sie unseren digitalen Reiseführer gewählt haben',
       'essential-services':'Wichtige Dienste','pharmacies':'Apotheken','supermarkets':'Supermärkte',
-      'outdoor':'Im Freien','indoor':'Innen','powered-by':'Freundlicherweise bereitgestellt von QRelax','show-services':'Dienste anzeigen'
+      'outdoor':'Im Freien','indoor':'Innen','powered-by':'Freundlicherweise bereitgestellt von QRelax'
     }
   };
   
@@ -436,13 +306,6 @@
     });
   }
   
-  function announce(message) {
-    const a = document.getElementById('announcer');
-    if (!a) return;
-    a.textContent = message; 
-    setTimeout(()=> a.textContent='', 1000);
-  }
-  
   function getApartmentSlug() {
     const p = new URLSearchParams(window.location.search);
     return p.get('apt') || 'papaya';
@@ -479,13 +342,12 @@
     document.getElementById('apt-cover').src = data.foto_copertina || '';
     document.getElementById('wifi-ssid').textContent = data.wifi_ssid || '—';
     document.getElementById('wifi-pass').textContent = data.wifi_password || '—';
+    
+    // FIX: Gestione multilingua check-in/check-out
     const checkinText = data.checkin && data.checkin[currentLang] ? data.checkin[currentLang] : data.checkin || '—';
-const checkoutText = data.checkout && data.checkout[currentLang] ? data.checkout[currentLang] : data.checkout || '—';
-document.getElementById('checkin').textContent = checkinText;
-document.getElementById('checkout').textContent = checkoutText;
-
-const checkinNoteText = data.checkin_note && data.checkin_note[currentLang] ? data.checkin_note[currentLang] : data.checkin_note || '';
-document.getElementById('checkin-note').textContent = checkinNoteText;
+    const checkoutText = data.checkout && data.checkout[currentLang] ? data.checkout[currentLang] : data.checkout || '—';
+    document.getElementById('checkin').textContent = checkinText;
+    document.getElementById('checkout').textContent = checkoutText;
     
     const hostInfo = document.getElementById('host-info');
     let hostHtml = '';
@@ -493,7 +355,9 @@ document.getElementById('checkin-note').textContent = checkinNoteText;
     if (data.host_email) hostHtml += `${hostHtml ? ' • ' : ''}<a href="mailto:${data.host_email}">${data.host_email}</a>`;
     hostInfo.innerHTML = hostHtml || '—';
     
-    document.getElementById('checkin-note').textContent = data.checkin_note || '';
+    // FIX: Gestione multilingua checkin_note
+    const checkinNoteText = data.checkin_note && data.checkin_note[currentLang] ? data.checkin_note[currentLang] : data.checkin_note || '';
+    document.getElementById('checkin-note').textContent = checkinNoteText;
     
     const regoleContent = data.regole && data.regole[currentLang] ? data.regole[currentLang] : data.regole || '—';
     document.getElementById('regole').innerHTML = regoleContent;
@@ -681,3 +545,133 @@ document.getElementById('checkin-note').textContent = checkinNoteText;
   </script>
 </body>
 </html>
+            <h1 class="q-title" id="apt-nome">Caricamento...</h1>
+            <p class="q-text" id="apt-indirizzo">Caricamento indirizzo...</p>
+
+            <div class="q-grid cols-3" style="margin-top:14px">
+              <a class="q-card q-action q-link" href="#casa"><svg class="q-ico"><use href="#q-house"/></svg><div class="q-title" data-i18n="house">La casa</div><p class="q-text" data-i18n="house-desc">TV, clima, riscaldamento</p></a>
+              <a class="q-card q-action q-link" href="#mangiare"><svg class="q-ico"><use href="#q-restaurant"/></svg><div class="q-title" data-i18n="eat">Mangiare</div><p class="q-text" data-i18n="eat-desc">Ristoranti locali</p></a>
+              <a class="q-card q-action q-link" href="#attivita"><svg class="q-ico"><use href="#q-activity"/></svg><div class="q-title" data-i18n="activities">Attività</div><p class="q-text" data-i18n="activities-desc">Esperienze e svago</p></a>
+            </div>
+          </div>
+
+          <div class="hero-cover center"><img id="apt-cover" src="" alt="Appartamento" style="width:100%;height:100%;object-fit:cover"></div>
+        </div>
+      </header>
+
+      <section class="q-grid cols-2" style="margin-top:18px">
+        <div class="q-card">
+          <div class="q-row"><svg class="q-ico"><use href="#q-wifi"/></svg><div class="q-title" data-i18n="wifi">Wi-Fi</div></div>
+          <p class="q-small"><strong>SSID:</strong> <span id="wifi-ssid">—</span></p>
+          <p class="q-small"><strong data-i18n="password">Password:</strong> <span id="wifi-pass">—</span></p>
+          <a href="#" class="q-btn" id="copyPass" data-i18n="copy-password">Copia password</a><span class="muted" id="copiedMsg" style="display:none;margin-left:8px" data-i18n="copied">Copiata ✅</span>
+        </div>
+
+        <div class="q-card">
+          <div class="q-row"><svg class="q-ico"><use href="#q-calendar"/></svg><div class="q-title" data-i18n="checkin-checkout">Check-in / Check-out</div></div>
+          <p class="q-small"><span data-i18n="checkin">Check-in</span>: <span id="checkin">—</span> • <span data-i18n="checkout">Check-out</span>: <span id="checkout">—</span></p>
+          <div style="margin-top:10px"><strong data-i18n="host">Host:</strong> <span id="host-info">—</span></div>
+          <p class="q-small" id="checkin-note" style="margin-top:6px;font-style:italic"></p>
+        </div>
+
+        <div class="q-card">
+          <div class="q-row"><svg class="q-ico"><use href="#q-doc"/></svg><div class="q-title" data-i18n="house-rules">Regole della casa</div></div>
+          <div class="q-small" id="regole">—</div>
+        </div>
+
+        <div class="q-card">
+          <div class="q-row"><svg class="q-ico"><use href="#q-plus"/></svg><div class="q-title" data-i18n="emergencies">Emergenze</div></div>
+          <div class="q-small" id="emergenze">—</div>
+        </div>
+      </section>
+
+      <section id="casa" style="margin-top:18px">
+        <div class="q-title" data-i18n="house-operations">Funzionamento della casa</div>
+        <div class="q-card" style="margin-top:8px">
+          <div id="funzionamento" class="q-small">—</div>
+        </div>
+      </section>
+
+      <section id="mangiare" style="margin-top:18px">
+        <div class="q-title" data-i18n="where-eat">Dove mangiare</div>
+        <div class="filter-bar" role="group" aria-label="Filtri ristoranti">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter-all">Tutti</button>
+          <button class="filter-btn" data-filter="€" aria-label="Fascia economica">€</button>
+          <button class="filter-btn" data-filter="€€" aria-label="Fascia media">€€</button>
+          <button class="filter-btn" data-filter="€€€" aria-label="Fascia alta">€€€</button>
+          <button class="filter-btn" data-filter="vicino" data-i18n="filter-nearby">Vicino</button>
+        </div>
+        <div class="scroll-container">
+          <div id="luoghi-wrap" class="scroll-grid"></div>
+        </div>
+      </section>
+
+      <section class="services-section">
+        <button class="services-toggle" id="services-toggle">
+          <span><svg class="q-ico" style="margin-right:8px"><use href="#q-shopping"/></svg><span data-i18n="essential-services">Servizi Essenziali</span></span>
+          <svg class="q-ico"><use href="#q-chevron-down"/></svg>
+        </button>
+        <div class="services-content" id="services-content">
+          <div style="margin-top:14px">
+            <div class="filter-bar">
+              <button class="filter-btn active" data-filter-services="all" data-i18n="filter-all">Tutti</button>
+              <button class="filter-btn" data-filter-services="pharmacy" data-i18n="pharmacies">Farmacie</button>
+              <button class="filter-btn" data-filter-services="supermarket" data-i18n="supermarkets">Supermercati</button>
+            </div>
+            <div class="scroll-container">
+              <div id="services-wrap" class="scroll-grid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="attivita" style="margin-top:18px">
+        <div class="q-title" data-i18n="recommended-activities">Attività consigliate</div>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter-activity="all" data-i18n="filter-all">Tutti</button>
+          <button class="filter-btn" data-filter-activity="outdoor" data-i18n="outdoor">All'aperto</button>
+          <button class="filter-btn" data-filter-activity="indoor" data-i18n="indoor">Al chiuso</button>
+        </div>
+        <div class="scroll-container">
+          <div id="attivita-wrap" class="scroll-grid"></div>
+        </div>
+      </section>
+
+      <section id="galleria" style="margin-top:18px">
+        <div class="q-title" data-i18n="gallery">Galleria</div>
+        <div id="gallery-wrap" class="q-grid cols-2" style="margin-top:10px"></div>
+      </section>
+
+      <section id="mappa" style="margin-top:18px">
+        <div class="q-card">
+          <div class="q-title" data-i18n="map">Mappa</div>
+          <div class="map-wrapper">
+            <iframe id="mappa-iframe" src="" width="100%" height="350" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="contatti" style="margin-top:18px">
+        <div class="q-card">
+          <div class="q-title" data-i18n="contacts">Contatti</div>
+          <div class="q-small" id="contact-block">—</div>
+          <div style="margin-top:16px">
+            <a href="feedback.html" class="q-btn q-btn-primary" id="feedback-link" style="text-decoration:none;display:inline-flex">
+              ⭐ <span data-i18n="leave-feedback">Lascia un feedback</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-section">
+        <div class="footer-logo">
+          <svg viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#7DD3FC;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#2D3748;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <text x="0" y="45" font-family="Inter, sans-serif" font-weight="700" font-size="48" fill="url(#logoGradient2)">QRelax</text>
+          </svg>
+        </div>
