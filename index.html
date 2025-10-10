@@ -52,7 +52,7 @@
     .lang-btn{padding:6px 10px;border:1px solid var(--line);background:#fff;color:var(--muted);text-decoration:none;border-radius:6px;font-size:.8rem;transition:all 0.2s}
     .lang-btn.active,.lang-btn:hover{background:var(--secondary);color:var(--primary);border-color:var(--secondary)}
     .brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
-    .brand-logo{width:60px;height:auto}
+    .brand-logo{width:180px;height:auto}
     .q-bottom{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-around;background:#fff;border-top:1px solid var(--line);padding:8px 10px;z-index:999}
     .q-bottom a{display:flex;flex-direction:column;align-items:center;font-size:.72rem;color:var(--ink);text-decoration:none}
     .q-bottom svg{width:18px;height:18px;margin-bottom:4px}
@@ -76,6 +76,44 @@
     .skip-link{position:absolute;top:-40px;left:0;background:var(--primary);color:#fff;padding:8px;z-index:100;transition:top 0.3s}
     .skip-link:focus{top:0}
     [aria-live]{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+    
+    /* WHATSAPP WIDGET */
+    .whatsapp-widget {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 998;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+    }
+    .whatsapp-widget:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+    .whatsapp-widget svg {
+      width: 35px;
+      height: 35px;
+    }
+    @media(max-width:768px){
+      .whatsapp-widget {
+        bottom: 70px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+      }
+      .whatsapp-widget svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -129,9 +167,14 @@
         <div class="hero-grid">
           <div>
             <div class="brand">
-              <svg class="brand-logo" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-                <text x="0" y="45" font-family="Inter, sans-serif" font-weight="700" font-size="48" fill="#2D3748">QR</text>
-                <text x="80" y="45" font-family="Inter, sans-serif" font-weight="400" font-size="48" fill="#7DD3FC">ELAX</text>
+              <svg class="brand-logo" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#7DD3FC;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#2D3748;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <text x="0" y="45" font-family="Inter, sans-serif" font-weight="700" font-size="48" fill="url(#logoGradient)">QRelax</text>
               </svg>
             </div>
             <h1 class="q-title" id="apt-nome">Caricamento...</h1>
@@ -209,7 +252,6 @@
             <div class="q-title" data-i18n="contacts">Contatti</div>
             <div class="q-small" id="contact-block">—</div>
             <div style="margin-top:16px">
-              <!-- BOTTTONE FEEDBACK: href relativo -->
               <a href="feedback.html" class="q-btn q-btn-primary" id="feedback-link" style="text-decoration:none;display:inline-flex">
                 ⭐ Lascia un feedback
               </a>
@@ -226,12 +268,31 @@
     </div>
 
     <nav class="q-bottom">
-      <a href="#home"><svg><use href="#q-house"/></svg><span data-i18n="home">Home</span></a>
-      <a href="#casa"><svg><use href="#q-activity"/></svg><span data-i18n="casa-nav">Casa</span></a>
-      <a href="#mangiare"><svg><use href="#q-restaurant"/></svg><span data-i18n="eat-nav">Mangiare</span></a>
-      <a href="#contatti"><svg><use href="#q-doc"/></svg><span data-i18n="contacts">Contatti</span></a>
+      <a href="#home">
+        <svg><use href="#q-house"/></svg>
+        <span data-i18n="home">Home</span>
+      </a>
+      <a href="#mangiare">
+        <svg><use href="#q-restaurant"/></svg>
+        <span data-i18n="eat-nav">Mangiare</span>
+      </a>
+      <a href="#attivita">
+        <svg><use href="#q-activity"/></svg>
+        <span data-i18n="activities">Attività</span>
+      </a>
+      <a href="#contatti">
+        <svg><use href="#q-phone"/></svg>
+        <span data-i18n="contacts">Contatti</span>
+      </a>
     </nav>
   </div>
+
+  <!-- WHATSAPP WIDGET -->
+  <a href="https://wa.me/393470839898" class="whatsapp-widget" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path fill="white" d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-.646-7.07-1.87l-.507-.292-5.247 1.408 1.417-5.267-.321-.525c-1.321-2.165-2.005-4.652-2.005-7.188 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62-6.11 13.62-13.62 13.62zM21.305 18.421c-.327-.163-1.933-.956-2.233-1.066s-.518-.163-.736.163c-.218.327-.845 1.066-1.036 1.284s-.382.245-.709.082c-.327-.163-1.381-.509-2.632-1.626-.973-.868-1.629-1.939-1.82-2.267s-.02-.504.143-.667c.147-.146.327-.382.491-.573s.218-.327.327-.545c.109-.218.055-.409-.027-.573s-.736-1.775-1.01-2.43c-.267-.638-.538-.552-.736-.562-.191-.01-.409-.012-.627-.012s-.573.082-.873.409c-.3.327-1.145 1.12-1.145 2.731s1.172 3.167 1.336 3.385c.163.218 2.312 3.527 5.602 4.945.782.337 1.393.539 1.869.689.787.25 1.503.215 2.069.13.631-.094 1.933-.791 2.207-1.555s.273-1.42.191-1.555c-.082-.135-.3-.218-.627-.382z"/>
+    </svg>
+  </a>
 
   <!-- SCRIPT -->
   <script>
@@ -435,7 +496,6 @@
   });
 
   (async function init() {
-    // REGISTRA SERVICE WORKER (usa il nome file presente nel repo)
     if ('serviceWorker' in navigator) {
       try { await navigator.serviceWorker.register('SW (1).JS'); } catch(_) {}
     }
@@ -445,7 +505,6 @@
     const slug = getApartmentSlug();
     translatePage(lang);
 
-    // Forza href corretto del bottone feedback (RELATIVO + param apt)
     const feedbackLink = document.getElementById('feedback-link');
     if (feedbackLink) feedbackLink.href = `feedback.html?apt=${encodeURIComponent(slug)}`;
 
