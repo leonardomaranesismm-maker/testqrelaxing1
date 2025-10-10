@@ -11,9 +11,21 @@
   "checkin_note": "Gli orari possono essere modificati su richiesta",
   "host_telefono": "+39 347 083 9898",
   "host_email": "leonardo@qrelaxing.com",
-  "regole": "<ul style='margin:0;padding-left:20px'><li><strong>Silenzio:</strong> 14:00-16:00 e 22:00-08:00</li><li><strong>Vietato:</strong> Feste e fumare in casa</li><li><strong>Animali:</strong> Solo su richiesta preventiva</li></ul>",
-  "emergenze": "<p><strong>🚑 Ambulanza:</strong> <a href='tel:118'>118</a><br><strong>👩‍⚕️ Guardia Medica:</strong> <a href='tel:116117'>116 117</a><br><strong>💊 Farmacia:</strong> <a href='tel:800801185'>800 801 185</a><br><strong>📞 Emergenze:</strong> <a href='tel:112'>112</a></p>",
-  "funzionamento": "<h4 style='margin:0 0 8px;color:#2D3748'>📺 Televisione</h4><p>Accendi con <strong>Power</strong>. Canali: <strong>CH+/CH-</strong>. Netflix/YouTube: <strong>Home</strong>.</p><h4 style='margin:16px 0 8px;color:#2D3748'>🌡️ Climatizzatore</h4><p>Power per accendere. <strong>Heat</strong> riscalda, <strong>Cool</strong> raffredda.</p>",
+  "regole": {
+    "it": "<ul style='margin:0;padding-left:20px'><li><strong>Silenzio:</strong> 14:00-16:00 e 22:00-08:00</li><li><strong>Vietato:</strong> Feste e fumare in casa</li><li><strong>Animali:</strong> Solo su richiesta preventiva</li></ul>",
+    "en": "<ul style='margin:0;padding-left:20px'><li><strong>Quiet hours:</strong> 2:00 PM-4:00 PM and 10:00 PM-8:00 AM</li><li><strong>Forbidden:</strong> Parties and smoking indoors</li><li><strong>Pets:</strong> Only upon prior request</li></ul>",
+    "de": "<ul style='margin:0;padding-left:20px'><li><strong>Ruhezeiten:</strong> 14:00-16:00 und 22:00-08:00</li><li><strong>Verboten:</strong> Feiern und Rauchen im Haus</li><li><strong>Haustiere:</strong> Nur auf vorherige Anfrage</li></ul>"
+  },
+  "emergenze": {
+    "it": "<p><strong>🚑 Ambulanza:</strong> <a href='tel:118'>118</a><br><strong>👩‍⚕️ Guardia Medica:</strong> <a href='tel:116117'>116 117</a><br><strong>💊 Farmacia:</strong> <a href='tel:800801185'>800 801 185</a><br><strong>📞 Emergenze:</strong> <a href='tel:112'>112</a></p>",
+    "en": "<p><strong>🚑 Ambulance:</strong> <a href='tel:118'>118</a><br><strong>👩‍⚕️ Medical Guard:</strong> <a href='tel:116117'>116 117</a><br><strong>💊 Pharmacy:</strong> <a href='tel:800801185'>800 801 185</a><br><strong>📞 Emergencies:</strong> <a href='tel:112'>112</a></p>",
+    "de": "<p><strong>🚑 Krankenwagen:</strong> <a href='tel:118'>118</a><br><strong>👩‍⚕️ Ärztlicher Notdienst:</strong> <a href='tel:116117'>116 117</a><br><strong>💊 Apotheke:</strong> <a href='tel:800801185'>800 801 185</a><br><strong>📞 Notfälle:</strong> <a href='tel:112'>112</a></p>"
+  },
+  "funzionamento": {
+    "it": "<h4 style='margin:0 0 8px;color:#2D3748'>📺 Televisione</h4><p>Accendi con <strong>Power</strong>. Canali: <strong>CH+/CH-</strong>. Netflix/YouTube: <strong>Home</strong>.</p><h4 style='margin:16px 0 8px;color:#2D3748'>🌡️ Climatizzatore</h4><p>Power per accendere. <strong>Heat</strong> riscalda, <strong>Cool</strong> raffredda.</p>",
+    "en": "<h4 style='margin:0 0 8px;color:#2D3748'>📺 Television</h4><p>Turn on with <strong>Power</strong>. Channels: <strong>CH+/CH-</strong>. Netflix/YouTube: <strong>Home</strong>.</p><h4 style='margin:16px 0 8px;color:#2D3748'>🌡️ Air Conditioning</h4><p>Power to turn on. <strong>Heat</strong> warms, <strong>Cool</strong> cools.</p>",
+    "de": "<h4 style='margin:0 0 8px;color:#2D3748'>📺 Fernseher</h4><p>Einschalten mit <strong>Power</strong>. Kanäle: <strong>CH+/CH-</strong>. Netflix/YouTube: <strong>Home</strong>.</p><h4 style='margin:16px 0 8px;color:#2D3748'>🌡️ Klimaanlage</h4><p>Power zum Einschalten. <strong>Heat</strong> heizt, <strong>Cool</strong> kühlt.</p>"
+  },
   "mappa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.5!2d12.6463!3d45.5073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDMwJzI2LjMiTiAxMsKwMzgnNDYuNyJF!5e0!3m2!1sit!2sit!4v1234567890",
   "ristoranti": [
     {
@@ -21,7 +33,11 @@
       "foto": "https://www.altorcioristorante.it/wp-content/uploads/2022/10/IMG_2817.jpg",
       "prezzo": "€€",
       "distanza": "5 min a piedi",
-      "descrizione": "Trattoria e pizzeria rustica. Cucina veneta con pesce e pizza al forno a legna.",
+      "descrizione": {
+        "it": "Trattoria e pizzeria rustica. Cucina veneta con pesce e pizza al forno a legna.",
+        "en": "Rustic trattoria and pizzeria. Venetian cuisine with fresh fish and wood-fired pizza.",
+        "de": "Rustikale Trattoria und Pizzeria. Venezianische Küche mit frischem Fisch und Holzofenpizza."
+      },
       "telefono": "+39 0421 972153",
       "maps": "https://www.google.com/maps/search/?api=1&query=Al+Torcio,+80+Via+Silvio+Trentin,+Veneto&query_place_id=ChIJd-0Yf2EAfEcRdWcfFHfmtXw"
     },
@@ -30,7 +46,11 @@
       "foto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/4e/91/0d/la-veranda-con-vista.jpg?w=900&h=500&s=1",
       "prezzo": "€€€",
       "distanza": "10 min in auto",
-      "descrizione": "Ristorante stellato Michelin. Pesce fresco dalla Laguna, giardino romantico.",
+      "descrizione": {
+        "it": "Ristorante stellato Michelin. Pesce fresco dalla Laguna, giardino romantico.",
+        "en": "Michelin-starred restaurant. Fresh fish from the Lagoon, romantic garden.",
+        "de": "Michelin-Stern Restaurant. Frischer Fisch aus der Lagune, romantischer Garten."
+      },
       "telefono": "+39 0421 350380",
       "maps": "https://www.google.com/maps/place/Da+Guido/@45.5222,12.6397,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5e861ff1de7:0x7ca5e67747211f75!8m2!3d45.5222!4d12.6397!16s%2Fg%2F1tgsxg2l"
     },
@@ -39,7 +59,11 @@
       "foto": "https://www.veneziepost.it/wp-content/uploads/2023/05/Da-Omar-Jesolo-Lido3-e1684858923428.jpg",
       "prezzo": "€€€",
       "distanza": "Centro, 8 min",
-      "descrizione": "Elegante sul lungomare. Pesce fresco senza elaborazioni eccessive.",
+      "descrizione": {
+        "it": "Elegante sul lungomare. Pesce fresco senza elaborazioni eccessive.",
+        "en": "Elegant seafront location. Fresh fish without excessive elaboration.",
+        "de": "Elegante Strandpromenade. Frischer Fisch ohne übermäßige Verarbeitung."
+      },
       "telefono": "+39 0421 93685",
       "maps": "https://www.google.com/maps/place/Ristorante+da+Omar/@45.5173,12.6486,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f0e5a99999:0x3333333333333333!8m2!3d45.5173!4d12.6486!16s%2Fg%2F11b6dqv123"
     },
@@ -48,7 +72,11 @@
       "foto": "https://www.panisfizio.com/wp-content/uploads/2024/04/Panisfizio-Pizzeria-JesoloDSC01407-2.jpg",
       "prezzo": "€€",
       "distanza": "8 min a piedi",
-      "descrizione": "Pizza gourmet Tre Spicchi Gambero Rosso. Impasto 36h di lievitazione.",
+      "descrizione": {
+        "it": "Pizza gourmet Tre Spicchi Gambero Rosso. Impasto 36h di lievitazione.",
+        "en": "Gourmet pizza with Three Forks Gambero Rosso award. 36h leavening dough.",
+        "de": "Gourmet-Pizza mit Drei-Gabeln-Auszeichnung. 36h Teigführung."
+      },
       "telefono": "+39 0421 380123",
       "maps": "https://www.google.com/maps/place/Panisfizio/@45.5095,12.6425,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5eeeeeeeeee:0x4444444444444444!8m2!3d45.5095!4d12.6425!16s%2Fg%2F11f5j8k9l0"
     },
@@ -57,7 +85,11 @@
       "foto": "https://2night.s3.eu-west-1.amazonaws.com/pics/articles/original/d3b/668ee7a9631166e2e4ff3dd9.jpg",
       "prezzo": "€",
       "distanza": "2 min a piedi",
-      "descrizione": "Gelato artigianale siciliano. Pistacchio di Bronte, mandorla di Avola.",
+      "descrizione": {
+        "it": "Gelato artigianale siciliano. Pistacchio di Bronte, mandorla di Avola.",
+        "en": "Artisan Sicilian gelato. Bronte pistachio, Avola almond.",
+        "de": "Handwerkliches sizilianisches Eis. Bronte-Pistazie, Avola-Mandel."
+      },
       "telefono": "+39 327 4297195",
       "maps": "https://www.google.com/maps/place/Gelateria+MareMoro/@45.5088,12.6471,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f123456789:0x5555555555555555!8m2!3d45.5088!4d12.6471!16s%2Fg%2F11h1234567"
     },
@@ -66,7 +98,11 @@
       "foto": "https://www.hotel-nettuno.com/images/cmsone/galleryone/ristorante-friggitoria-tempini/zoom/dsc_4729_45295.JPG",
       "prezzo": "€€",
       "distanza": "7 min a piedi",
-      "descrizione": "Friggitoria e ristorante. Frittura mista dell'Adriatico e pasta fresca.",
+      "descrizione": {
+        "it": "Friggitoria e ristorante. Frittura mista dell'Adriatico e pasta fresca.",
+        "en": "Fried seafood restaurant. Mixed Adriatic fry and fresh pasta.",
+        "de": "Frittiertes Meeresfrüchte-Restaurant. Gemischter adriatischer Fisch und frische Pasta."
+      },
       "telefono": "+39 0421 980234",
       "maps": "https://www.google.com/maps/place/Ristorante+Tempini/@45.5101,12.6455,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f987654321:0x6666666666666666!8m2!3d45.5101!4d12.6455!16s%2Fg%2F11c1m2n3o4"
     }
@@ -76,7 +112,11 @@
       "nome": "Caribe Bay",
       "foto": "https://www.jesolojournal.com/wp-content/uploads/2023/09/jj34_caribe-bay.jpg",
       "distanza": "15 min in auto (6 km)",
-      "descrizione": "Parco acquatico con scivoli mozzafiato, piscine a onde e lagune caraibiche.",
+      "descrizione": {
+        "it": "Parco acquatico con scivoli mozzafiato, piscine a onde e lagune caraibiche.",
+        "en": "Water park with breathtaking slides, wave pools and Caribbean lagoons.",
+        "de": "Wasserpark mit atemberaubenden Rutschen, Wellenbecken und karibischen Lagunen."
+      },
       "tipo": "outdoor",
       "maps": "https://www.google.com/maps/place/Caribe+Bay/@45.5389,12.6253,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb62ec1a0c8ed:0x8e0f8c9d7a6b5c4d!8m2!3d45.5389!4d12.6253!16s%2Fm%2F0h_6yc2"
     },
@@ -84,7 +124,11 @@
       "nome": "Sea Life Jesolo",
       "foto": "https://vivijesolo.it/wp-content/uploads/2021/05/Lido-di-Jesolo-SEA-LIFE-Aquarium_vista-oceanica-scaled.jpg",
       "distanza": "12 min in auto (4.5 km)",
-      "descrizione": "Acquario con oltre 5000 creature marine. Tunnel oceanico e vasca tattile.",
+      "descrizione": {
+        "it": "Acquario con oltre 5000 creature marine. Tunnel oceanico e vasca tattile.",
+        "en": "Aquarium with over 5000 marine creatures. Ocean tunnel and touch pool.",
+        "de": "Aquarium mit über 5000 Meerestieren. Ozeantunnel und Streichelbecken."
+      },
       "tipo": "indoor",
       "maps": "https://www.google.com/maps/place/SEA+LIFE+Jesolo/@45.5265,12.6358,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5fd8a9b7c6e:0x1a2b3c4d5e6f7a8b!8m2!3d45.5265!4d12.6358!16s%2Fm%2F0h_8zt4"
     },
@@ -92,7 +136,11 @@
       "nome": "Pista Azzurra Go-Kart",
       "foto": "https://www.jesolojournal.com/wp-content/uploads/2023/09/jj34_pista-azzurra.jpg",
       "distanza": "10 min in auto (3.8 km)",
-      "descrizione": "Pista go-kart professionale con due tracciati per adulti e bambini.",
+      "descrizione": {
+        "it": "Pista go-kart professionale con due tracciati per adulti e bambini.",
+        "en": "Professional go-kart track with two circuits for adults and children.",
+        "de": "Professionelle Go-Kart-Bahn mit zwei Strecken für Erwachsene und Kinder."
+      },
       "tipo": "outdoor",
       "maps": "https://www.google.com/maps/place/Pista+Azzurra/@45.5298,12.6195,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb61f2d3e4a5b:0x9c8d7e6f5a4b3c2d!8m2!3d45.5298!4d12.6195!16s%2Fg%2F11b8v9w8x9"
     },
@@ -100,7 +148,11 @@
       "nome": "Spiaggia di Jesolo",
       "foto": "https://www.veneto.info/wp-content/uploads/sites/114/jesolo-hd.jpg",
       "distanza": "5 min a piedi (400 m)",
-      "descrizione": "15 km di spiaggia sabbiosa con stabilimenti attrezzati e sport acquatici.",
+      "descrizione": {
+        "it": "15 km di spiaggia sabbiosa con stabilimenti attrezzati e sport acquatici.",
+        "en": "15 km of sandy beach with equipped facilities and water sports.",
+        "de": "15 km Sandstrand mit ausgestatteten Anlagen und Wassersport."
+      },
       "tipo": "outdoor",
       "maps": "https://www.google.com/maps/place/Spiaggia+di+Jesolo/@45.5067,12.6449,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f0a1b2c3d4:0xe5f6a7b8c9d0e1f2!8m2!3d45.5067!4d12.6449!16s%2Fg%2F11c5d6e7f8"
     },
@@ -108,7 +160,11 @@
       "nome": "Venezia",
       "foto": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?fm=jpg&q=60&w=3000",
       "distanza": "40 min in auto (45 km)",
-      "descrizione": "La città più romantica del mondo. Piazza San Marco, Canal Grande e gondole.",
+      "descrizione": {
+        "it": "La città più romantica del mondo. Piazza San Marco, Canal Grande e gondole.",
+        "en": "The most romantic city in the world. St. Mark's Square, Grand Canal and gondolas.",
+        "de": "Die romantischste Stadt der Welt. Markusplatz, Canal Grande und Gondeln."
+      },
       "tipo": "outdoor",
       "maps": "https://www.google.com/maps/place/Venezia/@45.4408,12.3155,13z/data=!3m1!4b1!4m6!3m5!1s0x477eb1daf1d4a533:0x3c6c7d5e8f9a0b1c!8m2!3d45.4408!4d12.3155!16zL20vMDZ5OTM"
     },
@@ -116,7 +172,11 @@
       "nome": "Tropicarium Park",
       "foto": "https://www.hoteldantejesolo.com/public/img-camere/larg/tropicarium-park-1065021015.jpg",
       "distanza": "8 min a piedi (650 m)",
-      "descrizione": "Parco tropicale con squali, pinguini, rettili e farfalle. Educativo e divertente.",
+      "descrizione": {
+        "it": "Parco tropicale con squali, pinguini, rettili e farfalle. Educativo e divertente.",
+        "en": "Tropical park with sharks, penguins, reptiles and butterflies. Educational and fun.",
+        "de": "Tropischer Park mit Haien, Pinguinen, Reptilien und Schmetterlingen. Lehrreich und unterhaltsam."
+      },
       "tipo": "indoor",
       "maps": "https://www.google.com/maps/place/Tropicarium+Park/@45.5142,12.6501,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f8d9e0a1b2:0xc3d4e5f6a7b8c9d0!8m2!3d45.5142!4d12.6501!16s%2Fg%2F11b7c8d9e0"
     }
