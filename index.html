@@ -16,13 +16,16 @@
       --primary:#f7fafc; --secondary:#63b3ed; --shadow:0 10px 30px rgba(0,0,0,.3);
     }
     html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;transition:background 0.3s,color 0.3s}
-    .q-container{max-width:1120px;margin:0 auto;padding:20px}
+    .q-container{max-width:1120px;margin:0 auto;padding:20px;padding-top:120px}
+    @media(max-width:768px){
+      .q-container{padding:12px;padding-top:100px}
+    }
     .q-grid{display:grid;gap:14px}
     @media (min-width:768px){ 
       .q-grid.cols-2{grid-template-columns:repeat(2,1fr)} 
       .q-grid.cols-3{grid-template-columns:repeat(3,1fr)} 
     }
-    .hero{padding:28px 0}
+    .hero{padding:0;padding-top:0}
     .hero-grid{display:grid;gap:16px}
     @media(min-width:768px){ .hero-grid{grid-template-columns:1fr 420px;align-items:center} }
     .hero-cover{border-radius:12px;overflow:hidden;background:#eee;height:260px}
