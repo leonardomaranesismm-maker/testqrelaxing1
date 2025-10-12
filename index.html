@@ -53,17 +53,16 @@
     
     /* WIDGET METEO */
     .weather-widget{
-      position:fixed;
+      position:absolute;
       top:20px;
       left:20px;
       background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       border-radius:16px;
       padding:16px 20px;
       box-shadow:0 10px 30px rgba(102,126,234,0.4);
-      z-index:9999;
+      z-index:10;
       min-width:200px;
       color:white;
-      backdrop-filter:blur(10px);
     }
     .weather-widget.hidden{display:none}
     .weather-info{display:flex;align-items:center;gap:12px}
