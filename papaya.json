@@ -51,7 +51,7 @@
         "de": "Rustikale Trattoria und Pizzeria. Venezianische Küche mit Fischspezialitäten und Pizza aus dem Holzofen."
       },
       "telefono": "+39 0421 972153",
-      "maps": "https://maps.app.goo.gl/TorcioJesolo"
+      "maps": "https://www.google.com/maps/search/?api=1&query=Al+Torcio+Ristorante+Jesolo"
     },
     {
       "nome": "Da Guido",
@@ -136,7 +136,11 @@
       "nome": "Sea Life Jesolo",
       "foto": "https://vivijesolo.it/wp-content/uploads/2021/05/Lido-di-Jesolo-SEA-LIFE-Aquarium_vista-oceanica-scaled.jpg",
       "distanza": "12 min in auto (4.5 km)",
-      "descrizione": "Acquario con oltre 5000 creature marine. Tunnel oceanico e vasca tattile. Perfetto per famiglie.",
+      "descrizione": {
+        "it": "Acquario con oltre 5000 creature marine. Tunnel oceanico e vasca tattile. Perfetto per famiglie.",
+        "en": "Aquarium with over 5000 marine creatures. Ocean tunnel and touch pool. Perfect for families.",
+        "de": "Aquarium mit über 5000 Meereslebewesen. Ozeantunnel und Streichelbecken. Perfekt für Familien."
+      },
       "tipo": "indoor",
       "maps": "https://maps.app.goo.gl/SeaLifeJesolo"
     },
@@ -144,7 +148,11 @@
       "nome": "Pista Azzurra Go-Kart",
       "foto": "https://www.jesolojournal.com/wp-content/uploads/2023/09/jj34_pista-azzurra.jpg",
       "distanza": "10 min in auto (3.8 km)",
-      "descrizione": "Pista go-kart professionale con due tracciati per adulti e bambini. Emozioni garantite!",
+      "descrizione": {
+        "it": "Pista go-kart professionale con due tracciati per adulti e bambini. Emozioni garantite!",
+        "en": "Professional go-kart track with two circuits for adults and children. Thrills guaranteed!",
+        "de": "Professionelle Go-Kart-Strecke mit zwei Parcours für Erwachsene und Kinder. Nervenkitzel garantiert!"
+      },
       "tipo": "outdoor",
       "maps": "https://maps.app.goo.gl/PistaAzzurraJesolo"
     },
@@ -152,7 +160,11 @@
       "nome": "Spiaggia di Jesolo",
       "foto": "https://www.veneto.info/wp-content/uploads/sites/114/jesolo-hd.jpg",
       "distanza": "5 min a piedi (400 m)",
-      "descrizione": "15 km di spiaggia sabbiosa con stabilimenti attrezzati, sport acquatici, beach volley e relax.",
+      "descrizione": {
+        "it": "15 km di spiaggia sabbiosa con stabilimenti attrezzati, sport acquatici, beach volley e relax.",
+        "en": "15 km of sandy beach with equipped facilities, water sports, beach volleyball and relaxation.",
+        "de": "15 km Sandstrand mit ausgestatteten Einrichtungen, Wassersport, Beachvolleyball und Entspannung."
+      },
       "tipo": "outdoor",
       "maps": "https://maps.app.goo.gl/SpiaggiaJesolo"
     },
@@ -160,7 +172,11 @@
       "nome": "Venezia",
       "foto": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?fm=jpg&q=60&w=3000",
       "distanza": "40 min in auto (45 km)",
-      "descrizione": "La città più romantica del mondo. Piazza San Marco, Canal Grande, gondole e arte ovunque.",
+      "descrizione": {
+        "it": "La città più romantica del mondo. Piazza San Marco, Canal Grande, gondole e arte ovunque.",
+        "en": "The most romantic city in the world. St. Mark's Square, Grand Canal, gondolas and art everywhere.",
+        "de": "Die romantischste Stadt der Welt. Markusplatz, Canal Grande, Gondeln und Kunst überall."
+      },
       "tipo": "outdoor",
       "maps": "https://maps.app.goo.gl/Venezia"
     },
@@ -168,7 +184,11 @@
       "nome": "Tropicarium Park",
       "foto": "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=800",
       "distanza": "8 min a piedi (650 m)",
-      "descrizione": "Parco tropicale con squali, pinguini, rettili e farfalle. Esperienza educativa e divertente.",
+      "descrizione": {
+        "it": "Parco tropicale con squali, pinguini, rettili e farfalle. Esperienza educativa e divertente.",
+        "en": "Tropical park with sharks, penguins, reptiles and butterflies. Educational and fun experience.",
+        "de": "Tropischer Park mit Haien, Pinguinen, Reptilien und Schmetterlingen. Lehrreiches und unterhaltsames Erlebnis."
+      },
       "tipo": "indoor",
       "maps": "https://maps.app.goo.gl/TropicariumJesolo"
     }
