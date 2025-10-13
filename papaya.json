@@ -7,20 +7,20 @@
   "wifi_ssid": "PAPAYAwifi",
   "wifi_password": "testpasswifi",
   "checkin": {
-  "it": "dalle 15:00",
-  "en": "from 3:00 PM",
-  "de": "ab 15:00 Uhr"
-},
-"checkout": {
-  "it": "entro le 10:00",
-  "en": "by 10:00 AM",
-  "de": "bis 10:00 Uhr"
-},
-"checkin_note": {
-  "it": "Gli orari possono essere modificati su richiesta",
-  "en": "Times can be modified upon request",
-  "de": "Zeiten können auf Anfrage geändert werden"
-},
+    "it": "dalle 15:00",
+    "en": "from 3:00 PM",
+    "de": "ab 15:00 Uhr"
+  },
+  "checkout": {
+    "it": "entro le 10:00",
+    "en": "by 10:00 AM",
+    "de": "bis 10:00 Uhr"
+  },
+  "checkin_note": {
+    "it": "Gli orari possono essere modificati su richiesta",
+    "en": "Times can be modified upon request",
+    "de": "Zeiten können auf Anfrage geändert werden"
+  },
   "host_telefono": "+39 347 083 9898",
   "host_email": "leonardo@qrelaxing.com",
   "regole": {
@@ -51,7 +51,7 @@
         "de": "Rustikale Trattoria und Pizzeria. Venezianische Küche mit frischem Fisch und Holzofenpizza."
       },
       "telefono": "+39 0421 972153",
-      "maps": ""maps": "https://maps.google.com/?q=Al+Torcio+Jesolo""
+      "maps": "https://maps.google.com/?q=Al+Torcio+Jesolo"
     },
     {
       "nome": "Da Guido",
@@ -64,7 +64,7 @@
         "de": "Michelin-Stern Restaurant. Frischer Fisch aus der Lagune, romantischer Garten."
       },
       "telefono": "+39 0421 350380",
-      "maps": ""maps": "https://maps.google.com/?q=Da+Guido+Jesolo"
+      "maps": "https://maps.google.com/?q=Da+Guido+Jesolo"
     },
     {
       "nome": "Da Omar",
@@ -77,7 +77,7 @@
         "de": "Elegante Strandpromenade. Frischer Fisch ohne übermäßige Verarbeitung."
       },
       "telefono": "+39 0421 93685",
-      "maps": ""maps": "https://maps.google.com/?q=Da+Omar+Jesolo"
+      "maps": "https://maps.google.com/?q=Da+Omar+Jesolo"
     },
     {
       "nome": "Panisfizio",
@@ -90,7 +90,7 @@
         "de": "Gourmet-Pizza mit Drei-Gabeln-Auszeichnung. 36h Teigführung."
       },
       "telefono": "+39 0421 380123",
-      "maps": ""maps": "https://maps.google.com/?q=Panisfizio+Jesolo"
+      "maps": "https://maps.google.com/?q=Panisfizio+Jesolo"
     },
     {
       "nome": "Gelateria MareMoro",
@@ -103,7 +103,7 @@
         "de": "Handwerkliches sizilianisches Eis. Bronte-Pistazie, Avola-Mandel."
       },
       "telefono": "+39 327 4297195",
-      "maps": "maps": "https://maps.google.com/?q=Gelateria+MareMoro+Jesolo""
+      "maps": "https://maps.google.com/?q=Gelateria+MareMoro+Jesolo"
     },
     {
       "nome": "Ristorante Tempini",
@@ -116,7 +116,7 @@
         "de": "Frittiertes Meeresfrüchte-Restaurant. Gemischter adriatischer Fisch und frische Pasta."
       },
       "telefono": "+39 0421 980234",
-      "maps": "maps": "https://maps.google.com/?q=Ristorante+Tempini+Jesolo"
+      "maps": "https://maps.google.com/?q=Ristorante+Tempini+Jesolo"
     }
   ],
   "attivita": [
@@ -130,7 +130,7 @@
         "de": "Wasserpark mit atemberaubenden Rutschen, Wellenbecken und karibischen Lagunen."
       },
       "tipo": "outdoor",
-      "maps": "maps": "https://maps.google.com/?q=Caribe+Bay+Jesolo"
+      "maps": "https://maps.google.com/?q=Caribe+Bay+Jesolo"
     },
     {
       "nome": "Sea Life Jesolo",
@@ -166,7 +166,7 @@
         "de": "15 km Sandstrand mit ausgestatteten Anlagen und Wassersport."
       },
       "tipo": "outdoor",
-      "maps": "https://maps.google.com/?q=Spiaggia+Di+Jesolo"
+      "maps": "https://maps.google.com/?q=Spiaggia+Jesolo"
     },
     {
       "nome": "Venezia",
@@ -178,7 +178,8 @@
         "de": "Die romantischste Stadt der Welt. Markusplatz, Canal Grande und Gondeln."
       },
       "tipo": "outdoor",
-      "maps": "https://maps.google.com/?q=Venezia"
+      "maps": "https://maps.google.com/?q=Venezia+Italy"
+    },
     {
       "nome": "Tropicarium Park",
       "foto": "https://www.hoteldantejesolo.com/public/img-camere/larg/tropicarium-park-1065021015.jpg",
@@ -199,7 +200,7 @@
       "distanza": "3 min a piedi",
       "indirizzo": "Via Bafile 320, Jesolo",
       "telefono": "+39 0421 972340",
-      "maps": "https://www.google.com/maps/place/Farmacia+Comunale+Jesolo/@45.5091,12.6478,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f1a2b3c4d5:0xe6f7a8b9c0d1e2f3!8m2!3d45.5091!4d12.6478!16s%2Fg%2F11f1g2h3i4"
+      "maps": "https://maps.google.com/?q=Farmacia+Comunale+Jesolo"
     },
     {
       "nome": "Farmacia San Marco",
@@ -207,7 +208,7 @@
       "distanza": "5 min a piedi",
       "indirizzo": "Piazza Mazzini 18, Jesolo",
       "telefono": "+39 0421 380125",
-      "maps": "https://www.google.com/maps/place/Farmacia+San+Marco/@45.5105,12.6461,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f2b3c4d5e6:0xf7a8b9c0d1e2f3a4!8m2!3d45.5105!4d12.6461!16s%2Fg%2F11g2h3i4j5"
+      "maps": "https://maps.google.com/?q=Farmacia+San+Marco+Jesolo"
     },
     {
       "nome": "Farmacia Centrale Jesolo",
@@ -215,7 +216,7 @@
       "distanza": "7 min a piedi",
       "indirizzo": "Via Dante Alighieri 55, Jesolo",
       "telefono": "+39 0421 93156",
-      "maps": "https://www.google.com/maps/place/Farmacia+Centrale/@45.5182,12.6492,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f3c4d5e6f7:0xa8b9c0d1e2f3a4b5!8m2!3d45.5182!4d12.6492!16s%2Fg%2F11h3i4j5k6"
+      "maps": "https://maps.google.com/?q=Farmacia+Centrale+Jesolo"
     },
     {
       "nome": "Conad City",
@@ -223,7 +224,7 @@
       "distanza": "4 min a piedi",
       "indirizzo": "Via Bafile 288, Jesolo",
       "telefono": "+39 0421 380567",
-      "maps": "https://www.google.com/maps/place/Conad+City/@45.5098,12.6471,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f4d5e6f7a8:0xb9c0d1e2f3a4b5c6!8m2!3d45.5098!4d12.6471!16s%2Fg%2F11i4j5k6l7"
+      "maps": "https://maps.google.com/?q=Conad+City+Jesolo"
     },
     {
       "nome": "Despar Express",
@@ -231,7 +232,7 @@
       "distanza": "6 min a piedi",
       "indirizzo": "Via Dante Alighieri 102, Jesolo",
       "telefono": "+39 0421 971234",
-      "maps": "https://www.google.com/maps/place/Despar+Express/@45.5188,12.6483,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f5e6f7a8b9:0xc0d1e2f3a4b5c6d7!8m2!3d45.5188!4d12.6483!16s%2Fg%2F11j5k6l7m8"
+      "maps": "https://maps.google.com/?q=Despar+Express+Jesolo"
     },
     {
       "nome": "Eurospar",
@@ -239,7 +240,7 @@
       "distanza": "10 min a piedi",
       "indirizzo": "Via Roma Destra 124, Jesolo",
       "telefono": "+39 0421 350789",
-      "maps": "https://www.google.com/maps/place/Eurospar/@45.5225,12.6405,17z/data=!3m1!4b1!4m6!3m5!1s0x477eb5f6f7a8b9c0:0xd1e2f3a4b5c6d7e8!8m2!3d45.5225!4d12.6405!16s%2Fg%2F11k6l7m8n9"
+      "maps": "https://maps.google.com/?q=Eurospar+Jesolo"
     }
   ],
   "galleria": [
