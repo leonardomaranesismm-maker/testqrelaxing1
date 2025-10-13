@@ -532,79 +532,84 @@
     }
     
     function renderRestaurants(restaurants){
-      const container=document.getElementById('luoghi-wrap');
-      container.innerHTML='';
-      const callText=TRANS[currentLang]?.call||'Chiama';
-      const mapsText=TRANS[currentLang]?.maps||'Maps';
-      restaurants.forEach(r=>{
-        const distMatch=(r.distanza||'').match(/(\d+)/);
-        const distNum=distMatch?distMatch[1]:'999';
-        const desc=r.descrizione&&r.descrizione[currentLang]?r.descrizione[currentLang]:r.descrizione||'';
-        const card=document.createElement('article');
-        card.className='q-card';
-        card.dataset.price=r.prezzo||'';
-        card.dataset.distance=distNum;
-        card.innerHTML=`
-          <div class="q-img"><img src="${r.foto||''}" alt="${r.nome||''}" loading="lazy"></div>
-          <div style="padding:12px">
-            <div class="q-title">${r.nome||''}</div>
-            <div class="q-small">
-              ${r.prezzo?`<span class="q-chip">${r.prezzo}</span>`:''}
-              ${r.distanza?` • ${r.distanza}`:''}
-            </div>
-            <div class="q-small" style="margin-top:6px">${desc}</div>
-            <div class="q-cta" style="margin-top:10px">
-              ${r.telefono?`<a class="q-btn" href="tel:${(r.telefono||'').replace(/\s/g,'')}"><svg class="q-ico q-ico-sm"><use href="#q-phone"/></svg>${callText}</a>`:''}
-              ${r.maps?`<a class="q-btn" href="${r.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>${mapsText}</a>`:''}
-            </div>
-          </div>`;
-        container.appendChild(card);
-      });
-    }function renderActivities(activities){
-      const container=document.getElementById('attivita-wrap');
-      container.innerHTML='';
-      const mapsText=TRANS[currentLang]?.maps||'Maps';
-      activities.forEach(a=>{
-        const desc=a.descrizione&&a.descrizione[currentLang]?a.descrizione[currentLang]:a.descrizione||'';
-        const card=document.createElement('article');
-        card.className='q-card';
-        card.dataset.type=a.tipo||'outdoor';
-        card.innerHTML=`
-          <div class="q-img"><img src="${a.foto||''}" alt="${a.nome||''}" loading="lazy"></div>
-          <div style="padding:12px">
-            <div class="q-title">${a.nome||''}</div>
-            <div class="q-small">${a.distanza||''}</div>
-            <div class="q-small" style="margin-top:6px">${desc}</div>
-            ${a.maps?`<div class="q-cta" style="margin-top:10px"><a class="q-btn" href="${a.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>${mapsText}</a></div>`:''}
-          </div>`;
-        container.appendChild(card);
-      });
-    }
+  const container=document.getElementById('luoghi-wrap');
+  container.innerHTML='';
+  const callText=TRANS[currentLang]?.call||'Chiama';
+  const mapsText=TRANS[currentLang]?.maps||'Maps';
+  restaurants.forEach(r=>{
+    const distanzaText=r.distanza&&r.distanza[currentLang]?r.distanza[currentLang]:r.distanza||'';
+    const distMatch=(distanzaText).match(/(\d+)/);
+    const distNum=distMatch?distMatch[1]:'999';
+    const desc=r.descrizione&&r.descrizione[currentLang]?r.descrizione[currentLang]:r.descrizione||'';
+    const card=document.createElement('article');
+    card.className='q-card';
+    card.dataset.price=r.prezzo||'';
+    card.dataset.distance=distNum;
+    card.innerHTML=`
+      <div class="q-img"><img src="${r.foto||''}" alt="${r.nome||''}" loading="lazy"></div>
+      <div style="padding:12px">
+        <div class="q-title">${r.nome||''}</div>
+        <div class="q-small">
+          ${r.prezzo?`<span class="q-chip">${r.prezzo}</span>`:''}
+          ${distanzaText?` • ${distanzaText}`:''}
+        </div>
+        <div class="q-small" style="margin-top:6px">${desc}</div>
+        <div class="q-cta" style="margin-top:10px">
+          ${r.telefono?`<a class="q-btn" href="tel:${(r.telefono||'').replace(/\s/g,'')}"><svg class="q-ico q-ico-sm"><use href="#q-phone"/></svg>${callText}</a>`:''}
+          ${r.maps?`<a class="q-btn" href="${r.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>${mapsText}</a>`:''}
+        </div>
+      </div>`;
+    container.appendChild(card);
+  });
+}
+    
+  function renderActivities(activities){
+  const container=document.getElementById('attivita-wrap');
+  container.innerHTML='';
+  const mapsText=TRANS[currentLang]?.maps||'Maps';
+  activities.forEach(a=>{
+    const distanzaText=a.distanza&&a.distanza[currentLang]?a.distanza[currentLang]:a.distanza||'';
+    const desc=a.descrizione&&a.descrizione[currentLang]?a.descrizione[currentLang]:a.descrizione||'';
+    const card=document.createElement('article');
+    card.className='q-card';
+    card.dataset.type=a.tipo||'outdoor';
+    card.innerHTML=`
+      <div class="q-img"><img src="${a.foto||''}" alt="${a.nome||''}" loading="lazy"></div>
+      <div style="padding:12px">
+        <div class="q-title">${a.nome||''}</div>
+        <div class="q-small">${distanzaText}</div>
+        <div class="q-small" style="margin-top:6px">${desc}</div>
+        ${a.maps?`<div class="q-cta" style="margin-top:10px"><a class="q-btn" href="${a.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>${mapsText}</a></div>`:''}
+      </div>`;
+    container.appendChild(card);
+  });
+}
     
     function renderServices(services){
-      const container=document.getElementById('services-wrap');
-      container.innerHTML='';
-      const callText=TRANS[currentLang]?.call||'Chiama';
-      const mapsText=TRANS[currentLang]?.maps||'Maps';
-      services.forEach(s=>{
-        const card=document.createElement('article');
-        card.className='q-card';
-        card.dataset.type=s.tipo||'pharmacy';
-        card.innerHTML=`
-          <div style="padding:12px">
-            <div class="q-title">${s.nome||''}</div>
-            <div class="q-small">
-              ${s.tipo==='pharmacy'?'💊':'🛒'} ${s.distanza||''}
-            </div>
-            <div class="q-small" style="margin-top:6px">${s.indirizzo||''}</div>
-            <div class="q-cta" style="margin-top:10px">
-              ${s.telefono?`<a class="q-btn" href="tel:${(s.telefono||'').replace(/\s/g,'')}"><svg class="q-ico q-ico-sm"><use href="#q-phone"/></svg>${callText}</a>`:''}
-              ${s.maps?`<a class="q-btn" href="${s.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>${mapsText}</a>`:''}
-            </div>
-          </div>`;
-        container.appendChild(card);
-      });
-    }
+  const container=document.getElementById('services-wrap');
+  container.innerHTML='';
+  const callText=TRANS[currentLang]?.call||'Chiama';
+  const mapsText=TRANS[currentLang]?.maps||'Maps';
+  services.forEach(s=>{
+    const distanzaText=s.distanza&&s.distanza[currentLang]?s.distanza[currentLang]:s.distanza||'';
+    const card=document.createElement('article');
+    card.className='q-card';
+    card.dataset.type=s.tipo||'pharmacy';
+    card.innerHTML=`
+      <div style="padding:12px">
+        <div class="q-title">${s.nome||''}</div>
+        <div class="q-small">
+          ${s.tipo==='pharmacy'?'💊':'🛒'} ${distanzaText}
+        </div>
+        <div class="q-small" style="margin-top:6px">${s.indirizzo||''}</div>
+        <div class="q-cta" style="margin-top:10px">
+          ${s.telefono?`<a class="q-btn" href="tel:${(s.telefono||'').replace(/\s/g,'')}"><svg class="q-ico q-ico-sm"><use href="#q-phone"/></svg>${callText}</a>`:''}
+          ${s.maps?`<a class="q-btn" href="${s.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>${mapsText}</a>`:''}
+        </div>
+      </div>`;
+    container.appendChild(card);
+  });
+}
     
     function renderGallery(photos){
       const container=document.getElementById('gallery-wrap');
