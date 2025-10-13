@@ -1,16 +1,23 @@
 {
-  "name": "QRelax",
-  "short_name": "QRelax",
-  "description": "Guida digitale appartamento",
-  "start_url": "/",
+  "name": "QRelax - Papaya",
+  "short_name": "Papaya",
+  "start_url": "./index.html?apt=papaya",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#7DD3FC",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "https://via.placeholder.com/192",
+      "src": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=192&h=192&fit=crop",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=512&h=512&fit=crop",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
