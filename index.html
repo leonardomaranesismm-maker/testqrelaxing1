@@ -84,8 +84,7 @@
     .services-content{max-height:0;overflow:hidden;transition:max-height 0.3s ease}
     .services-content.expanded{max-height:2000px}
   </style>
-</head>
-<body>
+</head><body>
 
   <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
     <symbol id="q-house" viewBox="0 0 24 24"><path d="M3 10L12 3l9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10Z" stroke-width="2"/></symbol>
@@ -104,8 +103,8 @@
     <symbol id="q-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="2"/></symbol>
   </svg>
 
-  <div id="loading" class="loading">⏳ Caricamento appartamento...</div>
-  <div id="error" class="error hidden">❌ Errore nel caricamento dei dati. Verifica che il file papaya.json sia presente.</div>
+  <div id="loading" class="loading" data-i18n="loading">⏳ Caricamento appartamento...</div>
+  <div id="error" class="error hidden" data-i18n="error">❌ Errore nel caricamento dei dati. Verifica che il file papaya.json sia presente.</div>
 
   <div id="app" class="hidden">
     <div id="weather-widget" class="weather-widget hidden">
@@ -160,42 +159,42 @@
           <div class="q-row"><svg class="q-ico"><use href="#q-wifi"/></svg><div class="q-title">Wi-Fi</div></div>
           <p class="q-small"><strong>SSID:</strong> <span id="wifi-ssid">—</span></p>
           <p class="q-small"><strong>Password:</strong> <span id="wifi-pass">—</span></p>
-          <a href="#" class="q-btn" id="copyPass">Copia password</a><span class="muted" id="copiedMsg" style="display:none;margin-left:8px">✅</span>
+          <a href="#" class="q-btn" id="copyPass" data-i18n="copy-password">Copia password</a><span class="muted" id="copiedMsg" style="display:none;margin-left:8px">✅</span>
         </div>
 
         <div class="q-card">
-          <div class="q-row"><svg class="q-ico"><use href="#q-calendar"/></svg><div class="q-title">Check-in / Check-out</div></div>
-          <p class="q-small">Check-in: <span id="checkin">—</span> • Check-out: <span id="checkout">—</span></p>
-          <div style="margin-top:10px"><strong>Host:</strong> <span id="host-info">—</span></div>
+          <div class="q-row"><svg class="q-ico"><use href="#q-calendar"/></svg><div class="q-title" data-i18n="checkinout-title">Check-in / Check-out</div></div>
+          <p class="q-small"><span data-i18n="checkin-label">Check-in:</span> <span id="checkin">—</span> • <span data-i18n="checkout-label">Check-out:</span> <span id="checkout">—</span></p>
+          <div style="margin-top:10px"><strong data-i18n="host-label">Host:</strong> <span id="host-info">—</span></div>
           <p class="q-small" id="checkin-note" style="margin-top:6px;font-style:italic"></p>
         </div>
 
         <div class="q-card">
-          <div class="q-row"><svg class="q-ico"><use href="#q-doc"/></svg><div class="q-title">Regole</div></div>
+          <div class="q-row"><svg class="q-ico"><use href="#q-doc"/></svg><div class="q-title" data-i18n="rules-title">Regole</div></div>
           <div class="q-small" id="regole">—</div>
         </div>
 
         <div class="q-card">
-          <div class="q-row"><svg class="q-ico"><use href="#q-plus"/></svg><div class="q-title">Emergenze</div></div>
+          <div class="q-row"><svg class="q-ico"><use href="#q-plus"/></svg><div class="q-title" data-i18n="emergencies-title">Emergenze</div></div>
           <div class="q-small" id="emergenze">—</div>
         </div>
       </section>
 
       <section id="casa" style="margin-top:18px">
-        <div class="q-title">Funzionamento</div>
+        <div class="q-title" data-i18n="how-it-works">Funzionamento</div>
         <div class="q-card" style="margin-top:8px">
           <div id="funzionamento" class="q-small">—</div>
         </div>
       </section>
 
       <section id="mangiare" style="margin-top:18px">
-        <div class="q-title">Dove mangiare</div>
+        <div class="q-title" data-i18n="where-eat">Dove mangiare</div>
         <div class="filter-bar">
-          <button class="filter-btn active" data-filter="all">Tutti</button>
+          <button class="filter-btn active" data-filter="all" data-i18n="filter-all">Tutti</button>
           <button class="filter-btn" data-filter="€">€</button>
           <button class="filter-btn" data-filter="€€">€€</button>
           <button class="filter-btn" data-filter="€€€">€€€</button>
-          <button class="filter-btn" data-filter="vicino">Vicino</button>
+          <button class="filter-btn" data-filter="vicino" data-i18n="filter-nearby">Vicino</button>
         </div>
         <div class="scroll-container">
           <div id="luoghi-wrap" class="scroll-grid"></div>
@@ -204,15 +203,15 @@
 
       <section style="margin-top:18px">
         <button class="services-toggle" id="services-toggle">
-          <span><svg class="q-ico" style="margin-right:8px"><use href="#q-shopping"/></svg>Servizi Essenziali</span>
+          <span><svg class="q-ico" style="margin-right:8px"><use href="#q-shopping"/></svg><span data-i18n="essential-services">Servizi Essenziali</span></span>
           <svg class="q-ico"><use href="#q-chevron-down"/></svg>
         </button>
         <div class="services-content" id="services-content">
           <div style="margin-top:14px">
             <div class="filter-bar">
-              <button class="filter-btn active" data-filter-services="all">Tutti</button>
-              <button class="filter-btn" data-filter-services="pharmacy">💊 Farmacie</button>
-              <button class="filter-btn" data-filter-services="supermarket">🛒 Supermercati</button>
+              <button class="filter-btn active" data-filter-services="all" data-i18n="filter-all">Tutti</button>
+              <button class="filter-btn" data-filter-services="pharmacy"><span data-i18n="pharmacy">💊 Farmacie</span></button>
+              <button class="filter-btn" data-filter-services="supermarket"><span data-i18n="supermarket">🛒 Supermercati</span></button>
             </div>
             <div class="scroll-container">
               <div id="services-wrap" class="scroll-grid"></div>
@@ -222,9 +221,9 @@
       </section>
 
       <section id="attivita" style="margin-top:18px">
-        <div class="q-title">Attività</div>
+        <div class="q-title" data-i18n="activities">Attività</div>
         <div class="filter-bar">
-          <button class="filter-btn active" data-filter-activity="all">Tutti</button>
+          <button class="filter-btn active" data-filter-activity="all" data-i18n="filter-all">Tutti</button>
           <button class="filter-btn" data-filter-activity="outdoor">Outdoor</button>
           <button class="filter-btn" data-filter-activity="indoor">Indoor</button>
         </div>
@@ -234,13 +233,13 @@
       </section>
 
       <section id="galleria" style="margin-top:18px">
-        <div class="q-title">Galleria</div>
+        <div class="q-title" data-i18n="gallery">Galleria</div>
         <div id="gallery-wrap" class="q-grid cols-2" style="margin-top:10px"></div>
       </section>
 
       <section id="mappa" style="margin-top:18px">
         <div class="q-card">
-          <div class="q-title">Mappa</div>
+          <div class="q-title" data-i18n="map">Mappa</div>
           <div class="map-wrapper">
             <iframe id="mappa-iframe" src="" width="100%" height="350" allowfullscreen="" loading="lazy"></iframe>
           </div>
@@ -249,7 +248,7 @@
 
       <section id="contatti" style="margin-top:18px">
         <div class="q-card">
-          <div class="q-title">Contatti</div>
+          <div class="q-title" data-i18n="contacts">Contatti</div>
           <div class="q-small" id="contact-block">—</div>
         </div>
       </section>
@@ -266,16 +265,16 @@
             <text x="0" y="45" font-family="Inter,sans-serif" font-weight="700" font-size="48" fill="url(#logoGrad)">QRelax</text>
           </svg>
         </div>
-        <p class="footer-text">Grazie per aver scelto la nostra guida digitale</p>
-        <p class="footer-powered">Gentilmente powered by QRelax</p>
+        <p class="footer-text" data-i18n="footer-thanks">Grazie per aver scelto la nostra guida digitale</p>
+        <p class="footer-powered" data-i18n="footer-powered">Gentilmente powered by QRelax</p>
       </div>
     </div>
 
     <nav class="q-bottom">
-      <a href="#home"><svg><use href="#q-house"/></svg><span>Home</span></a>
-      <a href="#mangiare"><svg><use href="#q-restaurant"/></svg><span>Mangiare</span></a>
-      <a href="#attivita"><svg><use href="#q-activity"/></svg><span>Attività</span></a>
-      <a href="#contatti"><svg><use href="#q-map"/></svg><span>Contatti</span></a>
+      <a href="#home"><svg><use href="#q-house"/></svg><span data-i18n="nav-home">Home</span></a>
+      <a href="#mangiare"><svg><use href="#q-restaurant"/></svg><span data-i18n="nav-eat">Mangiare</span></a>
+      <a href="#attivita"><svg><use href="#q-activity"/></svg><span data-i18n="nav-activities">Attività</span></a>
+      <a href="#contatti"><svg><use href="#q-map"/></svg><span data-i18n="nav-contacts">Contatti</span></a>
     </nav>
   </div>
 
@@ -283,18 +282,118 @@
     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <path fill="white" d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-.646-7.07-1.87l-.507-.292-5.247 1.408 1.417-5.267-.321-.525c-1.321-2.165-2.005-4.652-2.005-7.188 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62-6.11 13.62-13.62 13.62zM21.305 18.421c-.327-.163-1.933-.956-2.233-1.066s-.518-.163-.736.163c-.218.327-.845 1.066-1.036 1.284s-.382.245-.709.082c-.327-.163-1.381-.509-2.632-1.626-.973-.868-1.629-1.939-1.82-2.267s-.02-.504.143-.667c.147-.146.327-.382.491-.573s.218-.327.327-.545c.109-.218.055-.409-.027-.573s-.736-1.775-1.01-2.43c-.267-.638-.538-.552-.736-.562-.191-.01-.409-.012-.627-.012s-.573.082-.873.409c-.3.327-1.145 1.12-1.145 2.731s1.172 3.167 1.336 3.385c.163.218 2.312 3.527 5.602 4.945.782.337 1.393.539 1.869.689.787.25 1.503.215 2.069.13.631-.094 1.933-.791 2.207-1.555s.273-1.42.191-1.555c-.082-.135-.3-.218-.627-.382z"/>
     </svg>
-  </a>
-  
-  <script>
+  </a><script>
   (function(){
     'use strict';
     
     let currentLang='it',apartmentData=null;
     
     const TRANS={
-      it:{house:'La casa','house-desc':'TV, clima',eat:'Mangiare','eat-desc':'Ristoranti',activities:'Attività','activities-desc':'Svago'},
-      en:{house:'The house','house-desc':'TV, AC',eat:'Dining','eat-desc':'Restaurants',activities:'Activities','activities-desc':'Fun'},
-      de:{house:'Das Haus','house-desc':'TV, Klima',eat:'Essen','eat-desc':'Restaurants',activities:'Aktivitäten','activities-desc':'Spaß'}
+      it:{
+        house:'La casa',
+        'house-desc':'TV, clima',
+        eat:'Mangiare',
+        'eat-desc':'Ristoranti',
+        activities:'Attività',
+        'activities-desc':'Svago',
+        'copy-password':'Copia password',
+        'checkinout-title':'Check-in / Check-out',
+        'checkin-label':'Check-in:',
+        'checkout-label':'Check-out:',
+        'host-label':'Host:',
+        'rules-title':'Regole',
+        'emergencies-title':'Emergenze',
+        'how-it-works':'Funzionamento',
+        'where-eat':'Dove mangiare',
+        'filter-all':'Tutti',
+        'filter-nearby':'Vicino',
+        'essential-services':'Servizi Essenziali',
+        'pharmacy':'💊 Farmacie',
+        'supermarket':'🛒 Supermercati',
+        'gallery':'Galleria',
+        'map':'Mappa',
+        'contacts':'Contatti',
+        'nav-home':'Home',
+        'nav-eat':'Mangiare',
+        'nav-activities':'Attività',
+        'nav-contacts':'Contatti',
+        'footer-thanks':'Grazie per aver scelto la nostra guida digitale',
+        'footer-powered':'Gentilmente powered by QRelax',
+        'loading':'⏳ Caricamento appartamento...',
+        'error':'❌ Errore nel caricamento dei dati. Verifica che il file papaya.json sia presente.',
+        'call':'Chiama',
+        'maps':'Maps'
+      },
+      en:{
+        house:'The house',
+        'house-desc':'TV, AC',
+        eat:'Dining',
+        'eat-desc':'Restaurants',
+        activities:'Activities',
+        'activities-desc':'Fun',
+        'copy-password':'Copy password',
+        'checkinout-title':'Check-in / Check-out',
+        'checkin-label':'Check-in:',
+        'checkout-label':'Check-out:',
+        'host-label':'Host:',
+        'rules-title':'Rules',
+        'emergencies-title':'Emergencies',
+        'how-it-works':'How it works',
+        'where-eat':'Where to eat',
+        'filter-all':'All',
+        'filter-nearby':'Nearby',
+        'essential-services':'Essential Services',
+        'pharmacy':'💊 Pharmacies',
+        'supermarket':'🛒 Supermarkets',
+        'gallery':'Gallery',
+        'map':'Map',
+        'contacts':'Contacts',
+        'nav-home':'Home',
+        'nav-eat':'Dining',
+        'nav-activities':'Activities',
+        'nav-contacts':'Contacts',
+        'footer-thanks':'Thank you for choosing our digital guide',
+        'footer-powered':'Kindly powered by QRelax',
+        'loading':'⏳ Loading apartment...',
+        'error':'❌ Error loading data. Please verify that the papaya.json file is present.',
+        'call':'Call',
+        'maps':'Maps'
+      },
+      de:{
+        house:'Das Haus',
+        'house-desc':'TV, Klima',
+        eat:'Essen',
+        'eat-desc':'Restaurants',
+        activities:'Aktivitäten',
+        'activities-desc':'Spaß',
+        'copy-password':'Passwort kopieren',
+        'checkinout-title':'Check-in / Check-out',
+        'checkin-label':'Check-in:',
+        'checkout-label':'Check-out:',
+        'host-label':'Gastgeber:',
+        'rules-title':'Regeln',
+        'emergencies-title':'Notfälle',
+        'how-it-works':'Bedienung',
+        'where-eat':'Wo essen',
+        'filter-all':'Alle',
+        'filter-nearby':'In der Nähe',
+        'essential-services':'Wichtige Dienste',
+        'pharmacy':'💊 Apotheken',
+        'supermarket':'🛒 Supermärkte',
+        'gallery':'Galerie',
+        'map':'Karte',
+        'contacts':'Kontakte',
+        'nav-home':'Home',
+        'nav-eat':'Essen',
+        'nav-activities':'Aktivitäten',
+        'nav-contacts':'Kontakte',
+        'footer-thanks':'Vielen Dank, dass Sie unseren digitalen Reiseführer gewählt haben',
+        'footer-powered':'Freundlicherweise unterstützt von QRelax',
+        'loading':'⏳ Wohnung wird geladen...',
+        'error':'❌ Fehler beim Laden der Daten. Bitte überprüfen Sie, ob die Datei papaya.json vorhanden ist.',
+        'call':'Anrufen',
+        'maps':'Karte'
+      }
     };
     
     function initTheme(){
@@ -420,7 +519,8 @@
       document.getElementById('funzionamento').innerHTML=funzionamentoContent;
       
       const contactBlock=document.getElementById('contact-block');
-      contactBlock.innerHTML=hostInfo.innerHTML+(data.indirizzo?`<p style="margin-top:16px"><strong>Indirizzo:</strong><br>${data.indirizzo}</p>`:'');
+      const addressLabel=TRANS[currentLang]&&TRANS[currentLang]['address']?TRANS[currentLang]['address']:'Indirizzo:';
+      contactBlock.innerHTML=hostInfo.innerHTML+(data.indirizzo?`<p style="margin-top:16px"><strong>${addressLabel}</strong><br>${data.indirizzo}</p>`:'');
       
       if(data.mappa_embed)document.getElementById('mappa-iframe').src=data.mappa_embed;
       if(data.lat&&data.lon)loadWeather(data.lat,data.lon,data.nome);
@@ -434,6 +534,8 @@
     function renderRestaurants(restaurants){
       const container=document.getElementById('luoghi-wrap');
       container.innerHTML='';
+      const callText=TRANS[currentLang]?.call||'Chiama';
+      const mapsText=TRANS[currentLang]?.maps||'Maps';
       restaurants.forEach(r=>{
         const distMatch=(r.distanza||'').match(/(\d+)/);
         const distNum=distMatch?distMatch[1]:'999';
@@ -452,17 +554,16 @@
             </div>
             <div class="q-small" style="margin-top:6px">${desc}</div>
             <div class="q-cta" style="margin-top:10px">
-              ${r.telefono?`<a class="q-btn" href="tel:${(r.telefono||'').replace(/\s/g,'')}"><svg class="q-ico q-ico-sm"><use href="#q-phone"/></svg>Chiama</a>`:''}
-              ${r.maps?`<a class="q-btn" href="${r.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>Maps</a>`:''}
+              ${r.telefono?`<a class="q-btn" href="tel:${(r.telefono||'').replace(/\s/g,'')}"><svg class="q-ico q-ico-sm"><use href="#q-phone"/></svg>${callText}</a>`:''}
+              ${r.maps?`<a class="q-btn" href="${r.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>${mapsText}</a>`:''}
             </div>
           </div>`;
         container.appendChild(card);
       });
-    }
-    
-    function renderActivities(activities){
+    }function renderActivities(activities){
       const container=document.getElementById('attivita-wrap');
       container.innerHTML='';
+      const mapsText=TRANS[currentLang]?.maps||'Maps';
       activities.forEach(a=>{
         const desc=a.descrizione&&a.descrizione[currentLang]?a.descrizione[currentLang]:a.descrizione||'';
         const card=document.createElement('article');
@@ -474,7 +575,7 @@
             <div class="q-title">${a.nome||''}</div>
             <div class="q-small">${a.distanza||''}</div>
             <div class="q-small" style="margin-top:6px">${desc}</div>
-            ${a.maps?`<div class="q-cta" style="margin-top:10px"><a class="q-btn" href="${a.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>Maps</a></div>`:''}
+            ${a.maps?`<div class="q-cta" style="margin-top:10px"><a class="q-btn" href="${a.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>${mapsText}</a></div>`:''}
           </div>`;
         container.appendChild(card);
       });
@@ -483,6 +584,8 @@
     function renderServices(services){
       const container=document.getElementById('services-wrap');
       container.innerHTML='';
+      const callText=TRANS[currentLang]?.call||'Chiama';
+      const mapsText=TRANS[currentLang]?.maps||'Maps';
       services.forEach(s=>{
         const card=document.createElement('article');
         card.className='q-card';
@@ -495,8 +598,8 @@
             </div>
             <div class="q-small" style="margin-top:6px">${s.indirizzo||''}</div>
             <div class="q-cta" style="margin-top:10px">
-              ${s.telefono?`<a class="q-btn" href="tel:${(s.telefono||'').replace(/\s/g,'')}"><svg class="q-ico q-ico-sm"><use href="#q-phone"/></svg>Chiama</a>`:''}
-              ${s.maps?`<a class="q-btn" href="${s.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>Maps</a>`:''}
+              ${s.telefono?`<a class="q-btn" href="tel:${(s.telefono||'').replace(/\s/g,'')}"><svg class="q-ico q-ico-sm"><use href="#q-phone"/></svg>${callText}</a>`:''}
+              ${s.maps?`<a class="q-btn" href="${s.maps}" target="_blank" rel="noopener"><svg class="q-ico q-ico-sm"><use href="#q-pin"/></svg>${mapsText}</a>`:''}
             </div>
           </div>`;
         container.appendChild(card);
