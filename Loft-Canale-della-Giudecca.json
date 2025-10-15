@@ -1,7 +1,7 @@
 {
   "nome": "Luxury Penthouse - Loft in Venice",
   "indirizzo": "Fondamenta San Biagio 800Q, Isola della Giudecca, Venezia (VE)",
-  "foto_copertina": "",
+  "foto_copertina": "https://drive.google.com/uc?export=view&id=1IINm3DXlWTOFyCdPxMtyzN8ZVomDJbbR",
   "lat": 45.4268,
   "lon": 12.3256,
   "wifi_ssid": "Fastweb-5ch99x",
@@ -17,38 +17,241 @@
     "de": "bis 10:00 Uhr"
   },
   "checkin_note": {
-    "it": "Troverai la cassaforte per le chiavi accanto alla porta dell’ascensore. Inserisci il codice 3097 per aprirla.",
-    "en": "You’ll find the key safe next to the lift door. Enter code 3097 to open it.",
+    "it": "Troverai la cassaforte per le chiavi accanto alla porta dell'ascensore. Inserisci il codice 3097 per aprirla.",
+    "en": "You'll find the key safe next to the lift door. Enter code 3097 to open it.",
     "de": "Der Schlüsselkasten befindet sich neben der Aufzugstür. Gib den Code 3097 ein, um ihn zu öffnen."
   },
   "host_telefono": "+39 3481062120",
   "host_email": "brugneracqusizioni@gmail.com",
   "regole": {
-    "it": "<ul style='margin:0;padding-left:20px'><li><strong>Check-in:</strong> dalle 15:00 alle 00:00 (self check-in)</li><li><strong>Check-out:</strong> entro le 10:00</li><li><strong>Vietato:</strong> fumare all’interno (€150), organizzare feste (€200)</li><li><strong>Silenzio:</strong> 23:00–07:00</li><li><strong>Ospiti:</strong> non è possibile ospitare più persone di quelle dichiarate</li><li><strong>Altro:</strong> lasciare l’appartamento come trovato, segnalare eventuali danni, non lasciare cibo nel frigo o negli armadi, accumulare la spazzatura all’ingresso.</li></ul>",
+    "it": "<ul style='margin:0;padding-left:20px'><li><strong>Check-in:</strong> dalle 15:00 alle 00:00 (self check-in)</li><li><strong>Check-out:</strong> entro le 10:00</li><li><strong>Vietato:</strong> fumare all'interno (€150), organizzare feste (€200)</li><li><strong>Silenzio:</strong> 23:00–07:00</li><li><strong>Ospiti:</strong> non è possibile ospitare più persone di quelle dichiarate</li><li><strong>Altro:</strong> lasciare l'appartamento come trovato, segnalare eventuali danni, non lasciare cibo nel frigo o negli armadi, accumulare la spazzatura all'ingresso.</li></ul>",
     "en": "<ul style='margin:0;padding-left:20px'><li><strong>Check-in:</strong> from 3:00 PM to 12:00 AM (self check-in)</li><li><strong>Check-out:</strong> by 10:00 AM</li><li><strong>Forbidden:</strong> smoking indoors (€150), parties (€200)</li><li><strong>Quiet hours:</strong> 11:00 PM–7:00 AM</li><li><strong>Guests:</strong> no extra guests beyond the reservation</li><li><strong>Other:</strong> leave the apartment tidy, report damages, do not leave food, leave garbage at the entrance.</li></ul>",
     "de": "<ul style='margin:0;padding-left:20px'><li><strong>Check-in:</strong> von 15:00 bis 00:00 (Selbst-Check-in)</li><li><strong>Check-out:</strong> bis 10:00 Uhr</li><li><strong>Verboten:</strong> Rauchen im Haus (€150), Partys (€200)</li><li><strong>Ruhezeiten:</strong> 23:00–07:00</li><li><strong>Gäste:</strong> keine zusätzlichen Personen</li><li><strong>Sonstiges:</strong> Wohnung sauber hinterlassen, Schäden melden, keine Lebensmittel im Kühlschrank lassen, Müll am Eingang deponieren.</li></ul>"
   },
   "emergenze": {
-    "it": "<p><strong>📞 Emergenze:</strong> 112 (polizia, carabinieri, ambulanza, vigili del fuoco)<br><strong>🚑 Ambulanza:</strong> 118<br><strong>💊 Farmacia più vicina:</strong> Farmacia Alla Fede (400 m)</p>",
-    "en": "<p><strong>📞 Emergencies:</strong> 112 (police, ambulance, fire)<br><strong>🚑 Ambulance:</strong> 118<br><strong>💊 Nearest pharmacy:</strong> Farmacia Alla Fede (400 m)</p>",
-    "de": "<p><strong>📞 Notfälle:</strong> 112 (Polizei, Krankenwagen, Feuerwehr)<br><strong>🚑 Krankenwagen:</strong> 118<br><strong>💊 Nächste Apotheke:</strong> Farmacia Alla Fede (400 m)</p>"
+    "it": "<p><strong>📞 Emergenze:</strong> <a href='tel:112'>112</a> (polizia, carabinieri, ambulanza, vigili del fuoco)<br><strong>🚑 Ambulanza:</strong> <a href='tel:118'>118</a><br><strong>💊 Farmacia più vicina:</strong> Farmacia Alla Fede (400 m)</p>",
+    "en": "<p><strong>📞 Emergencies:</strong> <a href='tel:112'>112</a> (police, ambulance, fire)<br><strong>🚑 Ambulance:</strong> <a href='tel:118'>118</a><br><strong>💊 Nearest pharmacy:</strong> Farmacia Alla Fede (400 m)</p>",
+    "de": "<p><strong>📞 Notfälle:</strong> <a href='tel:112'>112</a> (Polizei, Krankenwagen, Feuerwehr)<br><strong>🚑 Krankenwagen:</strong> <a href='tel:118'>118</a><br><strong>💊 Nächste Apotheke:</strong> Farmacia Alla Fede (400 m)</p>"
   },
   "funzionamento": {
-    "it": "<h4>📶 Wi-Fi</h4><p>Nome rete: <strong>Fastweb-5ch99x</strong><br>Password: <strong>SPYXKL36CD</strong></p><h4>🗝️ Accesso</h4><p>Prendere le chiavi dalla security lock accanto all’ascensore (codice 3097), usare la chiave sottile per aprire la porta dell’ascensore e poi premere il 2° piano. L’appartamento è il B1 sulla sinistra.</p>",
-    "en": "<h4>📶 Wi-Fi</h4><p>Network name: <strong>Fastweb-5ch99x</strong><br>Password: <strong>SPYXKL36CD</strong></p><h4>🗝️ Access</h4><p>Take the keys from the security lock next to the lift (code 3097), use the thin key to open the lift door, go to floor 2. The apartment is B1 on the left.</p>",
-    "de": "<h4>📶 WLAN</h4><p>Netzwerkname: <strong>Fastweb-5ch99x</strong><br>Passwort: <strong>SPYXKL36CD</strong></p><h4>🗝️ Zugang</h4><p>Schlüssel aus dem Schlüsselkasten neben der Aufzugstür nehmen (Code 3097), dünnen Schlüssel benutzen, um die Tür zu öffnen, 2. Stock, Wohnung B1 links.</p>"
+    "it": "<h4 style='margin:0 0 8px;color:#2D3748'>📶 Wi-Fi</h4><p>Nome rete: <strong>Fastweb-5ch99x</strong><br>Password: <strong>SPYXKL36CD</strong></p><h4 style='margin:16px 0 8px;color:#2D3748'>🗝️ Accesso</h4><p>Prendere le chiavi dalla security lock accanto all'ascensore (codice <strong>3097</strong>), usare la chiave sottile per aprire la porta dell'ascensore e poi premere il 2° piano. L'appartamento è il <strong>B1</strong> sulla sinistra.</p>",
+    "en": "<h4 style='margin:0 0 8px;color:#2D3748'>📶 Wi-Fi</h4><p>Network name: <strong>Fastweb-5ch99x</strong><br>Password: <strong>SPYXKL36CD</strong></p><h4 style='margin:16px 0 8px;color:#2D3748'>🗝️ Access</h4><p>Take the keys from the security lock next to the lift (code <strong>3097</strong>), use the thin key to open the lift door, go to floor 2. The apartment is <strong>B1</strong> on the left.</p>",
+    "de": "<h4 style='margin:0 0 8px;color:#2D3748'>📶 WLAN</h4><p>Netzwerkname: <strong>Fastweb-5ch99x</strong><br>Passwort: <strong>SPYXKL36CD</strong></p><h4 style='margin:16px 0 8px;color:#2D3748'>🗝️ Zugang</h4><p>Schlüssel aus dem Schlüsselkasten neben der Aufzugstür nehmen (Code <strong>3097</strong>), dünnen Schlüssel benutzen, um die Tür zu öffnen, 2. Stock, Wohnung <strong>B1</strong> links.</p>"
   },
   "mappa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2771.9!2d12.3256!3d45.4268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb17bb4be7a91%3A0x8fb6b49cf726b45!2sFondamenta%20San%20Biagio%20800Q%2C%2030133%20Venezia%20VE!5e0!3m2!1sit!2sit!4v1728912345",
   "ristoranti": [
-    { "nome": "Trattoria da Jonny", "distanza": "Consigliato dall’host", "descrizione": { "it": "Pesce fresco, cucina veneziana autentica." } },
-    { "nome": "Antiche Carampane", "descrizione": { "it": "Cucina veneziana d’autore, rinomata per il pesce." } },
-    { "nome": "Al Timon", "descrizione": { "it": "Bacaro con cucina tipica e barca panoramica sul canale." } },
-    { "nome": "Osteria al Ponte dei Greci", "descrizione": { "it": "Atmosfera tradizionale e ottimi cicchetti veneziani." } }
+    {
+      "nome": "Trattoria da Jonny",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKHCYGmnKQL4Nn4DfKv-yrgm3iqSzcHq-juw&s",
+      "prezzo": "€€",
+      "distanza": {
+        "it": "Giudecca, consigliato dall'host",
+        "en": "Giudecca, recommended by host",
+        "de": "Giudecca, vom Gastgeber empfohlen"
+      },
+      "descrizione": {
+        "it": "Pesce fresco e cucina veneziana autentica in un ambiente familiare.",
+        "en": "Fresh fish and authentic Venetian cuisine in a family atmosphere.",
+        "de": "Frischer Fisch und authentische venezianische Küche in familiärer Atmosphäre."
+      },
+      "telefono": "+39 041 5224119",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Trattoria+da+Jonny+Giudecca+Venezia"
+    },
+    {
+      "nome": "Antiche Carampane",
+      "foto": "https://venetosecrets.com/wp-content/uploads/2025/04/Antiche-Carampane-Veneto-Secrets430.jpg",
+      "prezzo": "€€€",
+      "distanza": {
+        "it": "San Polo, 15 min in vaporetto",
+        "en": "San Polo, 15 min by vaporetto",
+        "de": "San Polo, 15 Min mit Vaporetto"
+      },
+      "descrizione": {
+        "it": "Cucina veneziana d'autore, rinomata per i piatti di pesce freschi e creativi.",
+        "en": "Creative Venetian cuisine, renowned for fresh and innovative seafood dishes.",
+        "de": "Kreative venezianische Küche, bekannt für frische und innovative Fischgerichte."
+      },
+      "telefono": "+39 041 5240165",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Antiche+Carampane+Venezia"
+    },
+    {
+      "nome": "Al Timon",
+      "foto": "https://viaggiaredegustando.it/wp-content/uploads/2021/03/Barcone-nel-canale.jpg",
+      "prezzo": "€€",
+      "distanza": {
+        "it": "Cannaregio, 20 min in vaporetto",
+        "en": "Cannaregio, 20 min by vaporetto",
+        "de": "Cannaregio, 20 Min mit Vaporetto"
+      },
+      "descrizione": {
+        "it": "Bacaro con cucina tipica veneziana e barca panoramica sul canale. Cicchetti eccellenti.",
+        "en": "Bacaro with typical Venetian cuisine and canal-side boat seating. Excellent cicchetti.",
+        "de": "Bacaro mit typisch venezianischer Küche und Kanalblick. Hervorragende Cicchetti."
+      },
+      "telefono": "+39 041 5246066",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Al+Timon+Venezia"
+    },
+    {
+      "nome": "Osteria al Ponte dei Greci",
+      "foto": "https://www.raccontaviaggi.it/wp-content/uploads/2023/09/ponte_dei_greci_fondamenta_s_lorenzo-1.jpeg",
+      "prezzo": "€€",
+      "distanza": {
+        "it": "Castello, 25 min in vaporetto",
+        "en": "Castello, 25 min by vaporetto",
+        "de": "Castello, 25 Min mit Vaporetto"
+      },
+      "descrizione": {
+        "it": "Atmosfera tradizionale veneziana con ottimi cicchetti e piatti di pesce.",
+        "en": "Traditional Venetian atmosphere with excellent cicchetti and seafood dishes.",
+        "de": "Traditionelle venezianische Atmosphäre mit ausgezeichneten Cicchetti und Fischgerichten."
+      },
+      "telefono": "+39 041 5229824",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Osteria+al+Ponte+dei+Greci+Venezia"
+    },
+    {
+      "nome": "Harry's Bar",
+      "foto": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800",
+      "prezzo": "€€€€",
+      "distanza": {
+        "it": "San Marco, 10 min in vaporetto",
+        "en": "San Marco, 10 min by vaporetto",
+        "de": "San Marco, 10 Min mit Vaporetto"
+      },
+      "descrizione": {
+        "it": "Storico locale veneziano, inventore del Bellini e del Carpaccio. Elegante e raffinato.",
+        "en": "Historic Venetian bar, inventor of the Bellini and Carpaccio. Elegant and refined.",
+        "de": "Historische venezianische Bar, Erfinder des Bellini und Carpaccio. Elegant und raffiniert."
+      },
+      "telefono": "+39 041 5285777",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Harry's+Bar+Venezia"
+    }
   ],
-  "attivita": [],
+  "attivita": [
+    {
+      "nome": "Piazza San Marco",
+      "foto": "https://www.visit-venice-italy.com/fotos-venecia/piazza-san-marco/piazza-san-marco-690.jpg",
+      "distanza": {
+        "it": "10 min in vaporetto",
+        "en": "10 min by vaporetto",
+        "de": "10 Min mit Vaporetto"
+      },
+      "descrizione": {
+        "it": "Il cuore di Venezia. Basilica di San Marco, Palazzo Ducale, Campanile con vista mozzafiato.",
+        "en": "The heart of Venice. St. Mark's Basilica, Doge's Palace, Bell Tower with breathtaking views.",
+        "de": "Das Herz Venedigs. Markusdom, Dogenpalast, Glockenturm mit atemberaubender Aussicht."
+      },
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco+Venezia"
+    },
+    {
+      "nome": "Canal Grande",
+      "foto": "https://www.italia.it/content/dam/tdh/en/interests/veneto/venezia/venezia-canal-grande/media/20210401173238-canale-grande-venezia-gettyimages-1081104312.jpg",
+      "distanza": {
+        "it": "Attraversa tutta Venezia",
+        "en": "Runs through all of Venice",
+        "de": "Durchquert ganz Venedig"
+      },
+      "descrizione": {
+        "it": "Il canale principale di Venezia. Giro in vaporetto da Piazzale Roma a San Marco, 45 minuti di meraviglia.",
+        "en": "Venice's main canal. Vaporetto ride from Piazzale Roma to San Marco, 45 minutes of wonder.",
+        "de": "Venedigs Hauptkanal. Vaporetto-Fahrt von Piazzale Roma nach San Marco, 45 Minuten voller Wunder."
+      },
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Canal+Grande+Venezia"
+    },
+    {
+      "nome": "Isola di Burano",
+      "foto": "https://www.planetware.com/wpimages/2020/02/italy-venice-side-trips-burano.jpg",
+      "distanza": {
+        "it": "40 min in vaporetto",
+        "en": "40 min by vaporetto",
+        "de": "40 Min mit Vaporetto"
+      },
+      "descrizione": {
+        "it": "Isola coloratissima famosa per i merletti. Case dipinte in colori vivaci, atmosfera magica e fotogenica.",
+        "en": "Colorful island famous for lace-making. Houses painted in vibrant colors, magical photogenic atmosphere.",
+        "de": "Farbenfrohe Insel, berühmt für Spitzenklöppelei. Bunt bemalte Häuser, magische fotogene Atmosphäre."
+      },
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Burano+Venice"
+    },
+    {
+      "nome": "Ponte di Rialto",
+      "foto": "https://www.visit-venice-italy.com/fotos-venecia/ponte-di-rialto/ponte-di-rialto-690.jpg",
+      "distanza": {
+        "it": "15 min in vaporetto",
+        "en": "15 min by vaporetto",
+        "de": "15 Min mit Vaporetto"
+      },
+      "descrizione": {
+        "it": "Il ponte più famoso e fotografato di Venezia sul Canal Grande. Mercato di Rialto nelle vicinanze.",
+        "en": "Venice's most famous and photographed bridge over the Grand Canal. Rialto Market nearby.",
+        "de": "Venedigs berühmteste und meistfotografierte Brücke über den Canal Grande. Rialto-Markt in der Nähe."
+      },
+      "tipo": "outdoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Ponte+di+Rialto+Venezia"
+    },
+    {
+      "nome": "Palazzo Ducale",
+      "foto": "https://ticketsvenice.it/wp-content/uploads/2023/07/palazzo-ducale-venice-tickets.jpg",
+      "distanza": {
+        "it": "10 min in vaporetto",
+        "en": "10 min by vaporetto",
+        "de": "10 Min mit Vaporetto"
+      },
+      "descrizione": {
+        "it": "Capolavoro gotico veneziano con il famoso Ponte dei Sospiri. Imperdibile tour degli interni storici.",
+        "en": "Venetian Gothic masterpiece with the famous Bridge of Sighs. Must-see tour of historic interiors.",
+        "de": "Venezianisches gotisches Meisterwerk mit der berühmten Seufzerbrücke. Besichtigung der historischen Innenräume."
+      },
+      "tipo": "indoor",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Palazzo+Ducale+Venezia"
+    }
+  ],
   "servizi": [
-    { "nome": "Farmacia Alla Fede", "tipo": "pharmacy", "distanza": "400 m" },
-    { "nome": "Supermercato Prix", "tipo": "supermarket", "distanza": "300 m" }
+    {
+      "nome": "Farmacia Alla Fede",
+      "tipo": "pharmacy",
+      "distanza": {
+        "it": "400 m",
+        "en": "400 m",
+        "de": "400 m"
+      },
+      "indirizzo": "Giudecca 800",
+      "telefono": "+39 041 5224338",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Farmacia+Alla+Fede+Giudecca+Venezia"
+    },
+    {
+      "nome": "Supermercato Prix",
+      "tipo": "supermarket",
+      "distanza": {
+        "it": "300 m",
+        "en": "300 m",
+        "de": "300 m"
+      },
+      "indirizzo": "Giudecca",
+      "orari": "8:00-20:00",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Supermercato+Prix+Giudecca+Venezia"
+    },
+    {
+      "nome": "Conad City",
+      "tipo": "supermarket",
+      "distanza": {
+        "it": "5 min in vaporetto",
+        "en": "5 min by vaporetto",
+        "de": "5 Min mit Vaporetto"
+      },
+      "indirizzo": "Dorsoduro",
+      "orari": "7:30-21:00",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Conad+City+Dorsoduro+Venezia"
+    }
   ],
-  "galleria": []
+  "galleria": [
+    "https://drive.google.com/uc?export=view&id=1MuR3T8iyQYM_NmOVgVZ-f9yTUmf2Cdr6",
+    "https://drive.google.com/uc?export=view&id=1JzhAeCQj0H4TV6tpc6crYSqUdklUX1J_",
+    "https://drive.google.com/uc?export=view&id=1RZMcPFWkVrl-Hx-Y6RNnu5fY0S8hbc-h",
+    "https://drive.google.com/uc?export=view&id=18gRLmtodoTwX5S5SLuMYZ5qhtg8LtSBu",
+    "https://drive.google.com/uc?export=view&id=1GJ9WpKNEfRpBr92SF3hBrFaz0kIGdYyt",
+    "https://drive.google.com/uc?export=view&id=1GlzNTN5M-qHDrUH08XteXwZFO3GkYcZf"
+  ]
 }
