@@ -1,7 +1,7 @@
 {
   "nome": "Luxury Penthouse - Loft in Venice",
   "indirizzo": "Fondamenta San Biagio 800Q, Isola della Giudecca, Venezia (VE)",
-  "foto_copertina": "https://drive.google.com/uc?export=view&id=1IINm3DXlWTOFyCdPxMtyzN8ZVomDJbbR",
+  "foto_copertina": "https://drive.google.com/thumbnail?id=1IINm3DXlWTOFyCdPxMtyzN8ZVomDJbbR&sz=w1400",
   "lat": 45.4268,
   "lon": 12.3256,
   "wifi_ssid": "Fastweb-5ch99x",
@@ -35,9 +35,9 @@
     "de": "<p><strong>📞 Notfälle:</strong> <a href='tel:112'>112</a> (Polizei, Krankenwagen, Feuerwehr)<br><strong>🚑 Krankenwagen:</strong> <a href='tel:118'>118</a><br><strong>💊 Nächste Apotheke:</strong> Farmacia al Redentore (200 m)</p>"
   },
   "funzionamento": {
-    "it": "<h4 style='margin:0 0 8px;color:#2D3748'>📶 Wi-Fi</h4><p>Nome rete: <strong>Fastweb-5ch99x</strong><br>Password: <strong>SPYXKL36CD</strong></p><h4 style='margin:16px 0 8px;color:#2D3748'>🗝️ Accesso</h4><p>Prendere le chiavi dalla security lock accanto all'ascensore (codice <strong>3097</strong>), usare la chiave sottile per aprire la porta dell'ascensore e poi premere il 2° piano. L'appartamento è il <strong>B1</strong> sulla sinistra.</p>",
-    "en": "<h4 style='margin:0 0 8px;color:#2D3748'>📶 Wi-Fi</h4><p>Network name: <strong>Fastweb-5ch99x</strong><br>Password: <strong>SPYXKL36CD</strong></p><h4 style='margin:16px 0 8px;color:#2D3748'>🗝️ Access</h4><p>Take the keys from the security lock next to the lift (code <strong>3097</strong>), use the thin key to open the lift door, go to floor 2. The apartment is <strong>B1</strong> on the left.</p>",
-    "de": "<h4 style='margin:0 0 8px;color:#2D3748'>📶 WLAN</h4><p>Netzwerkname: <strong>Fastweb-5ch99x</strong><br>Passwort: <strong>SPYXKL36CD</strong></p><h4 style='margin:16px 0 8px;color:#2D3748'>🗝️ Zugang</h4><p>Schlüssel aus dem Schlüsselkasten neben der Aufzugstür nehmen (Code <strong>3097</strong>), dünnen Schlüssel benutzen, um die Tür zu öffnen, 2. Stock, Wohnung <strong>B1</strong> links.</p>"
+    "it": "<h4 style='margin:0 0 8px;color:#2D3748'>🗝️ Accesso</h4><p>Prendere le chiavi dalla security lock accanto all'ascensore (codice <strong>3097</strong>), usare la chiave sottile per aprire la porta dell'ascensore e poi premere il 2° piano. L'appartamento è il <strong>B1</strong> sulla sinistra.</p><h4 style='margin:16px 0 8px;color:#2D3748'>📺 Televisione</h4><p>Accendi con <strong>Power</strong> del telecomando. Canali: <strong>CH+/CH-</strong>. Netflix/YouTube: tasto <strong>Home</strong>.</p>",
+    "en": "<h4 style='margin:0 0 8px;color:#2D3748'>🗝️ Access</h4><p>Take the keys from the security lock next to the lift (code <strong>3097</strong>), use the thin key to open the lift door, go to floor 2. The apartment is <strong>B1</strong> on the left.</p><h4 style='margin:16px 0 8px;color:#2D3748'>📺 Television</h4><p>Turn on with <strong>Power</strong> button. Channels: <strong>CH+/CH-</strong>. Netflix/YouTube: <strong>Home</strong> button.</p>",
+    "de": "<h4 style='margin:0 0 8px;color:#2D3748'>🗝️ Zugang</h4><p>Schlüssel aus dem Schlüsselkasten neben der Aufzugstür nehmen (Code <strong>3097</strong>), dünnen Schlüssel benutzen, um die Tür zu öffnen, 2. Stock, Wohnung <strong>B1</strong> links.</p><h4 style='margin:16px 0 8px;color:#2D3748'>📺 Fernseher</h4><p>Einschalten mit <strong>Power</strong>-Taste. Kanäle: <strong>CH+/CH-</strong>. Netflix/YouTube: <strong>Home</strong>-Taste.</p>"
   },
   "mappa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2771.9!2d12.3256!3d45.4268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb17bb4be7a91%3A0x8fb6b49cf726b45!2sFondamenta%20San%20Biagio%20800Q%2C%2030133%20Venezia%20VE!5e0!3m2!1sit!2sit!4v1728912345",
   "ristoranti": [
