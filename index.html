@@ -529,6 +529,11 @@
       renderActivities(data.attivita||[]);
       renderServices(data.servizi||[]);
       renderGallery(data.galleria||[]);
+const whatsappWidget = document.querySelector('.whatsapp-widget');
+if(whatsappWidget && data.host_whatsapp) {
+  const whatsappNumber = data.host_whatsapp.replace(/[\s\+\-\(\)]/g, '');
+  whatsappWidget.href = `https://wa.me/${whatsappNumber}`;
+}
     }
     
     function renderRestaurants(restaurants){
