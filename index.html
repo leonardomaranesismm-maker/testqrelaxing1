@@ -494,6 +494,10 @@
       document.getElementById('apt-cover').src=data.foto_copertina||'';
       document.getElementById('wifi-ssid').textContent=data.wifi_ssid||'—';
       document.getElementById('wifi-pass').textContent=data.wifi_password||'—';
+      if(data.sfondo){
+  document.body.style.background=data.sfondo;
+  document.body.style.backgroundAttachment='fixed';
+}
       
       const checkinText=data.checkin&&data.checkin[currentLang]?data.checkin[currentLang]:data.checkin||'—';
       const checkoutText=data.checkout&&data.checkout[currentLang]?data.checkout[currentLang]:data.checkout||'—';
