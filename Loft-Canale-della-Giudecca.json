@@ -1,7 +1,8 @@
 {
-  "nome": "Luxury Penthouse - Loft in Venice",
+   "nome": "Luxury Penthouse - Loft in Venice",
   "indirizzo": "Fondamenta San Biagio 800Q, Isola della Giudecca, Venezia (VE)",
   "foto_copertina": "https://i.imgur.com/3HvPTyn.jpg",
+  "sfondo": "linear-gradient(135deg, #f5e6d3 0%, #e8d4ba 50%, #d9c3a8 100%)",
   "lat": 45.4268,
   "lon": 12.3256,
   "wifi_ssid": "Fastweb-5ch99x",
