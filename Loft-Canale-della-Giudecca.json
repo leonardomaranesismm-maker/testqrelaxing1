@@ -113,7 +113,7 @@
   "attivita": [
     {
       "nome": "Piazza San Marco",
-      "foto": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+      "foto": "https://cdn.pixabay.com/photo/2018/05/07/13/55/venice-3380829_1280.jpg",
       "distanza": {
         "it": "10 min in vaporetto",
         "en": "10 min by vaporetto",
@@ -129,7 +129,7 @@
     },
     {
       "nome": "Canal Grande",
-      "foto": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=800&q=80",
+      "foto": "https://cdn.pixabay.com/photo/2014/05/05/03/55/canal-grande-337987_1280.jpg",
       "distanza": {
         "it": "Attraversa tutta Venezia",
         "en": "Runs through all of Venice",
@@ -145,7 +145,7 @@
     },
     {
       "nome": "Isola di Burano",
-      "foto": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&q=80",
+      "foto": "https://cdn.pixabay.com/photo/2019/03/18/11/03/channel-4062894_640.jpg",
       "distanza": {
         "it": "45 min in vaporetto",
         "en": "45 min by vaporetto",
@@ -161,7 +161,7 @@
     },
     {
       "nome": "Ponte di Rialto",
-      "foto": "https://images.unsplash.com/photo-1518987048-93e29699e79a?w=800&q=80",
+      "foto": "https://www.veneto.info/wp-content/uploads/sites/114/venezia-ponte-rialto.jpg",
       "distanza": {
         "it": "15 min in vaporetto",
         "en": "15 min by vaporetto",
@@ -177,7 +177,7 @@
     },
     {
       "nome": "Palazzo Ducale",
-      "foto": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80",
+      "foto": "https://www.veneto.info/wp-content/uploads/sites/114/venezia-palazzo-ducale-hd.jpg",
       "distanza": {
         "it": "10 min in vaporetto",
         "en": "10 min by vaporetto",
